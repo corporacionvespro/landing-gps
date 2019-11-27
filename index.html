@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/gps.css" />
+    <link rel="stylesheet" href="css/icon/style.css" />
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <title>GPS-VESPRO</title>
+
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
+        <div class="container-fluid text-center">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top" style="z-index: 99999;">
+                <img class="img-fluid" src="img/logo.png" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto align-items-center justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#beneficios">Beneficios</a>
+                    </li><i class="icon-circle"></i>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#cotizar">Cotizar</a>
+                    </li><i class="icon-circle"></i>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#herramientas">Herramientas</a>
+                    </li><i class="icon-circle"></i>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#testimonios">Testimonios</a>
+                    </li><i class="icon-circle"></i>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#otros_productos">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Botón flotante de navegación-->
+    <div class="container-navegacion">
+        <input type="checkbox" id="toggle-navegacion" hidden>
+        <nav class="nav-navegacion">
+            <a class="btn-navegacion text-center" href="#beneficios">Beneficios</a>
+            <a class="btn-navegacion text-center" href="#cotizar">Cotizar</a>
+            <a class="btn-navegacion text-center" href="#herramientas">Herramientas</a>
+            <a class="btn-navegacion text-center" href="#testimonios">Testimonios</a>
+            <a class="btn-navegacion text-center" href="#otros_productos">Productos</a>
+        </nav>
+        <div class="boton-flotante">
+            <i class="icon-bars text-primary bar-navegacion" for="toggle-navegacion"></i>
+            <!-- <label for="toggle-navegacion" class="button-navegacion"></label> -->
+        </div>
+    </div>
+
+     <!--Botón flotante de Whatsapp-->
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=51997627162" target="_blank">
+            <img id="whatsapp-button" src="img/whatsapp.png" alt="">
+        </a>
+    </div>
+
+    <!--Encabezado-->
+    <header id="header" class="masthead">
+        <div class="container-fluid ">
+            <div class="row align-items-center">
+                <div class="container-fluid col-12 col-md-7">
+                    <div class="row justify-content-center">
+                        <div class="8">
+                            <h1 class="intro-heading">Controla tu vehículo</h1>
+                            <h1 class="intro-">Desde tu celular</h1>
+                            <p class="intro-lead-in">En tiempo real, las 24 horas del día y </p> 
+                            <p> én la tranquilidad que tu vehículo </p>
+                            <p>esté seguro en todo momento.</p>
+                            <!-- <p class="intro-tercero">De manera fácil y segura</p> -->
+                            <!-- <ul class="text-center list-inline social-buttons align-items-center">
+                                <li class="list-inline-item">
+                                    <a class="btn btn-primary btn-xl botones" href="#cotizar">Adquiérelo</a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <img id="img-control" class=" img-fluid" src="img/header-celular.png"/>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- raya -->
+    <hr class="header-raya">
+    <!--Introducción-->
+     <div class="container-fluid text-center align-items-center justify-content-center " id="introduccion" style="position: relative;">
+        <hr class="intro-raya">
+        <p class="intro-heading text-primary">El control del vehículo</p> <br>
+        <p class="intro-lead-in">Lo tienes tú!</p> <br>
+        <label class="icon"><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></label>
+        <div class="text-center container-fluid">
+            <img src="img/control2.png" class="img-fluid"/>
+        </div>
+    </div> 
+
+
+    <!-- Beneficios-carousel-->
+    <div id="beneficios-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="col-10 col-lg-4 d-block">
+                    <div class="card border-0 card-shadow card-1">
+                        <div class="row no-gutters align-items-center h-100">
+                            <div class="col-3">
+                                <img class="card-img card-img-1" src="img/ojos.png"/>
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary">OBTIENES</h5>
+                                    <div class="card-text">la ubicación actual de tu vehículo las 24 horas del día.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-10 col-lg-4 d-block">
+                    <div class="card border-0 card-shadow card-3">
+                        <div class="row no-gutters align-items-center h-100">
+                            <div class="col-3">
+                                <img class="card-img card-img-1" src="img/docuemnto.png"/>
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary">Tienes</h5>
+                                    <div class="card-text">la información del recorrido en el momento que lo requieres para tomar  desiciones.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-10 col-lg-4 d-block">
+                    <div class="card border-0 card-shadow card-2">
+                        <div class="row no-gutters align-items-center h-100">
+                            <div class="col-3">
+                                <img class="card-img card-img-2" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;" src="img/sos.png" />
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary">TE PERMITE</h5>
+                                    <div class="card-text">avisar a tus familiares o conocidos que te encuentras en una emergencia.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-10 col-lg-4 d-block">
+                    <div class="card border-0 card-shadow card-4">
+                        <div class="row no-gutters align-items-center h-100">
+                            <div class="col-3">
+                                <img class="card-img card-img-2" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;" src="img/seguridad.png" />
+                            </div>
+                            <div class="col-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary">LIBÉRATE</h5>
+                                    <div class="card-text">de las preocupaciones  de perder tu vehículo.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Beneficios-->
+    <div id="beneficios" class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="card border-0 card-shadow card-1">
+                    <div class="row no-gutters align-items-center h-100">
+                        <div class="col-3 text-center">
+                            <img class="card-img card-img-1" src="img/ojos.png"/>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">OBTIENES</h5>
+                                <div class="card-text">la ubicación actual de tu vehículo las 24 horas del día.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="card border-0 card-shadow card-3">
+                    <div class="row no-gutters align-items-center h-100">
+                        <div class="col-3 text-center">
+                            <img class="card-img card-img-1" src="img/docuemnto.png"/>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Tienes</h5>
+                                <div class="card-text">la información del recorrido en el momento que lo requieres para tomar  desiciones.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="card border-0 card-shadow card-2">
+                    <div class="row no-gutters align-items-center h-100">
+                        <div class="col-3 text-center">
+                            <img class="card-img card-img-2" src="img/sos.png" />
+                        </div>
+                        <div class="col-9">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">TE PERMITE</h5>
+                                <div class="card-text">avisar a tus familiares o conocidos que te encuentras en una emergencia.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="card border-0 card-shadow card-4">
+                    <div class="row no-gutters align-items-center h-100">
+                        <div class="col-3 text-center">
+                            <img class="card-img card-img-2" src="img/seguridad.png" />
+                        </div>
+                        <div class="col-9">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">LIBÉRATE</h5>
+                                <div class="card-text">de las preocupaciones  de perder tu vehículo.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Herramientas-->
+    <div id="herramientas" class="container-fluid align-items-center">
+        <div class="row container-fluid text-center justify-content-center" >
+            <div class="container col-auto" style="margin-left: 0; margin-right: 0;">
+                <div class="numero5 ">
+                    <label class=" text-primary">5</label>
+                </div>
+            </div>
+            <div class="container col-auto" style="margin-left: 0; margin-right: 0;">
+                <div class="numero5">
+                    <p class="intro-heading text-primary" style="text-align: start;">Las herramientas <br>  que necesitas para</p> <br>
+                    <p class="intro-lead-in" style="text-align: start;">tener el control de <br> tu unidad </p> <br>
+                    <p class="icon"><i class="icon-circle text-primary text-center"></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container-fluid align-items-center herramienta">
+        <div class="row align-items-center" style="margin-bottom: 60px;">
+            <div class="col-md-6 container-herramienta" style="z-index: 1;">
+                <h4 class="header-herramienta">Auto Apágate</h4>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad utilizando tu celular, sin importar la distancia en la que te encuentres.</p>
+                    </div>
+                </div>
+                <i class="icon-circle icon-circle-herramienta text-primary"></i>
+            </div>
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <img id="img-herramientas" src="img/auto-apagate.png"/>
+            </div>
+        </div>
+        <div class="row align-items-center invertir">
+            <div class="col-md-6 container-herramienta" style="z-index: 1;">
+                <h4 class="header-herramienta">Auto Apágate</h4>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad utilizando tu celular, sin importar la distancia en la que te encuentres.</p>
+                    </div>
+                </div>
+                <i class="icon-circle icon-circle-herramienta text-primary"></i>
+            </div>
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <img id="img-herramientas" src="img/auto-apagate.png"/>
+            </div>
+        </div>
+        <!-- <div class="row align-items-center invertir">
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <img id="img-herramientas" src="img/auto-apagate.png"/>
+            </div>
+            <div class="col-md-6 container-herramienta" style="z-index: 1;">
+                <h4 class="header-herramienta">Auto Apágate</h4>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad utilizando tu celular, sin importar la distancia en la que te encuentres.</p>
+                    </div>
+                </div>
+                <i class="icon-circle icon-circle-herramienta text-primary"></i>
+            </div>
+        </div>
+        <div class="row align-items-center ">
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <img id="img-herramientas" src="img/auto-apagate.png"/>
+            </div>
+            <div class="col-md-6 container-herramienta" style="z-index: 1;">
+                <h4 class="header-herramienta">Auto Apágate</h4>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad utilizando tu celular, sin importar la distancia en la que te encuentres.</p>
+                    </div>
+                </div>
+                <i class="icon-circle icon-circle-herramienta text-primary"></i>
+            </div>
+        </div> -->
+        
+    </div>
+
+    <!--otros -->
+    <!-- <div id="herramientas" class="container-fluid align-items-center">
+        <div class="container-fluid align-items-center text-center" style="margin-bottom: 60px;">
+            <img src="img/cinco.png" class="img-fluid col-12 col-md-8 col-lg-7 col-xl-5">
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center invertir">
+                <img class="circulo-naranja2" src="img/circulo2.PNG"/>
+                <div class="col-md-5 imagen" style="z-index: 1;">
+                    <img id="img-herramientas" src="img/estado_financiero.png"/>
+                </div>
+                <div class="col-md-6" style="z-index: 1;">
+                    <div class="row">
+                        <a class="divisiones">Estado Financiero</a>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Controla tus ingresos, egresos, depósitos y transferencias.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Revisa la cantidad de dinero que tienes en caja, en tu cuenta bancaria y la suma de ambas.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Observa los montos de dinero de fechas anteriores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-5 imagen" style="z-index: 1;">
+                    <img id="img-herramientas" src="img/operaciones.png"/>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <a class="divisiones">Operaciones</a>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Registra ingresos, egresos, depósitos y transferencias en tiempo real.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Obtén la información de saldos pendientes de cada afiliado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center invertir">
+                <img class="circulo-naranja3" src="img/circulo3.PNG" />
+                <div class="col-md-5 imagen" style="z-index: 1;">
+                    <img id="img-herramientas" src="img/informes.png"/>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <a class="divisiones">Informes</a>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Revisa los movimientos de dinero de tu empresa en un periodo de tiempo, del día, semana o mes.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Obtén información detallada de quién pagó, cuánto pagó y quién registró el pago.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-5 imagen" style="z-index: 1;">
+                    <img id="img-herramientas" src="img/contactos.png"/>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <a class="divisiones">Contactos</a>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Revisa datos detallados de tus afiliados, vehículos y documentación/vigencia.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Registra a tus proveedores.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Registra a tus colaboradores.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Registra a tus usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center invertir">
+                <img class="circulo-naranja2" src="img/circulo2.PNG"/>
+                <div class="col-md-5 imagen" style="z-index: 1;">
+                    <img id="img-herramientas" src="img/tareas_por_realizar.png"/>
+                </div>
+                <div class="col-md-6" style="z-index: 1;">
+                    <div class="row">
+                        <a class="divisiones">Tareas por realizar</a>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Revisa la relación de afiliados con deudas pendientes.</p>
+                        </div>
+                    </div>
+                    <div class="row centro-10px">
+                        <div class="col-1">
+                            <img src="img/check_naranja.png" class="check"/>
+                        </div>
+                        <div class="col-11">
+                            <p class="divisiones2">Revisa documentación por vencer y caducados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <img src="img/linea_gris.png" class="linea-gris" />
+        </div>
+    </div> -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/gps.js"></script>
+     <script>
+        $('body').on('click', '.btn-navegacion', function(){
+            $('.nav-navegacion').css('opacity','0%');
+            $('.nav-navegacion').css('display','none');
+        });
+        var estado = 0;
+        $('body').on('click', '.bar-navegacion', function() {
+            if (estado == 0) {
+                $('.nav-navegacion').css('opacity','1');
+                $('.nav-navegacion').css('display','block');
+                estado = 1;
+            } else {
+                $('.nav-navegacion').css('opacity','0%');
+                $('.nav-navegacion').css('display','block');
+                estado = 0;
+            }
+        });
+        var nav = document.getElementById('mainNav');
+        window.onscroll = function() {
+            if (window.pageYOffset > 100) {
+                nav.classList.add("orange");
+            } else {
+                nav.classList.remove("orange");
+            }
+        }
+    </script>
+</body>
+</html>

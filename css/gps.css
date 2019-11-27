@@ -1,0 +1,373 @@
+.text-primary{
+    color: #b01f16!important;
+}
+
+*{
+    font-family: 'Montserrat-regular' ;
+    font-weight: 500;
+    /* background-color: #f8f8f8; */
+}
+body{
+    background-color: #f8f8f8;
+
+}
+a:hover{text-decoration: none}
+
+/* navbar */
+.navbar{
+    padding: 0;
+}
+.navbar *{
+    background-color:white;
+}
+.navbar .navbar-brand img {
+    width: 200px;
+    height: auto;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #b01f16;
+    font-family: 'Montserrat-regular';
+} 
+.navbar-nav i{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #b01f16;
+}
+
+/* navbar resposibe */
+.container-navegacion {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    z-index: 10000;
+    display: block;
+    margin: auto;
+    background: transparent;
+}
+.nav-navegacion {
+    opacity: 0%;
+    transition: all 0.5s ease-in-out;
+    width: 150px;
+    border-radius: 5px;
+}
+.nav-navegacion a {
+    background-color:#b01f16;
+    text-align: left;
+    display: block;
+    margin: 10px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    font-family: 'Montserrat-medium';
+}
+.nav-navegacion a:hover {
+    background-color:#FFF;
+    color: #b01f16;
+}
+.boton-flotante {
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    margin-right: -10PX;
+}
+.boton-flotante i.text-primary{
+    font-size: 20px;
+}
+#toggle-navegacion:checked ~ .nav-navegacion {
+    opacity: 1;
+    margin-bottom: 80px;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+    #navbarResponsive, #boton-sandwich {
+        display: block;
+    }
+
+    .container-navegacion {
+        display: none;
+    }
+}
+
+
+/* btn whatsapp*/
+.btn-whatsapp {
+    display:block;
+    width:50px;
+    height:50px;
+    position: fixed;
+    right:43px;
+    bottom:40px;
+    z-index: 120;
+}
+
+.btn-whatsapp img {
+    width: 100%;
+    filter: drop-shadow(5px 5px 10px #77777770);
+}
+
+/* header */
+
+#header.masthead {
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center bottom;
+    color: #FFFFFF;
+}
+
+#img-control {
+    height: 800px;
+    width: auto;
+    padding-top: 50px;
+    /* margin-top: 150px;
+    margin-bottom: 150px; */
+}
+
+/* raya header */
+.header-raya{
+    height: 50px;
+    background-color: #b01f16;
+    border: 0;
+    margin: 0;
+}
+
+/* introduccion */
+#introduccion{
+    /* margin-top: 90px; */
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#introduccion i{
+    padding: 0px 30px;
+    font-size: 20px;
+}
+#introduccion label{
+    margin-top: 20px;
+}
+
+#introduccion p {
+    font-size: 65px;
+    font-family: "Montserrat-bold";
+    padding: 0px 60px;
+    display: inline-block;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.intro-raya{
+    background-color: black;
+    max-width: 80VW;
+    height: 10px;
+    margin: 0px auto -57px;
+}
+
+#introduccion div{
+    max-height: 90vh;
+    padding: 10px;
+}
+
+#introduccion img{
+    height: inherit;
+    width: auto;
+}
+/* beneficios  */
+
+#beneficios .card {
+    font-size: 20px;
+    height: 25vh;
+    margin-bottom: 30px;
+    font-family: 'Montserrat-medium';
+
+}
+#beneficios .card h5{
+    font-family: 'Montserrat-medium';
+}
+
+
+#beneficios img{
+    padding: 10px;
+    /* width: auto; */
+    /* height: 12vh; */
+}
+
+/*  */
+/* #herramientas label{
+    font-size: 200px;
+    font-family: 'Montserrat-bold';
+} */
+#herramientas p.intro-heading, #herramientas p.intro-lead-in{
+    font-size: 50px;
+    font-family: 'Montserrat-bold';
+    margin: 0;
+    line-height: 1;
+}
+
+.numero5{
+    display: inline-block;
+}
+.numero5 label{
+    font-size: 250px;
+    font-family: 'Montserrat-bold';
+    margin: 0;
+    line-height: 1;
+}
+#herramientas i{
+    padding: 0px 20px;
+}
+
+
+#img-herramientas {
+    height: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.header-herramienta{
+    display: inline-block;
+    background-color: #b01f16;
+    color: white;
+    font-family: "Montserrat-bold";
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-bottom: 40px;
+    margin-top: -29px;
+    /* z-index: 200; */
+}
+
+.invertir .header-herramienta, .invertir .text-herramienta {
+    text-align: end;
+}
+
+.text-herramienta{
+    font-size: 28px;
+}
+
+.container-herramienta{
+    padding: 0px 30px 30px;
+    border-left: 5px solid #b01f16;
+}
+.container-herramienta:before, .container-herramienta:after{
+    content: "";
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    left: -5px;
+    background: #b01f16;
+    z-index: -100;
+}
+
+.container-herramienta:before{
+    top: 0px;
+} 
+.container-herramienta:after{
+    bottom: 0;
+}
+
+.icon-circle-herramienta:before {
+    content: "\f111";
+    bottom: -7px;
+    left: 45px;
+    position: absolute;
+    font-size: 20px;
+}
+.invertir .container-herramienta:before, .invertir .container-herramienta:after{
+    right: -5px;
+}
+
+
+.invertir .icon-circle-herramienta:before {
+    right: 45px;
+}
+
+.herramienta{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.herramienta .invertir {
+    flex-direction: row-reverse;
+}
+
+.herramienta .invertir:first-child {
+    order: 2;
+}
+
+.herramienta .invertir:nth-child(2) {
+    order: 1;
+}
+
+  
+@media (min-width: 341px){
+    #beneficios-carousel {
+        display: none;
+    }
+    
+    #beneficios {
+        display: block;
+    }
+    
+    
+
+}
+@media (max-width: 340px){
+    #beneficios {
+        display: none;
+    }
+
+    #beneficios-carousel {
+        display: block;
+    }
+
+    .herramienta .invertir {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .herramienta .invertir:first-child {
+        order: 1;
+    }
+
+    .herramienta .invertir:nth-child(2) {
+        order: 2;
+    }
+}
+
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url("../css/font-montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url("../css/font-montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url("../css/font-montserrat/Montserrat-Thin.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-semiBold';
+    src: url("../css/font-montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url("../css/font-montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-thin';
+    src: url("../css/font-montserrat/Montserrat-Thin.ttf")
+}
