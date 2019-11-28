@@ -124,8 +124,6 @@ a:hover{text-decoration: none}
     height: 800px;
     width: auto;
     padding-top: 50px;
-    /* margin-top: 150px;
-    margin-bottom: 150px; */
 }
 
 /* raya header */
@@ -138,14 +136,10 @@ a:hover{text-decoration: none}
 
 /* introduccion */
 #introduccion{
-    /* margin-top: 90px; */
     padding-top: 90px;
     padding-bottom: 90px;
 }
-#introduccion i{
-    padding: 0px 30px;
-    font-size: 20px;
-}
+
 #introduccion label{
     margin-top: 20px;
 }
@@ -191,15 +185,8 @@ a:hover{text-decoration: none}
 
 #beneficios img{
     padding: 10px;
-    /* width: auto; */
-    /* height: 12vh; */
 }
 
-/*  */
-/* #herramientas label{
-    font-size: 200px;
-    font-family: 'Montserrat-bold';
-} */
 #herramientas p.intro-heading, #herramientas p.intro-lead-in{
     font-size: 50px;
     font-family: 'Montserrat-bold';
@@ -216,10 +203,9 @@ a:hover{text-decoration: none}
     margin: 0;
     line-height: 1;
 }
-#herramientas i{
+/* #herramientas i{
     padding: 0px 20px;
-}
-
+} */
 
 #img-herramientas {
     height: 50vh;
@@ -228,7 +214,27 @@ a:hover{text-decoration: none}
     margin-right: auto;
 }
 
+.herramienta{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+.herramienta .invertir {
+    flex-direction: row-reverse;
+}
 
+.herramienta .invertir:first-child {
+    order: 2;
+}
+
+.herramienta .invertir:nth-child(2) {
+    order: 1;
+}
+.container-herramienta{
+    padding: 0px 30px 30px;
+}
 
 .header-herramienta{
     display: inline-block;
@@ -243,26 +249,41 @@ a:hover{text-decoration: none}
     /* z-index: 200; */
 }
 
+.text-herramienta{
+    font-size: 28px;
+}
+.icon-circle-herramienta:before {
+    content: "\f111";
+    bottom: -7px;
+    /* left: 45px; */
+    position: absolute;
+    font-size: 20px;
+}
+
 .invertir .header-herramienta, .invertir .text-herramienta {
     text-align: end;
 }
 
-.text-herramienta{
-    font-size: 28px;
-}
-
-.container-herramienta{
-    padding: 0px 30px 30px;
-    border-left: 5px solid #b01f16;
-}
 .container-herramienta:before, .container-herramienta:after{
     content: "";
     width: 60px;
     height: 5px;
     position: absolute;
-    left: -5px;
     background: #b01f16;
     z-index: -100;
+}   
+.container-herramienta.container-herramienta-derecha:before, .container-herramienta.container-herramienta-derecha:after{
+    left: -5px;
+}
+.container-herramienta.container-herramienta-izquierda:before, .container-herramienta.container-herramienta-izquierda:after{
+    right: 0px;
+}
+.container-herramienta.container-herramienta-izquierda{
+    border-right: 5px solid #b01f16;
+    text-align: end;
+}
+.container-herramienta.container-herramienta-derecha{
+    border-left: 5px solid #b01f16;
 }
 
 .container-herramienta:before{
@@ -272,41 +293,52 @@ a:hover{text-decoration: none}
     bottom: 0;
 }
 
-.icon-circle-herramienta:before {
-    content: "\f111";
-    bottom: -7px;
+.container-herramienta-izquierda .icon-circle-herramienta:before{
+    right: 45px;
+} 
+
+.container-herramienta-derecha .icon-circle-herramienta:before{
     left: 45px;
-    position: absolute;
+} 
+
+/* otros */
+.alerta-raya{
+    height: 3px;
+    background-color: #666666;
+    max-width: 60vw;
+    border-radius: 2px;
+    margin: 60px auto;  
+}
+
+.alerta-heading{
+    font-size: 50px;
+    font-family: 'Montserrat-semiBold';
+}
+.alerta-lead-in{
+    font-size: 30px;
+    font-family: 'Montserrat-semiBold';
+}
+
+.container-alerta{
+    margin-top: 60px;
+    background-image: url('../img/fondo-circle-black.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center bottom;
+}
+.container-alerta .card-title {
+    font-family: 'Montserrat-Bold';
+    font-size: 25PX;
+}
+ 
+
+
+.icon i{
+    padding: 0px 30px;
     font-size: 20px;
 }
-.invertir .container-herramienta:before, .invertir .container-herramienta:after{
-    right: -5px;
-}
 
-
-.invertir .icon-circle-herramienta:before {
-    right: 45px;
-}
-
-.herramienta{
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.herramienta .invertir {
-    flex-direction: row-reverse;
-}
-
-.herramienta .invertir:first-child {
-    order: 2;
-}
-
-.herramienta .invertir:nth-child(2) {
-    order: 1;
-}
-
-  
 @media (min-width: 341px){
     #beneficios-carousel {
         display: none;
