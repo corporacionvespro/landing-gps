@@ -9,7 +9,6 @@
 }
 body{
     background-color: #f8f8f8;
-
 }
 a:hover{text-decoration: none}
 
@@ -26,11 +25,11 @@ a:hover{text-decoration: none}
 }
 
 .nav-item .nav-link {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
     color: #b01f16;
-    font-family: 'Montserrat-regular';
+    font-family: 'Montserrat-semibold';
 } 
 .navbar-nav i{
     font-size: 10px;
@@ -119,11 +118,35 @@ a:hover{text-decoration: none}
     background-position: center bottom;
     color: #FFFFFF;
 }
+.intro-heading{
+    font-size: 60px;
+    font-family: "Montserrat-bold";
+}
+.intro{
+    font-size: 75px;
+    font-family: "Montserrat-bold";
+    padding-bottom: 10px;
+}
+.intro-lead-in{
+    font-size: 30px;
+    font-family: "Montserrat-semibold";
+    line-height: 1;
+}
+
+#header .btn{
+    width: auto;
+    font-size: 30px;
+    padding: 10px 30px;
+    background-color: #FFF;
+    margin-top: 30px;
+}
 
 #img-control {
     height: 800px;
     width: auto;
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 /* raya header */
@@ -132,6 +155,7 @@ a:hover{text-decoration: none}
     background-color: #b01f16;
     border: 0;
     margin: 0;
+    margin-top: 15vh;
 }
 
 /* introduccion */
@@ -156,7 +180,7 @@ a:hover{text-decoration: none}
 .intro-raya{
     background-color: black;
     max-width: 80VW;
-    height: 10px;
+    height: 8px;
     margin: 0px auto -57px;
 }
 
@@ -166,7 +190,8 @@ a:hover{text-decoration: none}
 }
 
 #introduccion img{
-    height: inherit;
+    margin-top: 10px;
+    max-height: 90vh;
     width: auto;
 }
 /* beneficios  */
@@ -508,16 +533,15 @@ a:hover{text-decoration: none}
     box-shadow: 0 0 0 1px #b01f16;
 }
 
-.card-contacto .btn-primary {
+.btn-primary {
     background-color: #b01f16;
     border: #b01f16;
     width: 100%;
     font-family: "Montserrat-bold";
     font-size: 20px;
     border-radius: 10px;
-
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle .btn-primary:focus {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle .btn-primary:focus, .btn-primary:hover {
     color: #fff;
     background-color: #b01f16;
     border: #b01f16;
@@ -530,26 +554,163 @@ a:hover{text-decoration: none}
     bottom: 9px;
 }
 
-
-
-
-/* #testimonios .carousel-inner {
-    margin-top: 50px;
+/* testimonio pc*/
+.container-testimonio {
+    margin-bottom: 60px;
+}
+.container-testimonio .carousel {
+    background-image: url(../img/fondo-circle.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center bottom;
+    padding-bottom: 20px;
+}
+.testimonio-raya{
+    height: 5PX;
+    border: 0;
+    background-color: #b01f16;
+    width: 150px;
+    margin: 0 auto;
 }
 
-#testimonios-movil .carousel-inner {
-    margin-top: 0px;
-} */
+.card-testimonio{
+    padding: 50px 30px;
+}
 
+.card-testimonio .card-testimonio-img{
+    z-index: 2;
+}
+.card-testimonio .card-img{
+    width: 140px;
+    height: 140px;
+    background-color: #867b7b;
+    border: 8px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    margin-bottom: -20px;
+    box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.53);
+}
 
+.card-testimonio .card-img img {
+    width: 100%;
+    transform: translate(0,-50%);
+    margin-top: 50%;
+}
 
+.card-testimonio .testimonio-comillas{
+    width: 40px;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.card-testimonio .card-testimonio-text{
+    background-color: white;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 4px 10px 2px #0000006e;
+    position: relative;
+}
+.testimonio-text{
+    text-align: justify;
+}
+.testimonio-firma{
+    text-align: end;
+}
 
+.carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #b01f16;
+    opacity: .4;
+}
 
+.carousel-indicators li.active {
+    opacity: 1;
+    background-color: #b01f16;
+}
 
+/* beneficios */
+.container-beneficio{
+    margin: 100px 0px;
+}
+.beneficio-text{
+    background-color: #b01f16;
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px 2px #0000006e;
+    padding: 30px;
+}
+.beneficio-img{
+    height: 20vh;
+    text-align: center;
+    margin: 30px 30px 0px;
+}
+.beneficio-img img{
+    width: auto;
+    height: inherit;
+}
 
+/* otros productos */
+.container-productos .h-100{
+    min-height: 70vh !important;
+}
 
+.container-productos img{
+    padding: 30px;
+}
+.container-productos .btn{
+    width: auto;
+}
 
+.container-productos .divisiones{
+    font-size: 40px;
+    font-family: 'Montserrat-bold';
 
+}
+
+.container-productos .divisiones2{
+    font-size: 23px;
+    font-family: 'Cabin-italic';
+    line-height: 27px;
+    color: #cbcbcb;
+    padding: 40px 0px;
+}
+
+.container-productos .divisiones3{
+    font-size: 30px;
+    font-family: 'Montserrat-bold';
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.producto-text{
+    margin-bottom: 150px;
+}
+.productos-raya{
+    height: 5px;
+    background-color: #666666;
+    border: 0;
+    margin: 0;
+    margin-top: 100px;
+}
+
+/* footer */
+footer{
+    background-image: url("../img/footer.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: center;
+    color: #000000;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    /* height: 30vh; */
+    /* background-color: #FFFFFF; */
+}
 
 .icon i{
     padding: 0px 30px;
@@ -565,7 +726,9 @@ a:hover{text-decoration: none}
         display: block;
     }
     
-    
+    #testimonios-movil{
+        display: none;
+    }
 
 }
 @media (max-width: 340px){
@@ -590,7 +753,42 @@ a:hover{text-decoration: none}
         order: 2;
     }
 
+    /* carusel movil */
+
+    #testimonios-movil{
+        display: block;
+    }
+    #testimonios-movil .carousel-inner> .carousel-item.carousel-item-next, #testimonios-movil .carousel-inner > .carousel-item.active.carousel-item-right { 
+        transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        -moz-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+        top: 0;
+    }
     
+    #testimonios-movil .carousel-inner > .carousel-item.carousel-item-prev, #testimonios-movil .carousel-inner > .carousel-item.active.carousel-item-left { 
+        transform: translate3d(0,-100%, 0);
+        -webkit-transform: translate3d(0,-100%, 0);
+        -moz-transform: translate3d(0,-100%, 0);
+        -ms-transform: translate3d(0,-100%, 0);
+        -o-transform: translate3d(0,-100%, 0);
+        top: 0;
+    }
+    
+    #testimonios-movil .carousel-inner > .carousel-item.next.carousel-item-left, #testimonios-movil .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right, #testimonios-movil .carousel-inner > .carousel-item.active {
+        transform:translate3d(0,0,0);
+        -webkit-transform:translate3d(0,0,0);
+        -ms-transform:translate3d(0,0,0);
+        -moz-transform:translate3d(0,0,0);
+        -o-transform:translate3d(0,0,0);
+        top:0;
+    }
+    
+}
+@font-face {
+    font-family: 'Cabin-italic';
+    src: url("../css/font-cabin/Cabin-Italic.ttf");
 }
 
 @font-face {

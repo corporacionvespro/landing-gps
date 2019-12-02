@@ -71,10 +71,11 @@
                     <div class="row justify-content-center">
                         <div class="8">
                             <h1 class="intro-heading">Controla tu vehículo</h1>
-                            <h1 class="intro-">Desde tu celular</h1>
+                            <h1 class="intro">Desde tu celular</h1>
                             <p class="intro-lead-in">En tiempo real, las 24 horas del día y </p> 
-                            <p> én la tranquilidad que tu vehículo </p>
-                            <p>esté seguro en todo momento.</p>
+                            <p class="intro-lead-in"> én la tranquilidad que tu vehículo </p>
+                            <p class="intro-lead-in">esté seguro en todo momento.</p>
+                            <a class="btn btn-primary text-primary " href="#masinformacion">Adquiérelo</a>
                             <!-- <p class="intro-tercero">De manera fácil y segura</p> -->
                             <!-- <ul class="text-center list-inline social-buttons align-items-center">
                                 <li class="list-inline-item">
@@ -100,7 +101,7 @@
         <p class="intro-lead-in">Lo tienes tú!</p> <br>
         <label class="icon"><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></label>
         <div class="text-center container-fluid">
-            <img src="img/control2.png" class="img-fluid"/>
+            <img src="img/control.png" class="img-fluid"/>
         </div>
     </div> 
 
@@ -185,10 +186,10 @@
     </div>
 
     <!--Beneficios-->
-    <div id="beneficios" class="container-fluid">
+    <div id="beneficios" class="container-fluid container-beneficio">
         <div class="row justify-content-center">
             <div class="col-12 col-md-5 col-lg-4">
-                <div class="card border-0 card-shadow card-1">
+                <div class="card ">
                     <div class="row no-gutters align-items-center h-100">
                         <div class="col-3 text-center">
                             <img class="card-img card-img-1" src="img/ojos.png"/>
@@ -203,7 +204,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-5 col-lg-4">
-                <div class="card border-0 card-shadow card-3">
+                <div class="card">
                     <div class="row no-gutters align-items-center h-100">
                         <div class="col-3 text-center">
                             <img class="card-img card-img-1" src="img/docuemnto.png"/>
@@ -221,7 +222,7 @@
         </div>
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-5 col-lg-4">
-                <div class="card border-0 card-shadow card-2">
+                <div class="card">
                     <div class="row no-gutters align-items-center h-100">
                         <div class="col-3 text-center">
                             <img class="card-img card-img-2" src="img/sos.png" />
@@ -236,7 +237,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-5 col-lg-4">
-                <div class="card border-0 card-shadow card-4">
+                <div class="card">
                     <div class="row no-gutters align-items-center h-100">
                         <div class="col-3 text-center">
                             <img class="card-img card-img-2" src="img/seguridad.png" />
@@ -495,55 +496,235 @@
     </div>
 
      <!--Testimonios-PC-->
-    <div id="testimonios" class="prefooter">
-        <div class="circulo-naranja6"></div>
-        <h1 class="text-center negrita">Historias de nuestros clientes</h1>
-        <div class="text-center">
-            <img src="img/linea_naranja.png" width="100px" class="linea-naranja" />
+    <div id="testimonios" class="container-testimonio">
+        <div class="reporte-title text-center">
+            <p class="reporte-heading text-primary">Nuestros clientes</p>
+            <p class="reporte-lead-in ">nos respaldan</p>
+            <hr class="testimonio-raya ">
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide align-self-center col-12 col-md-11 justify-content-center align-items-center" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide align-self-center justify-content-center align-items-center" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner align">
-                <div class="carousel-item active" >
-                    <div class="card card2 border-0 card-shadow align-items-center col-10 col-lg-8">
-                        <img class="cliente col-md-5" src="img/cliente1.png" />
-                        <img class="comillas" src="img/comillas.png" />
-                        <p class="testimonio">Desde mediados de este año, he venido utilizando el sistema para cubrir exitosamente todos los procesos que realizo en mi empresa, ahora sé con mucha facilidad quién me debe y cuánto me debe, tengo ordenada toda la documentación de los conductores, sus vehículos, y al mismo tiempo registro los ingresos y salidas de dinero, todo desde mi celular.</p>
-                        <p class="testimonio" style="align-self: flex-end; margin-top: 0px; margin-bottom: 0px;">Gracias Vespro.</p>
-                        <p class="testimonio-firma" style="align-self: flex-end;">Juan Pérez</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card card2 border-0 card-shadow align-items-center col-10 col-lg-8">
-                        <img class="cliente col-md-5" src="img/cliente2.png" />
-                        <img class="comillas" src="img/comillas.png" />
-                        <p class="testimonio">Antes de adquirir el sistema, yo utilizaba un cuaderno para registrar a todos mis afiliados, sus deudas y más, todo iba bien hasta que un día desafortunado se perdió mi cuaderno y ya no tenía nada de información... Ahora que tengo el software se acabó mi preocupación, ya que todos los días se guarda una copia de toda mi información y además puedo descargar una copia en formato excel o pdf a mi computadora o celular.</p>
-                        <!--p class="testimonio" style="align-self: flex-end; margin-top: 0px; margin-bottom: 0px;">Gracias Vespro.</p-->
-                        <p class="testimonio-firma" style="align-self: flex-end;">Luis Quispe</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card card2 border-0 card-shadow align-items-center col-10 col-lg-8">
-                        <img class="cliente col-md-5" src="img/cliente3.png" />
-                        <img class="comillas" src="img/comillas.png" />
-                        <p class="testimonio">Lo interesante de Vespro es que hacen sistemas muy prácticos y fáciles de utilizar, con un click veo cuánto dinero tengo en la empresa, con otro click registro las operaciones de ingreso y salidas de dinero, con otro click reviso la información de mis afiliados y así... Con este sistema tengo todo lo que necesito a un click de distancia. Gracias por facilitarnos las cosas.</p>
-                        <!--p class="testimonio" style="align-self: flex-end; margin-top: 0px; margin-bottom: 0px;">Gracias Vespro.</p-->
-                        <p class="testimonio-firma" style="align-self: flex-end;">Manuel García</p>
+            <div class="row no-gutters justify-content-center ">
+                <div class="col-12 col-sm-7">
+                    <div class="carousel-inner align ">
+                        <div class="carousel-item active" >
+                            <div class="row justify-content-center card-testimonio">
+                                <div class="col-12 card-testimonio-img">
+                                    <div class="card-img text-center">
+                                        <img class="cliente " src="img/cliente.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 card-testimonio-text">
+                                    <img src="img/comillas.png" class="testimonio-comillas" alt="">
+                                    <p class="testimonio-text">Lo interesante de Vespro es que hacen sistemas muy prácticos y fáciles de utilizar, con un click veo cuánto dinero tengo en la empresa, con otro click registro las operaciones de ingreso y salidas de dinero, con otro click reviso la información de mis afiliados y así... Con este sistema tengo todo lo que necesito a un click de distancia. Gracias por facilitarnos las cosas.</p>
+                                    <p class="testimonio-firma" style="align-self: flex-end;">Manuel García</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " >
+                            <div class="row justify-content-center card-testimonio">
+                                <div class="col-12 card-testimonio-img">
+                                    <div class="card-img text-center">
+                                        <img class="cliente " src="img/cliente.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 card-testimonio-text">
+                                    <img src="img/comillas.png" class="testimonio-comillas" alt="">
+                                    <p class="testimonio-text">Lo interesante de Vespro es que hacen sistemas muy prácticos y fáciles de utilizar, con un click veo cuánto dinero tengo en la empresa, con otro click registro las operaciones de ingreso y salidas de dinero, con otro click reviso la información de mis afiliados y así... Con este sistema tengo todo lo que necesito a un click de distancia. Gracias por facilitarnos las cosas.</p>
+                                    <p class="testimonio-firma" style="align-self: flex-end;">Manuel García</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " >
+                            <div class="row justify-content-center card-testimonio">
+                                <div class="col-12 card-testimonio-img">
+                                    <div class="card-img text-center">
+                                        <img class="cliente " src="img/cliente.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 card-testimonio-text">
+                                    <img src="img/comillas.png" class="testimonio-comillas" alt="">
+                                    <p class="testimonio-text">Lo interesante de Vespro es que hacen sistemas muy prácticos y fáciles de utilizar, con un click veo cuánto dinero tengo en la empresa, con otro click registro las operaciones de ingreso y salidas de dinero, con otro click reviso la información de mis afiliados y así... Con este sistema tengo todo lo que necesito a un click de distancia. Gracias por facilitarnos las cosas.</p>
+                                    <p class="testimonio-firma" style="align-self: flex-end;">Manuel García</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="text-center">
-                <img class="linea-gris" src="img/linea_gris.png" width="100vw" />
-            </div>            
-        </div>
     </div>
    
+    <!-- Testimonio-movil -->
+
+    <div id="testimonios-movil" class="container-testimonio">
+        <div class="reporte-title text-center">
+            <p class="reporte-heading text-primary">Nuestros clientes</p>
+            <p class="reporte-lead-in ">nos respaldan</p>
+            <hr class="testimonio-raya ">
+        </div>
+        <div id="carousel-testimonios-movil" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-testimonios-movil" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-testimonios-movil" data-slide-to="1"></li>
+                <li data-target="#carousel-testimonios-movil" data-slide-to="2"></li>
+            </ol>
+            <div class="row no-gutters justify-content-center ">
+                <div class="col-12">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active" style="z-index: 1; position: relative;">
+                            <div class="row justify-content-center card-testimonio">
+                                <div class="col-12 card-testimonio-img">
+                                    <div class="card-img text-center">
+                                        <img class="cliente " src="img/cliente.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 card-testimonio-text">
+                                    <img src="img/comillas.png" class="testimonio-comillas" alt="">
+                                    <p class="testimonio-text">Lo interesante de Vespro es que hacen sistemas muy prácticos y fáciles de utilizar, con un click veo cuánto dinero tengo en la empresa, con otro click registro las operaciones de ingreso y salidas de dinero, con otro click reviso la información de mis afiliados y así... Con este sistema tengo todo lo que necesito a un click de distancia. Gracias por facilitarnos las cosas.</p>
+                                    <p class="testimonio-firma" style="align-self: flex-end;">Manuel García</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " >
+                            <div class="row justify-content-center card-testimonio">
+                                <div class="col-12 card-testimonio-img">
+                                    <div class="card-img text-center">
+                                        <img class="cliente " src="img/cliente.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 card-testimonio-text">
+                                    <img src="img/comillas.png" class="testimonio-comillas" alt="">
+                                    <p class="testimonio-text">Lo interesante de Vespro es que hacen sistemas muy prácticos y fáciles de utilizar, con un click veo cuánto dinero tengo en la empresa, con otro click registro las operaciones de ingreso y salidas de dinero, con otro click reviso la información de mis afiliados y así... Con este sistema tengo todo lo que necesito a un click de distancia. Gracias por facilitarnos las cosas.</p>
+                                    <p class="testimonio-firma" style="align-self: flex-end;">Manuel García</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item " >
+                            <div class="row justify-content-center card-testimonio">
+                                <div class="col-12 card-testimonio-img">
+                                    <div class="card-img text-center">
+                                        <img class="cliente " src="img/cliente.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-8 card-testimonio-text">
+                                    <img src="img/comillas.png" class="testimonio-comillas" alt="">
+                                    <p class="testimonio-text">Lo interesante de Vespro es que hacen sistemas muy prácticos y fáciles de utilizar, con un click veo cuánto dinero tengo en la empresa, con otro click registro las operaciones de ingreso y salidas de dinero, con otro click reviso la información de mis afiliados y así... Con este sistema tengo todo lo que necesito a un click de distancia. Gracias por facilitarnos las cosas.</p>
+                                    <p class="testimonio-firma" style="align-self: flex-end;">Manuel García</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- beneficios -->
+    <hr class="testimonio-raya ">
+    <div class=" container-fluid no-gutters align-items-center container-beneficios">
+        <div class="reporte-title text-center">
+            <p class="reporte-heading ">Más beneficios para ti</p>
+            <p class="reporte-lead-in text-primary">el Sistema incluye:</p>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-12 col-sm-3">
+                <div class="beneficio-text">
+                    <p class="text-white">Integrar Red de Cooperantes PNP. </p>
+                </div>
+                <div class="beneficio-img">
+                    <img src="img/pnp.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-sm-3">
+                <div class="beneficio-text">
+                    <p class="text-white">App adicional sólo para recibir alertas. </p>
+                </div>
+                <div class="beneficio-img">
+                    <img src="img/aplicacion.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-sm-3">
+                <div class="beneficio-text">
+                    <p class="text-white">Descargar reportes en formatos Excel y PDF. </p>
+                </div>
+                <div class="beneficio-img">
+                    <img src="img/reportes.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- OTROS -->
+    <div class=" container-fluid no-gutters align-items-center container-productos " >
+        <div class="reporte-title text-center">
+            <p class="reporte-heading ">Descubre otros servicios para ti </p>
+            <hr class="testimonio-raya ">
+        </div>
+        <div class="container-fluid align-items-center">
+            <div class="row align-items-center justify-content-end  producto-text h-100">
+                <div class="col-md-5">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                <h2 class="divisiones text-left text-primary">Gestión de <br> Flota de Vehículos</h2>
+                                <div class="text-center">
+                                    <p class="divisiones2">La información de tus vehículos de manera ordenada y segura para un mayor crecimiento...</p>
+                                </div>
+                                <p class="divisiones3">Sistema que te permitirá registrar, organizar, ubicar y gestionar tu flota de vehículos de manera óptima y segura.</p>
+                                <a class="btn btn-primary text-white " href="#masinformacion">+ Información</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <hr class="productos-raya">
+                </div>
+                <div class="col-md-6">
+                    <img id="fondo_maqueta" class="img-fluid" src="img/gestion-flota.png" />
+                </div>
+                <!-- <div class="col-md-6">
+                </div> -->
+            </div>
+            <!-- <hr class="productos-raya"> -->
+            <div class="row align-items-center justify-content-end">
+                <div class="col-md-5">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                                <h2 class="divisiones text-left text-primary">Sistema de Gestión  Empresarial ERP</h2>
+                                <div class="text-center">
+                                    <p class="divisiones2">Ordena y centraliza la información de tu empresa para tomar mejores decisiones...</p>
+                                </div>
+                                <p class="divisiones3">Sistema de Gestión Empresarial que te permitirá automatizar y conectar procesos en diversas áreas de tu negocio </p>
+                                <a class="btn btn-primary text-white " href="#masinformacion">+ Información</a>
+                            </div>
+                            <div class="col-12">
+                                <hr class="productos-raya">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img id="fondo_maqueta" class="img-fluid" src="img/gestion-empresa.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid footer text-white">
+        <div class="align-items-center">
+            <div class="container-fluid text-center align-items-center">
+                <div class="container-fluid align-items-center">
+                    <div class="final-text">Copyright &copy; Corporación Vespro.<br>Todos los derechos reservados.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
