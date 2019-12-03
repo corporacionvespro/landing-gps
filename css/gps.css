@@ -199,17 +199,23 @@ a:hover{text-decoration: none}
 #beneficios .card {
     font-size: 20px;
     height: 25vh;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-left: 40px;
     font-family: 'Montserrat-medium';
 
 }
 #beneficios .card h5{
-    font-family: 'Montserrat-medium';
+    font-family: 'Montserrat-semibold';
+    font-size: 25px;
 }
 
+.container-beneficio .card{
+    border-radius: 30px;
+    box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.37);
 
+}
 #beneficios img{
-    padding: 10px;
+    padding: 20px;
 }
 
 #herramientas p.intro-heading, #herramientas p.intro-lead-in{
@@ -274,8 +280,11 @@ a:hover{text-decoration: none}
     /* z-index: 200; */
 }
 
+.herramienta > .row{
+    margin-bottom: 40px;
+}
 .text-herramienta{
-    font-size: 28px;
+    font-size: 30px;
 }
 .icon-circle-herramienta:before {
     content: "\f111";
@@ -336,11 +345,11 @@ a:hover{text-decoration: none}
 }
 
 .alerta-heading{
-    font-size: 50px;
-    font-family: 'Montserrat-semiBold';
+    font-size: 65px;
+    font-family: 'Montserrat-Bold';
 }
 .alerta-lead-in{
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Montserrat-semiBold';
 }
 
@@ -358,29 +367,46 @@ a:hover{text-decoration: none}
 
 .container-alerta .card-title {
     font-family: 'Montserrat-Bold';
-    font-size: 25PX;
+    font-size: 28px;
+}
+
+.container-alerta .card-text {
+    font-family: 'Montserrat-Semibold';
+    font-size: 25px;
 }
  
 .container-alerta .card-body{
     padding-top: 0;
+    /* max-width: 380px; */
 }
 
+/* reporte */
+.reporte{
+    background-image: url('../img/fondo-degradado.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 30px 0px 60px;
+}
 .reporte-title{
-    font-size: 50px;
+    font-size: 65px;
     margin-bottom: 50px;
 }
 .reporte-title p{
     font-family: 'Montserrat-semiBold';
     margin: 0;
     line-height: 1.2;
+    /* font-size: 25px; */
 }
 
 .text-reporte p {
     text-align: left;
     font-family: 'Montserrat-semiBold';
-    font-size: 20px;
+    font-size: 30px;
     /* margin-left: 20px; */
     position: relative;
+    line-height: 1;
 }
 /* .text-reporte p{
     text-align: left;
@@ -621,6 +647,13 @@ a:hover{text-decoration: none}
     text-align: end;
 }
 
+.mas-beneficio-raya{
+    height: 5PX;
+    border: 0;
+    background-color: #666666;
+    width: 70vw;
+    margin: 0 auto;
+}
 .carousel-indicators li {
     height: 15px;
     width: 15px;
@@ -638,11 +671,17 @@ a:hover{text-decoration: none}
 .container-beneficio{
     margin: 100px 0px;
 }
+
+.container-beneficios{
+    padding: 100px 0px;
+    background-color: #ededed;
+}
 .beneficio-text{
     background-color: #b01f16;
     border-radius: 10px;
     box-shadow: 3px 4px 10px 2px #0000006e;
-    padding: 30px;
+    padding: 20px;
+    max-height: 10vh;
 }
 .beneficio-img{
     height: 20vh;
@@ -655,6 +694,17 @@ a:hover{text-decoration: none}
 }
 
 /* otros productos */
+.container-productos{
+    margin-top: 100px;
+}
+.producto-raya{
+    width: 15vw;
+    height: 5PX;
+    border: 0;
+    background-color: #b01f16;
+    margin: 0 auto;
+    margin-top: 10px;
+}
 .container-productos .h-100{
     min-height: 70vh !important;
 }
@@ -715,6 +765,10 @@ footer{
 .icon i{
     padding: 0px 30px;
     font-size: 20px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media (min-width: 341px){
@@ -786,6 +840,9 @@ footer{
     }
     
 }
+
+
+
 @font-face {
     font-family: 'Cabin-italic';
     src: url("../css/font-cabin/Cabin-Italic.ttf");
