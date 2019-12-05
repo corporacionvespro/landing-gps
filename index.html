@@ -69,13 +69,16 @@
             <div class="row align-items-center">
                 <div class="container-fluid col-12 col-md-7">
                     <div class="row justify-content-center">
-                        <div class="8">
+                        <div class="">
                             <h1 class="intro-heading">Controla tu vehículo</h1>
                             <h1 class="intro">Desde tu celular</h1>
-                            <p class="intro-lead-in">En tiempo real, las 24 horas del día y </p> 
-                            <p class="intro-lead-in"> én la tranquilidad que tu vehículo </p>
-                            <p class="intro-lead-in">esté seguro en todo momento.</p>
-                            <a class="btn btn-primary text-primary " href="#masinformacion">Adquiérelo</a>
+                            <div class="card-text">
+                                <p class="intro-lead-in">En tiempo real, las 24 horas del día y </p> 
+                                <p class="intro-lead-in"> obtén la tranquilidad que tu vehículo </p>
+                                <p class="intro-lead-in">esté seguro en todo momento.</p>
+                                <br>
+                                <a class="btn btn-primary text-primary " href="#masinformacion">Adquiérelo</a>
+                            </div>
                             <!-- <p class="intro-tercero">De manera fácil y segura</p> -->
                             <!-- <ul class="text-center list-inline social-buttons align-items-center">
                                 <li class="list-inline-item">
@@ -85,8 +88,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-5">
-                    <img id="img-control" class=" img-fluid" src="img/header-celular.png"/>
+                <div class="col-12 col-md-5 card-img">
+                    <div class="card-img">
+                        <img id="img-control" class=" img-fluid" src="img/header-celular.png"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,27 +106,28 @@
         <p class="intro-lead-in">Lo tienes tú!</p> <br>
         <label class="icon"><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></label>
         <div class="text-center container-fluid">
-            <img src="img/control.png" class="img-fluid"/>
+            <div class="card-img">
+                <img src="img/control.png" class="img-fluid"/>
+            </div>
         </div>
     </div> 
 
-    <!-- Beneficios-carousel-->
+ <!-- Beneficios-carousel-->
     <div id="beneficios-carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
         </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="col-10 col-lg-4 d-block">
-                    <div class="card border-0 card-shadow card-1">
-                        <div class="row no-gutters align-items-center h-100">
-                            <div class="col-3">
-                                <img class="card-img card-img-1" src="img/ojos.png"/>
+        <div class="carousel-inner row justify-content-center">
+            <div class="carousel-item active col-11" >
+                    <div class="card">
+                        <div class="row no-gutters  h-100">
+                            <div class="col-2">
+                                <img class="card-img" src="img/ojos.png">
                             </div>
-                            <div class="col-9">
+                            <div class="col-10">
                                 <div class="card-body">
                                     <h5 class="card-title text-primary">OBTIENES</h5>
                                     <div class="card-text">la ubicación actual de tu vehículo las 24 horas del día.</div>
@@ -129,33 +135,29 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="carousel-item">
-                <div class="col-10 col-lg-4 d-block">
-                    <div class="card border-0 card-shadow card-3">
-                        <div class="row no-gutters align-items-center h-100">
-                            <div class="col-3">
-                                <img class="card-img card-img-1" src="img/docuemnto.png"/>
+            <div class="carousel-item col-11">
+                    <div class="card ">
+                        <div class="row no-gutters  h-100">
+                            <div class="col-2">
+                                <img class="card-img "  src="img/docuemnto.png">
                             </div>
-                            <div class="col-9">
+                            <div class="col-10">
                                 <div class="card-body">
-                                    <h5 class="card-title text-primary">Tienes</h5>
+                                    <h5 class="card-title text-primary">TIENES</h5>
                                     <div class="card-text">la información del recorrido en el momento que lo requieres para tomar  desiciones.</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="carousel-item">
-                <div class="col-10 col-lg-4 d-block">
-                    <div class="card border-0 card-shadow card-2">
-                        <div class="row no-gutters align-items-center h-100">
-                            <div class="col-3">
-                                <img class="card-img card-img-2" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;" src="img/sos.png" />
+            <div class="carousel-item col-11">
+                    <div class="card ">
+                        <div class="row no-gutters  h-100">
+                            <div class="col-2">
+                                <img class="card-img" src="img/sos.png">
                             </div>
-                            <div class="col-9">
+                            <div class="col-10">
                                 <div class="card-body">
                                     <h5 class="card-title text-primary">TE PERMITE</h5>
                                     <div class="card-text">avisar a tus familiares o conocidos que te encuentras en una emergencia.</div>
@@ -163,16 +165,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-            <div class="carousel-item">
-                <div class="col-10 col-lg-4 d-block">
-                    <div class="card border-0 card-shadow card-4">
-                        <div class="row no-gutters align-items-center h-100">
-                            <div class="col-3">
-                                <img class="card-img card-img-2" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;" src="img/seguridad.png" />
+            <div class="carousel-item col-11">
+                    <div class="card ">
+                        <div class="row no-gutters  h-100">
+                            <div class="col-2">
+                                <img class="card-img "  src="img/seguridad.png">
                             </div>
-                            <div class="col-9">
+                            <div class="col-10">
                                 <div class="card-body">
                                     <h5 class="card-title text-primary">LIBÉRATE</h5>
                                     <div class="card-text">de las preocupaciones  de perder tu vehículo.</div>
@@ -180,11 +180,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
-
+    
     <!--Beneficios-->
     <div id="beneficios" class="container-fluid container-beneficio">
         <div class="row justify-content-center">
@@ -254,28 +253,104 @@
         </div>
     </div>
     
-    <!--Herramientas-->
+<!--Herramientas-->
     <div id="herramientas" class="container-fluid align-items-center">
-        <div class="row container-fluid text-center justify-content-center" >
-            <div class="container col-auto" style="margin-left: 0; margin-right: 0;">
+        <div class="row text-center justify-content-center" >
+            <div class="container col-auto">
                 <div class="numero5 ">
-                    <label class=" text-primary">5</label>
+                    <label class=" text-primary">4</label>
                 </div>
             </div>
-            <div class="container col-auto" style="margin-left: 0; margin-right: 0;">
-                <div class="numero5">
-                    <p class="intro-heading text-primary" style="text-align: start;">Las herramientas <br>  que necesitas para</p> <br>
-                    <p class="intro-lead-in" style="text-align: start;">tener el control de <br> tu unidad </p> <br>
-                    <p class="icon"><i class="icon-circle text-primary text-center"></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></p>
+            <div class="container col-auto">
+                <div class="numero5 text-left">
+                    <p class="intro-heading" >Las herramientas <br>  que necesitas para</p> <br class="br-none"> 
+                    <p class="intro-lead-in text-primary" >tener el control de <br> tu unidad </p> <br >
+                    <p class="icon text-center"><i class="icon-circle text-primary "></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid align-items-center herramienta">
+        <div class="row align-items-center ">
+            <div class="col-md-6 " style="z-index: 1;">
+                <div class="row justify-content-end" >
+                    <h4 class="header-herramienta">Auto Apágate</h4>
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-8  container-herramienta container-herramienta-derecha">
+                        <div class="card-text-herramienta">
+                            <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad utilizando tu celular, sin importar la distancia en la que te encuentres.</p>
+                        </div>
+                        <i class="icon-circle icon-circle-herramienta text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <div class="card-imagen">
+                    <img id="img-herramientas" src="img/microfono.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center invertir">
+            <div class="col-md-6 " style="z-index: 1;">
+                <div class="row justify-content-start">
+                    <h4 class="header-herramienta microfono-beneficio">Micrófono en Cabina  </h4>
+                    <div class="col-12  container-herramienta container-herramienta-izquierda">
+                        <div class="card-text-herramienta">
+                            <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad u escuchar lo que sucede dentro de tu unidad <strong>sin límite de distancia </strong> , de forma tan simple, como si realizaras una llamada..</p>
+                        </div>
+                        <i class="icon-circle icon-circle-herramienta text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <div class="card-imagen">
+                    <img id="img-herramientas" src="img/auto-apagate.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center ">
+            <div class="col-md-6 " style="z-index: 1;">
+                <div class="row justify-content-end" >
+                    <h4 class="header-herramienta">Botón de Pánico</h4>
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-8  container-herramienta container-herramienta-derecha">
+                        <div class="card-text-herramienta">
+                            <p class="text-herramienta"> <strong> Envía </strong>  alertas a diferentes celulares de tus familiares o conocidos en caso necesites ayuda, <strong>tan solo presionando un botón. </strong></p>
+                        </div>
+                        <i class="icon-circle icon-circle-herramienta text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <div class="card-imagen">
+                    <img id="img-herramientas" src="img/btn-panico.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center invertir">
+            <div class="col-md-6 " style="z-index: 1;">
+                <div class="row justify-content-start">
+                    <h4 class="header-herramienta ">Intromisión </h4>
+                    <div class="col-12  container-herramienta container-herramienta-izquierda">
+                        <div class="card-text-herramienta">
+                            <p class="text-herramienta"> <strong> Te notifica </strong> cuando una persona no autorizada enciende tu vehículo.</p>
+                        </div>
+                        <i class="icon-circle icon-circle-herramienta text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 imagen" style="z-index: 1;">
+                <div class="card-imagen">
+                    <img id="img-herramientas" src="img/intromision.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid align-items-center herramienta">
         <div class="row align-items-center">
             <div class="col-md-6 " style="z-index: 1;">
                 <div class="row justify-content-end" >
-                    <div class="col-8 col-sm-8 col-md-8 col-lg-8  container-herramienta container-herramienta-derecha">
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-8  container-herramienta container-herramienta-derecha">
                         <h4 class="header-herramienta">Auto Apágate</h4>
                         <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad utilizando tu celular, sin importar la distancia en la que te encuentres.</p>
                         <i class="icon-circle icon-circle-herramienta text-primary"></i>
@@ -290,7 +365,7 @@
         <div class="row align-items-center invertir">
             <div class="col-md-6 " style="z-index: 1;">
                 <div class="row justify-content-start">
-                    <div class="col-8  container-herramienta container-herramienta-izquierda">
+                    <div class="col-12  container-herramienta container-herramienta-izquierda">
                         <h4 class="header-herramienta ">Micrófono en Cabina  </h4>
                         <p class="text-herramienta"> <strong> Te permite </strong> bloquear tu unidad u escuchar lo que sucede dentro de tu unidad <strong>sin límite de distancia </strong> , de forma tan simple, como si realizaras una llamada..</p>
                         <i class="icon-circle icon-circle-herramienta text-primary"></i>
@@ -304,7 +379,7 @@
         <div class="row align-items-center" style="margin-bottom: 60px;">
             <div class="col-md-6 " style="z-index: 1;">
                 <div class="row justify-content-end" >
-                    <div class="col-8 col-sm-8 col-md-8 col-lg-8  container-herramienta container-herramienta-derecha">
+                    <div class="col-12 col-sm-8 col-md-8 col-lg-8  container-herramienta container-herramienta-derecha">
                         <h4 class="header-herramienta">Botón de Pánico</h4>
                         <p class="text-herramienta"> <strong> Envía </strong>  alertas a diferentes celulares de tus familiares o conocidos en caso necesites ayuda, <strong>tan solo presionando un botón. </strong></p>
                         <i class="icon-circle icon-circle-herramienta text-primary"></i>
@@ -319,7 +394,7 @@
         <div class="row align-items-center invertir">
             <div class="col-md-6 " style="z-index: 1;">
                 <div class="row justify-content-start">
-                    <div class="col-8  container-herramienta container-herramienta-izquierda">
+                    <div class="col-12  container-herramienta container-herramienta-izquierda">
                         <h4 class="header-herramienta ">Intromisión </h4>
                         <p class="text-herramienta"> <strong> Te notifica </strong> cuando una persona no autorizada enciende tu vehículo.</p>
                         <i class="icon-circle icon-circle-herramienta text-primary"></i>
@@ -330,7 +405,7 @@
                 <img id="img-herramientas" src="img/intromision.png"/>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- alertas -->
     <hr class="alerta-raya ">
@@ -340,13 +415,13 @@
         <label class="icon"><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></label>
 
         <div class="container-fluid container-alerta">
-            <div class="row justify-content-center text-left">
-                <div class="col-12 col-md-5 col-lg-4">
-                    <div class="row no-gutters align-items-center h-100 justify-content-end">
-                        <div class="col-1 text-center">
+            <div class="row text-left">
+                <div class="col-12 col-md-5 col-lg-4 card-alerta">
+                    <div class="row no-gutters  justify-content-end">
+                        <div class="col-2 col-sm-1 text-center">
                             <img class="card-img" src="img/tiempo.png"/>
                         </div>
-                        <div class="col-9">
+                        <div class="col-10 col-sm-9 ">
                             <div class="card-body">
                                 <h5 class="card-title text-primary">ALERTA VELOCIDAD</h5>
                                 <div class="card-text">El sistema detecta  y muestra señales de limitación de velocidad. </div>
@@ -354,12 +429,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-4 ">
-                    <div class="row no-gutters align-items-center  h-100 ">
-                        <div class="col-1 text-center">
+                <div class="col-12 col-md-5 col-lg-4 card-alerta">
+                    <div class="row no-gutters 0 ">
+                        <div class="col-2 col-sm-1 text-center">
                             <img class="card-img" src="img/bateria.png"/>
                         </div>
-                        <div class="col-9">
+                        <div class="col-10 col-sm-9 ">
                             <div class="card-body">
                                 <h5 class="card-title text-primary">ALERTA BATERÍA  DESCONECTADA</h5>
                                 <div class="card-text">El sistema notifica  cuando la batería del  vehículo es desactivada   de la unidad. </div>
@@ -367,44 +442,38 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="row justify-content-center text-left">
-                <div class="col-12 col-md-5 col-lg-4">
-                    <!-- <div class="card"> -->
-                        <div class="row no-gutters align-items-center h-100 justify-content-end">
-                            <div class="col-1 text-center">
+                <div class="col-12 col-md-5 col-lg-4 card-alerta">
+                        <div class="row no-gutters  justify-content-end">
+                            <div class="col-2 col-sm-1 text-center">
                                 <img class="card-img" src="img/ubicacion.png" />
                             </div>
-                            <div class="col-9">
+                            <div class="col-10 col-sm-9 ">
                                 <div class="card-body">
                                     <h5 class="card-title text-primary">ALERTA GEO-ZONA</h5>
                                     <div class="card-text">Notifica cuando el vehículo sale de la zona establecida. </div>
                                 </div>
                             </div>
                         </div>
-                    <!-- </div> -->
                 </div>
-                <div class="col-12 col-md-5 col-lg-4">
-                    <!-- <div class="card"> -->
-                        <div class="row no-gutters align-items-center h-100">
-                            <div class="col-1 text-center">
+                <div class="col-12 col-md-5 col-lg-4 card-alerta">
+                        <div class="row no-gutters ">
+                            <div class="col-2 col-sm-1 text-center">
                                 <img class="card-img" src="img/alerta.png" />
                             </div>
-                            <div class="col-9">
+                            <div class="col-10 col-sm-9 ">
                                 <div class="card-body">
                                     <h5 class="card-title text-primary">ALERTA DE AYUDA</h5>
                                     <div class="card-text">Te notifica las alertas de emergencia más accesibles ante cualquier circunstancia de peligro. </div>
                                 </div>
                             </div>
                         </div>
-                    <!-- </div> -->
                 </div>
                 
             </div>
         </div>
     </div> 
-
     <!-- reportes -->
     <div class="container-fluid text-center align-items-center justify-content-center reporte " style="position: relative;">
         <div class="reporte-title">
@@ -416,7 +485,7 @@
         <div class="row align-items-center no-gutters">
             <div class="col-md-6 " style="z-index: 1;">
                 <div class="row justify-content-end" >
-                    <div class="col-8 col-sm-8 col-md-8 col-lg-8 text-reporte">
+                    <div class="col-11 col-sm-8 col-md-8 col-lg-8 text-reporte">
                         <p>Recorrido de Vehículo.</p>
                         <p>Reporte de Kilometraje.</p>
                         <p>Reporte de recorrido.</p>
@@ -425,7 +494,7 @@
                             <span>(SOS, batería desconectada. choques y remolque).</span>
                         </p>
                         <p>Reporte de distancias recorridas.</p>
-                        <p>Reporte de evento <span>mapa</span></p>
+                        <p>Reporte de evento <br><span>mapa</span></p>
                     </div>
                 </div>
             </div>
@@ -433,64 +502,69 @@
                 <img id="img-herramientas" src="img/aplicacion-reporte.png"/>
             </div>
         </div>
-        
     </div> 
 
     <!-- contacto -->
     <div class=" container-fluid no-gutters align-items-center container-contacto">
-
-        <div class=" row no-gutters container-contacto-colores">
-            <div class="col-6 rojo ">
-            </div>
-            <div class="col-6 blanco">
-            </div>
-        </div>
-        <div class="row no-gutters align-items-center container-contacto-text">
-            <div class=" col-4 text-right">
-                <div class="container-text-rojo">
-                    <p class="reporte-heading-1 ">Contáctate  con nosotros</p>
-                    <p class="reporte-heading-2">y consigue tu demostración Gratis! </p>
+        <div class="container-fluid">
+            <!-- <div class=" row container-contacto-colores">
+                <div class="col-12 col-sm-6 rojo ">
                 </div>
-            </div>
-            <div class="col-4 text-center ">
-                <div class="card card-contacto">
-                    <div class="card-title">
-                        <img src="img/logo.png" alt="" >
-                    </div>
-                    <div class="card-body">
-                        <!-- <form action="" method="post"> -->
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Nombres">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Empresa">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="E-mail">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Whatsapp">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary text-white ">Lo adquiero</button>
-                            </div>
-                        <!-- </form> -->
+                <div class="col-12 col-sm-6 blanco">
+                </div>
+            </div> -->
+            <div class="row align-items-center container-contacto-text ">
+                <div class=" col-12 col-sm-4">
+                    <div class="container-text-rojo">
+                        <p class="reporte-heading-1 ">Contáctate  con nosotros</p>
+                        <p class="reporte-heading-2">y consigue tu demostración Gratis! </p>
                     </div>
                 </div>
+                <div class="col-11 col-sm-4 text-center ">
+                    <div class="card card-contacto">
+                        <div class="card-title">
+                            <img src="img/logo.png" alt="" >
+                        </div>
+                        <div class="card-body">
+                            <!-- <form action="" method="post"> -->
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Nombres">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Empresa">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Whatsapp">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary text-white ">Lo adquiero</button>
+                                </div>
+                            <!-- </form> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 container-contacto-text-politica">
+                    <p class="text-center">
+                        <span class="text-white">* Los datos proporcionados son confidenciales</span>
+                        <span class="text-primary">y para uso exclusivo de Corporación Vespro. </span>
+                    </p>
+                </div>
             </div>
-            
-        </div>
-        <div class="row no-gutters container-contacto-text-politica">
-            <div class="col-12">
-                <p class="text-center">
-                    <span class="text-white pr-3">* Los datos proporcionados son confidenciales</span>
-                    <span class="text-primary">y para uso exclusivo de Corporación Vespro. </span>
-                </p>
-            </div>
+            <!-- <div class="row container-contacto-text-politica">
+                <div class="col-12">
+                    <p class="text-center">
+                        <span class="text-white pr-3">* Los datos proporcionados son confidenciales</span>
+                        <span class="text-primary">y para uso exclusivo de Corporación Vespro. </span>
+                    </p>
+                </div>
+            </div> -->
         </div>
     </div>
 
-     <!--Testimonios-PC-->
+         <!--Testimonios-PC-->
     <div id="testimonios" class="container-testimonio">
         <div class="reporte-title text-center">
             <p class="reporte-heading text-primary">Nuestros clientes</p>
@@ -557,9 +631,9 @@
     <!-- Testimonio-movil -->
 
     <div id="testimonios-movil" class="container-testimonio">
-        <div class="reporte-title text-center">
-            <p class="reporte-heading text-primary">Nuestros clientes</p>
-            <p class="reporte-lead-in ">nos respaldan</p>
+        <div class="testimonio-title text-center">
+            <p class="testimonio-heading text-primary">Nuestros clientes</p>
+            <p class="testimonio-lead-in ">nos respaldan</p>
             <hr class="testimonio-raya ">
         </div>
         <div id="carousel-testimonios-movil" class="carousel slide" data-ride="carousel">
@@ -618,37 +692,38 @@
             </div>
         </div>
     </div>
-
-    <!-- beneficios -->
+<!-- mas beneficios -->
     <hr class="mas-beneficio-raya ">
     <div class=" container-fluid no-gutters align-items-center container-beneficios">
-        <div class="reporte-title text-center">
-            <p class="reporte-heading ">Más beneficios para ti</p>
-            <p class="reporte-lead-in text-primary">el Sistema incluye:</p>
-        </div>
-        <div class="row justify-content-center ">
-            <div class="col-12 col-sm-3">
-                <div class="beneficio-text">
-                    <p class="text-white">Integrar Red de Cooperantes PNP. </p>
-                </div>
-                <div class="beneficio-img">
-                    <img src="img/pnp.png" alt="" class="img-fluid">
-                </div>
+        <div class="container-fluid">
+            <div class="mas-beneficios-title text-center">
+                <p class="mas-beneficios-heading ">Más beneficios para ti</p>
+                <p class="mas-beneficios-lead-in text-primary">el Sistema incluye:</p>
             </div>
-            <div class="col-12 col-sm-3">
-                <div class="beneficio-text">
-                    <p class="text-white">App adicional sólo para recibir alertas. </p>
+            <div class="row justify-content-center ">
+                <div class="col-11 col-sm-3">
+                    <div class="beneficio-text">
+                        <p class="text-white">Integrar Red de Cooperantes PNP. </p>
+                    </div>
+                    <div class="beneficio-img">
+                        <img src="img/pnp.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-                <div class="beneficio-img">
-                    <img src="img/aplicacion.png" alt="" class="img-fluid">
+                <div class="col-11 col-sm-3">
+                    <div class="beneficio-text">
+                        <p class="text-white">App adicional sólo para recibir alertas. </p>
+                    </div>
+                    <div class="beneficio-img">
+                        <img src="img/aplicacion-reporte.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-sm-3">
-                <div class="beneficio-text">
-                    <p class="text-white">Descargar reportes en formatos Excel y PDF. </p>
-                </div>
-                <div class="beneficio-img">
-                    <img src="img/reportes.png" alt="" class="img-fluid">
+                <div class="col-11 col-sm-3">
+                    <div class="beneficio-text">
+                        <p class="text-white">Descargar reportes en formatos Excel y PDF. </p>
+                    </div>
+                    <div class="beneficio-img">
+                        <img src="img/reportes.png" alt="" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
@@ -673,10 +748,12 @@
                                 <p class="divisiones3">Sistema que te permitirá registrar, organizar, ubicar y gestionar tu flota de vehículos de manera óptima y segura.</p>
                                 <a class="btn btn-primary text-white " href="#masinformacion">+ Información</a>
                             </div>
-                            
+                            <div class="col-12">
+                                <hr class="productos-raya">
+                            </div>
                         </div>
                     </div>
-                    <hr class="productos-raya">
+                    <!-- <hr class="productos-raya"> -->
                 </div>
                 <div class="col-md-6">
                     <img id="fondo_maqueta" class="img-fluid" src="img/gestion-flota.png" />
@@ -719,7 +796,6 @@
             </div>
         </div>
     </footer>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
