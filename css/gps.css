@@ -184,16 +184,14 @@ a:hover{text-decoration: none}
     margin: 0px auto -57px;
 }
 
-#introduccion div{
+/* #introduccion div{
     max-height: 90vh;
-    /* padding: 10px; */
 }
 
 #introduccion img{
-    /* margin-top: 10px; */
     max-height: 90vh;
     width: auto;
-}
+} */
 /* beneficios  */
 
 #beneficios .card {
@@ -215,7 +213,8 @@ a:hover{text-decoration: none}
 
 }
 #beneficios img{
-    padding: 20px;
+    /* padding: 20px; */
+    width: 100%;
 }
 
 #herramientas p.intro-heading, #herramientas p.intro-lead-in{
@@ -238,9 +237,9 @@ a:hover{text-decoration: none}
     padding: 0px 20px;
 } */
 
-#img-herramientas {
-    max-width: 100%;
-    height: auto;
+.img-herramientas {
+    width: auto;
+    height: 100%;
     padding: 15px;
     /* height: 50vh;
     display: block;
@@ -298,7 +297,7 @@ a:hover{text-decoration: none}
 }
 
 .invertir .header-herramienta, .invertir .text-herramienta {
-    text-align: end;
+    text-align: left;
 }
 
 .container-herramienta:before, .container-herramienta:after{
@@ -403,6 +402,10 @@ a:hover{text-decoration: none}
     /* font-size: 25px; */
 }
 
+.text-reporte{
+    padding-right: 20px;
+    padding-left: 20px;
+}
 .text-reporte p {
     text-align: left;
     font-family: 'Montserrat-semiBold';
@@ -774,7 +777,7 @@ footer{
     margin-right: 0;
 }
 
-@media (min-width: 426px){
+@media (min-width: 576px){
     #beneficios-carousel {
         display: none;
     }
@@ -791,7 +794,7 @@ footer{
     }
 
 }
-@media (max-width: 425px){
+@media (max-width: 575px){
     #beneficios {
         display: none;
     }
@@ -906,7 +909,25 @@ footer{
 .card-text-herramienta{
     padding-top: 40px;
 }
-@media (min-width: 320px) {
+
+.card-img{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alerta-text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fondo_maqueta{
+    height: 100%;
+    width: auto;
+}
+@media (max-width: 319px) {
+    .card-img{
+        height: 250px;
+        width: 250px; 
+    }
     .icon i {
         padding: 0px 10px;
         font-size: 10px;
@@ -996,6 +1017,7 @@ footer{
     #herramientas .col-auto{
         padding-left: 0;
         padding-right: 0;
+        margin: 0;
     }   
     .numero5{
         padding: 10px;
@@ -1031,15 +1053,22 @@ footer{
         padding: 10px 20px;
         margin-bottom: -21px;
         margin-top: auto;
-        margin-left: 20px;
+        margin-right: 20px;
         /* z-index: 200; */
     }
 
-    .herramienta .justify-content-end{
+    /* .herramienta .justify-content-end{
         justify-content: left !important;
     }
     .herramienta .justify-content-start{
         justify-content: flex-end!important;
+    } */
+
+    .carusel-img{
+        width: 100%;
+    }
+    .alerta-img{
+        width: 100%;
     }
     .imagen .card-imagen{
         height: 40vh;
@@ -1052,7 +1081,7 @@ footer{
         margin-bottom: -21px;
         margin-top: auto;
         margin-left: 20px;
-        margin-right: 20px;
+        
     }
 
     .microfono-beneficio{
@@ -1070,7 +1099,9 @@ footer{
         line-height: 1;
         font-family: 'Montserrat-semiBold';
     }
-    
+    .alerta-br{
+        display: none;
+    }
     /* .container-alerta{
         margin: 60px 0px;
         background-image: url('../img/fondo-circle-black.png');
@@ -1123,7 +1154,7 @@ footer{
     }
     
     .text-reporte:before {
-        left: -5px;
+        left: 15px;
         margin-top: 9px;
         width: 4px;
     }
@@ -1272,6 +1303,11 @@ footer{
         margin-bottom: 0;
     }
 
+    .producto-text [class*=col-]{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
     .container-productos .divisiones {
         font-size: 28px;
     }
@@ -1300,30 +1336,45 @@ footer{
     .btn-primary{
         font-size: 18px;
     }
+
 }
-@media (min-width: 375px) {
-    
-    /* .masthead .intro-heading {
+/* @media (min-width: 320px) and (max-width: 374px) { */
+@media (min-width: 320px){
+    .card-img{
+        height: 250px;
+        width: 250px; 
+    }
+    .icon i {
+        padding: 0px 10px;
+        font-size: 10px;
+    }
+    .btn-whatsapp {
+        right: 15px;
+        bottom: 12px;
+    }
+    .carousel-indicators li {
+        height: 10px;
+        width: 10px;
+    }
+
+    .masthead{
+        margin-top: 50px;
+        padding-top: 46px;
+        text-align: center;
+    }
+    .masthead .intro-heading {
         font-size: 25px;
         line-height: 0.4;
     }
     .intro {
         font-size: 31px;
-    } */
-    /* .masthead .card-text{
+    }
+    .masthead .card-text{
         padding: 0px 10px;
-    } */
-    .masthead .card-img{
-        height: 300px;
-        width: 300px;
     }
-    #img-control {
-        height: auto;
-        width: 100%;
-        /* margin-top: 5vh; */
-    }
+
     .intro-lead-in {
-        font-size: 17px;
+        font-size: 14px;
         line-height: 1;
         display: inline;
     }
@@ -1332,12 +1383,12 @@ footer{
         font-size: 16px;
         padding: 4px 10px;
     }
-    
-    /* #img-control {
+    #img-control {
         height: 300px;
         width: auto;
         margin-top: 5vh;
     }
+    /*  */
     #introduccion p {
         font-size: 31px;
         padding: 0;
@@ -1352,40 +1403,43 @@ footer{
     }
     .intro-raya{
         display: none;        
-    } */
+    }
 
-    #beneficios-carousel .card-img{
-        width: 100%;
+    /*  */
+    /* #beneficios-carousel .card-img{
+        width: 40px;
         height: auto;
     }
-    #beneficios-carousel .card-title{
-        font-size: 17px;
-        line-height: 1;
-    }
+
     #beneficios-carousel .card-text {
         font-size: 16px;
-        line-height: 18px;
-    }
+        line-height: 16px;
+    } */
 
     .numero5 p{
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
-    /* .numero5 label{
-        font-size: 110px;
-    } */
-    /* .br-none{
+    .numero5 label{
+        font-size: 95px;
+    }
+    .br-none{
         display: none;
-    } */
-    /* #herramientas{
+    }
+    #herramientas{
         margin-top: 50px;
         margin-bottom: 50px;
-    } */
+    }
 
+    #herramientas .col-auto{
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }   
     .numero5{
-        padding: 14px;
+        padding: 10px;
     }
     .numero5 .intro-lead-in{
-        font-size: 22px !important;
+        font-size: 17px !important;
     }
 
     /* #img-herramientas {
@@ -1406,8 +1460,7 @@ footer{
     }
 
     .text-herramienta {
-        font-size: 18px;
-        line-height: 1.3;
+        font-size: 16px;
     }
 
     .herramienta .justify-content-end .header-herramienta{
@@ -1416,15 +1469,22 @@ footer{
         padding: 10px 20px;
         margin-bottom: -21px;
         margin-top: auto;
-        margin-left: 20px;
+        margin-right: 20px;
         /* z-index: 200; */
     }
 
-    .herramienta .justify-content-end{
+    /* .herramienta .justify-content-end{
         justify-content: left !important;
     }
     .herramienta .justify-content-start{
         justify-content: flex-end!important;
+    } */
+
+    .carusel-img{
+        width: 100%;
+    }
+    .alerta-img{
+        width: 100%;
     }
     .imagen .card-imagen{
         height: 40vh;
@@ -1437,11 +1497,11 @@ footer{
         margin-bottom: -21px;
         margin-top: auto;
         margin-left: 20px;
-        margin-right: 20px;
+        
     }
 
     .microfono-beneficio{
-        margin-bottom: -21px !important;
+        margin-bottom: -35px !important;
     }
 
 
@@ -1455,7 +1515,9 @@ footer{
         line-height: 1;
         font-family: 'Montserrat-semiBold';
     }
-    
+    .alerta-br{
+        display: none;
+    }
     /* .container-alerta{
         margin: 60px 0px;
         background-image: url('../img/fondo-circle-black.png');
@@ -1508,7 +1570,7 @@ footer{
     }
     
     .text-reporte:before {
-        left: -5px;
+        left: 15px;
         margin-top: 9px;
         width: 4px;
     }
@@ -1657,6 +1719,11 @@ footer{
         margin-bottom: 0;
     }
 
+    .producto-text [class*=col-]{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
     .container-productos .divisiones {
         font-size: 28px;
     }
@@ -1685,15 +1752,302 @@ footer{
     .btn-primary{
         font-size: 18px;
     }
-}
-@media (min-width: 425px) {
 
-    
 }
-@media (min-width: 425px) {
+/* @media (min-width: 375px) and (max-width: 550px){ */
+@media (min-width: 375px){
+    
+    .card-img{
+        height: 300px;
+        width: 300px; 
+    }
+    
+    #img-control {
+        height: 100%;
+        width: auto;
+    }
+    .intro-lead-in {
+        font-size: 17px;
+        line-height: 1;
+        display: inline;
+    }
 
+    #header .btn {
+        font-size: 16px;
+        padding: 4px 10px;
+    }
     
+    #introduccion .card-img img{
+        width: auto ;
+        height: 100%;
+    }
+
+    #beneficios-carousel .card-img{
+        width: 100%;
+        height: auto;
+    }
+    #beneficios-carousel .card-title{
+        font-size: 17px;
+        line-height: 1;
+    }
+    #beneficios-carousel .card-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .numero5 p{
+        font-size: 24px !important;
+    }
+    
+    .numero5{
+        padding: 14px;
+    }
+    .numero5 .intro-lead-in{
+        font-size: 22px !important;
+    }
+
+    .herramienta{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+
+    .container-herramienta{
+        padding: 0px 20px 20px;
+    }
+
+    .text-herramienta {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .alerta-br{
+        display: none;
+    }
+    
+    .microfono-beneficio{
+        margin-bottom: -21px !important;
+    }
+
+
+    .alerta-img {
+        width: 30px;
+    }
+    
+    .reporte .row.justify-content-end{
+        justify-content: center !important;
+    }
+
+    .reporte-title{
+        font-size: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* .reporte-title p{
+        font-family: 'Montserrat-semiBold';
+        margin: 0;
+        line-height: 1.2;
+    } */
+    
+    .text-reporte p {
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    .text-reporte p:before {
+        left: -23.5px;
+        font-size: 13px;
+    }
+    
+    .producto-text [class*=col-]{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* .container-productos .divisiones {
+        font-size: 28px;
+    }
+    .container-productos .divisiones2 {
+        font-size: 16px;
+        font-family: 'Cabin-italic';
+        line-height: 17px;
+        color: #cbcbcb;
+        padding: 15px 0px;
+    }
+    .container-productos .divisiones3 {
+        font-size: 17px;
+        padding-bottom:20px
+    }
+    .productos-raya{
+        margin-top: 50px;
+    }
+    .producto-text{
+        margin-bottom: 20px;
+    }
+    .final-text{
+        font-size: 14px;
+        font-family: 'Montserrat-semiBold';
+
+    } */
+    
+    .btn-primary{
+        font-size: 18px;
+    }
 }
+
+@media (min-width: 576px){
+    .card-img{
+        height: 300px;
+        width: auto; 
+    }
+    .masthead{
+        padding-top: 6px;
+    }
+    .masthead .intro-heading {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    #header .btn{
+        margin-top: 10px;
+    }
+    #img-control {
+        height: 100%;
+        width: auto;
+    }
+    .intro-lead-in {
+        font-size: 17px;
+        line-height: 1;
+        display: inline;
+    }
+
+    #header .btn {
+        font-size: 16px;
+        padding: 4px 10px;
+    }
+    
+    #introduccion .card-img img{
+        width: auto ;
+        height: 100%;
+    }
+
+    #beneficios .card{
+        margin-left: 0px !important;
+        padding: 18px;
+        height: 180px;
+    }
+
+    .container-beneficio .card-body{
+        padding: 0;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    #beneficios .card h5{
+        font-size: 20px;
+    }
+
+
+    .numero5 p{
+        font-size: 24px !important;
+    }
+    
+    .numero5{
+        padding: 14px;
+    }
+    .numero5 .intro-lead-in{
+        font-size: 22px !important;
+    }
+
+    .herramienta{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+
+    .container-herramienta{
+        padding: 0px 20px 20px;
+    }
+
+    .text-herramienta {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .alerta-br{
+        display: none;
+    }
+    
+    .microfono-beneficio{
+        margin-bottom: -21px !important;
+    }
+
+
+    .alerta-img {
+        width: 30px;
+    }
+    
+    .reporte .row.justify-content-end{
+        justify-content: center !important;
+    }
+
+    .reporte-title{
+        font-size: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* .reporte-title p{
+        font-family: 'Montserrat-semiBold';
+        margin: 0;
+        line-height: 1.2;
+    } */
+    
+    .text-reporte p {
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    .text-reporte p:before {
+        left: -23.5px;
+        font-size: 13px;
+    }
+    
+    .producto-text [class*=col-]{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* .container-productos .divisiones {
+        font-size: 28px;
+    }
+    .container-productos .divisiones2 {
+        font-size: 16px;
+        font-family: 'Cabin-italic';
+        line-height: 17px;
+        color: #cbcbcb;
+        padding: 15px 0px;
+    }
+    .container-productos .divisiones3 {
+        font-size: 17px;
+        padding-bottom:20px
+    }
+    .productos-raya{
+        margin-top: 50px;
+    }
+    .producto-text{
+        margin-bottom: 20px;
+    }
+    .final-text{
+        font-size: 14px;
+        font-family: 'Montserrat-semiBold';
+
+    } */
+    
+    .btn-primary{
+        font-size: 18px;
+    }
+}
+
 @media (min-width: 768px) {
 
 }
