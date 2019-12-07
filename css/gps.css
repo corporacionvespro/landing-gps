@@ -1897,6 +1897,10 @@ footer{
 }
 
 @media (min-width: 576px){
+    .icon i {
+        padding: 0px 20px;
+        font-size: 18px;
+    }
     .card-img{
         height: 300px;
         width: auto; 
@@ -1945,20 +1949,28 @@ footer{
     #beneficios .card h5{
         font-size: 20px;
     }
-
+    .container-beneficio .card-text{
+        line-height: 1.2;
+        font-size: 16px;
+    }
 
     .numero5 p{
-        font-size: 24px !important;
+        font-size: 39px !important;
     }
-    
+    .numero5 label{
+        font-size: 160px;
+    }
     .numero5{
         padding: 14px;
     }
     .numero5 .intro-lead-in{
-        font-size: 22px !important;
+        font-size: 35px !important;
     }
 
-    .herramienta{
+    .microfono-beneficio{
+        margin-bottom: -21px !important;
+    }
+    /* .herramienta{
         padding-left: 20px;
         padding-right: 20px;
         margin-right: auto;
@@ -1973,23 +1985,25 @@ footer{
     .text-herramienta {
         font-size: 18px;
         line-height: 1.3;
+    } */
+    .container-alerta .card-text {
+        font-size: 17px;
+        line-height: 1.2;
     }
 
     .alerta-br{
-        display: none;
+        display: block;
     }
-    
-    .microfono-beneficio{
-        margin-bottom: -21px !important;
-    }
-
 
     .alerta-img {
-        width: 30px;
+        width: 35px;
     }
     
+    .reporte .imagen{
+        margin-top: 0px;
+    }
     .reporte .row.justify-content-end{
-        justify-content: center !important;
+        justify-content: flex-end !important;
     }
 
     .reporte-title{
@@ -2003,6 +2017,9 @@ footer{
         line-height: 1.2;
     } */
     
+    .text-reporte{
+        padding-right: 0px ;
+    }
     .text-reporte p {
         font-size: 17px;
         line-height: 1.2;
