@@ -268,17 +268,23 @@ a:hover{text-decoration: none}
 .container-herramienta{
     padding: 0px 30px 30px;
 }
-
+/* .herramienta-text{
+    justify-content: flex-end !important;
+} */
 .header-herramienta{
+    margin-bottom: -24px;
+}
+.header-herramienta h4{
     display: inline-block;
     background-color: #b01f16;
     color: white;
     font-family: "Montserrat-bold";
     font-size: 30px;
     border-radius: 20px;
-    padding: 10px 40px;
+    margin-bottom: 0;
+    /* padding: 10px 40px;
     margin-bottom: 40px;
-    margin-top: -29px;
+    margin-top: -29px; */
     /* z-index: 200; */
 }
 
@@ -1047,13 +1053,13 @@ footer{
         font-size: 16px;
     }
 
-    .herramienta .justify-content-end .header-herramienta{
+    .herramienta .justify-content-end .header-herramienta h4{
         font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
-        margin-bottom: -21px;
+        /* margin-bottom: -21px;
         margin-top: auto;
-        margin-right: 20px;
+        margin-right: 20px; */
         /* z-index: 200; */
     }
 
@@ -1078,9 +1084,10 @@ footer{
         font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
-        margin-bottom: -21px;
+        /* text-align: end; */
+        /* margin-bottom: -21px;
         margin-top: auto;
-        margin-left: 20px;
+        margin-left: 20px; */
         
     }
 
@@ -1235,11 +1242,11 @@ footer{
         height: 40px;
         margin: 20px 0px 30px;
     }
-    .container-text-rojo p.reporte-heading-1{
+    .container-text-rojo p.reporte-heading-1, .container-text-rojo p.reporte-heading-2{
         font-size: 25px;
         display: inline;
     }
-    .container-text-rojo p.reporte-heading-2{
+    .container-text-rojo p.reporte-heading-3{
         font-size: 25px;
         display: inline;
     }
@@ -1340,6 +1347,7 @@ footer{
 }
 /* @media (min-width: 320px) and (max-width: 374px) { */
 @media (min-width: 320px){
+
     .card-img{
         height: 250px;
         width: 250px; 
@@ -1463,13 +1471,16 @@ footer{
         font-size: 16px;
     }
 
-    .herramienta .justify-content-end .header-herramienta{
+    .header-herramienta{
+        justify-content: center !important;
+    }
+    .herramienta .justify-content-end .header-herramienta h4{
         font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
-        margin-bottom: -21px;
+        /* margin-bottom: -21px;
         margin-top: auto;
-        margin-right: 20px;
+        margin-right: 20px; */
         /* z-index: 200; */
     }
 
@@ -1490,13 +1501,13 @@ footer{
         height: 40vh;
     }
 
-    .herramienta .justify-content-start .header-herramienta{
+    .herramienta .justify-content-start .header-herramienta h4{
         font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
-        margin-bottom: -21px;
+        /* margin-bottom: -21px;
         margin-top: auto;
-        margin-left: 20px;
+        margin-left: 20px; */
         
     }
 
@@ -1651,11 +1662,11 @@ footer{
         height: 40px;
         margin: 20px 0px 30px;
     }
-    .container-text-rojo p.reporte-heading-1{
+    .container-text-rojo p.reporte-heading-1, .container-text-rojo p.reporte-heading-2 {
         font-size: 25px;
         display: inline;
     }
-    .container-text-rojo p.reporte-heading-2{
+    .container-text-rojo p.reporte-heading-3{
         font-size: 25px;
         display: inline;
     }
@@ -1896,6 +1907,8 @@ footer{
     }
 }
 
+
+
 @media (min-width: 576px){
     .icon i {
         padding: 0px 20px;
@@ -1967,6 +1980,9 @@ footer{
         font-size: 35px !important;
     }
 
+    .container-herramienta-izquierda{
+        padding: 0px 20px 0px 10px;
+    }
     .microfono-beneficio{
         margin-bottom: -21px !important;
     }
@@ -2063,10 +2079,140 @@ footer{
     .btn-primary{
         font-size: 18px;
     }
+
+    /* .container-contacto:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    } */
+
+    .container-text-rojo{
+        padding: 0px 30px 30px;
+    }
+    /* .container-text-rojo .reporte-heading-1 {
+        display: block;
+    } */
+    .card-contacto{
+        padding: 35px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-contacto .card-title{
+        height: 50px;
+    }
+    .card-contacto .card-body .form-group{
+        margin-bottom: 1.5rem;
+    }
+    .card-contacto .card-body .form-group input{  
+        height: 2.2rem;
+    }
+    .card-contacto .card-body .form-group .btn{ 
+        margin-top: 1rem;
+    }
+
+    .container-text-rojo p.reporte-heading-1{
+        font-size: 27px;
+        /* display: block; */
+        margin-bottom: 7px;
+        line-height: 1;
+    }
+    .container-text-rojo p.reporte-heading-2{
+        font-size: 27px;
+        /* display: block; */
+        margin-bottom: 7px;
+        line-height: 1;
+    }
+    .container-text-rojo p.reporte-heading-3{
+        margin-top: 7px;
+        font-size: 24px;
+        font-family: "Montserrat-semibold";
+        line-height: 1.2;
+        display: block;
+    }
+    .container-text-rojo p.reporte-heading-3 span{
+        font-size: 25px;
+        font-family: "Montserrat-bold";
+    }
+    .container-contacto-text-politica{
+        /* padding: 0; */
+    }
+    .container-contacto-text-politica p{
+        /* font-size: 12px; */
+    }
+    /* .container-contacto-text-politica p .text-white{
+        color: white !important;
+        margin-right: 18px;
+    } */
+
+    .beneficio-text{
+        padding: 10px;
+        height: 90px;
+    }
+    .producto-text .card-img{
+        display: none;
+    }
+
+    .gestion-flota{
+        background-image: url(../img/gestion-flota.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 301px;
+        background-position: right;
+    }
+    .gestion-empresa{
+        background-image: url(../img/gestion-empresa.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 301px;
+        background-position: right;
+    }
+    .invertir .container-herramienta {
+        padding: 0px 10px 0px 20px;
+    }
+    .microfono-beneficio {
+        margin-bottom: -35px !important;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .beneficio-text{
+        font-size: 14px;
+    }
+}
+@media (max-width: 654px) {
+    .container-text-rojo p.reporte-heading-1{
+        font-size: 26px;
+        display: inline;
+    }
+    .container-text-rojo p.reporte-heading-2{
+        font-size: 23px;
+    }
+    .container-text-rojo p.reporte-heading-3{
+        font-size: 21px;
+    }
+    .container-text-rojo p.reporte-heading-3 span{
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 768px) {
-
+    .herramienta-text{
+        justify-content: flex-end;
+    }
+    .container-contacto-text {
+        justify-content: left;
+    }
 }
 @media (min-width: 800px) {
 
