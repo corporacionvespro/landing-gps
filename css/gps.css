@@ -184,15 +184,6 @@ a:hover{text-decoration: none}
     margin: 57px auto -57px;
 }
 
-/* #introduccion div{
-    max-height: 90vh;
-}
-
-#introduccion img{
-    max-height: 90vh;
-    width: auto;
-} */
-/* beneficios  */
 
 #beneficios .card {
     font-size: 20px;
@@ -213,7 +204,6 @@ a:hover{text-decoration: none}
 
 }
 #beneficios img{
-    /* padding: 20px; */
     width: 100%;
 }
 
@@ -233,18 +223,11 @@ a:hover{text-decoration: none}
     margin: 0;
     line-height: 1;
 }
-/* #herramientas i{
-    padding: 0px 20px;
-} */
 
 .img-herramientas {
     width: auto;
     height: 100%;
     padding: 15px;
-    /* height: 50vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; */
 }
 
 .herramienta{
@@ -268,9 +251,7 @@ a:hover{text-decoration: none}
 .container-herramienta{
     padding: 0px 30px 30px;
 }
-/* .herramienta-text{
-    justify-content: flex-end !important;
-} */
+
 .header-herramienta{
     margin-bottom: -24px;
 }
@@ -282,10 +263,6 @@ a:hover{text-decoration: none}
     font-size: 30px;
     border-radius: 20px;
     margin-bottom: 0;
-    /* padding: 10px 40px;
-    margin-bottom: 40px;
-    margin-top: -29px; */
-    /* z-index: 200; */
 }
 
 .herramienta > .row{
@@ -379,13 +356,11 @@ a:hover{text-decoration: none}
 }
 
 .container-alerta .card-text {
-    /* font-family: 'Montserrat-Semibold'; */
     font-size: 25px;
 }
  
 .container-alerta .card-body{
     padding-top: 0;
-    /* max-width: 380px; */
 }
 
 /* reporte */
@@ -405,7 +380,6 @@ a:hover{text-decoration: none}
     font-family: 'Montserrat-semiBold';
     margin: 0;
     line-height: 1.2;
-    /* font-size: 25px; */
 }
 
 .text-reporte{
@@ -416,16 +390,9 @@ a:hover{text-decoration: none}
     text-align: left;
     font-family: 'Montserrat-semiBold';
     font-size: 30px;
-    /* margin-left: 20px; */
     position: relative;
     line-height: 1;
 }
-/* .text-reporte p{
-    text-align: left;
-    font-family: 'Montserrat-semiBold';
-    font-size: 20px;
-    margin-left:20px ;
-} */
 
 .text-reporte p:last-child {
     margin-bottom: 0;
@@ -440,24 +407,12 @@ a:hover{text-decoration: none}
 }
 .text-reporte p:before {
     content: "\f111";
-    /* bottom: 0; */
     left: -50px;
     position: absolute;
     font-size: 20px;
     font-family: 'vespro' !important;
     color: #b01f16;
 }
-
-/* .text-reporte p:before {
-    content: "\f111";
-    bottom: 0;
-    left: -21px;
-    position: relative;
-    font-size: 20px;
-    font-family: 'vespro' !important;
-    color: #b01f16;
-
-} */
 
 .text-reporte:before {
     content: "";
@@ -466,81 +421,21 @@ a:hover{text-decoration: none}
     position: absolute;
     background: #b01f16;
     z-index: -100;
-    /* top: 0; */
     left: -28px;
     margin-top: 15px;
 }
-/* .text-reporte:after {
-    content: "";
-    width: 5px;
-    min-height: calc(100% - 32px);
-    position: absolute;
-    background: #b01f16;
-    z-index: -100;
-    top: 0;
-    left: 21px;
-    margin-top: 15px;
-} */
-
 
 /* contacto */
 .container-contacto{
-    /* height: 80vh; */
-    /* background-color: #b01f16; */
     padding: 0px;
     position: relative;
     margin-bottom: 40px;    
 }
-/*
-.container-contacto .container-contacto-colores{
-    height: 100%;
-}
-.container-contacto .container-contacto-colores .rojo{
-    height: 100%;
-    background-image: url(../img/fondo-circle-black.png);
-    background-repeat: no-repeat;
-    background-position: left bottom ;
-}
 
-.container-contacto .container-contacto-colores .blanco{
-    height: 100%;
-    background-color:white;
-    border-top-left-radius: 10%;
-    border-bottom-left-radius: 10%;
-
-    background-image: url(../img/fondo-circle-black.png);
-    background-repeat: no-repeat;
-    background-position: right top 
-}
-
-.container-contacto-text{
-     position: absolute;
-    background-color:transparent;
-    width: 100%;
-    bottom: 0;
-    top: 0;    
-}
-
-.container-text-rojo{
-    max-width: 300px;    
-    text-align: end;
-    margin-left: auto;
-    padding-right: 30px;
-}
-*/
 .container-text-rojo p{
     color: white;
     font-family: "Montserrat-bold";
 }
-/*
-.container-text-rojo p.reporte-heading-1{
-    font-size: 40px;
-}
-
-.container-text-rojo p.reporte-heading-2{
-    font-size: 35px;
-} */
-
 
 /* card contacto */
 .card-contacto{
@@ -587,11 +482,6 @@ a:hover{text-decoration: none}
     box-shadow: 0 0 0 0.2rem #b01f16;
 }
 
-/* .container-contacto-text-politica{
-    position: absolute;
-    width: 100%;
-    bottom: 9px;
-} */
 
 /* testimonio pc*/
 .container-testimonio {
@@ -770,8 +660,6 @@ footer{
     color: #000000;
     padding-top: 15vh;
     padding-bottom: 5vh;
-    /* height: 30vh; */
-    /* background-color: #FFFFFF; */
 }
 
 .icon i{
@@ -860,7 +748,6 @@ footer{
 }
 
 #beneficios-carousel .card {
-    /* width: 80vw; */
     height: 140px;
     margin-left: auto;
     margin-right: auto;
@@ -878,15 +765,11 @@ footer{
 #beneficios-carousel .card-text {
     font-size: 14px;
     line-height: 15px;
-    /* font-family: 'Montserrat-medium'; */
 }
 #beneficios-carousel .h-100{
     padding: 20px;
 }
 
-/* #beneficios-carousel .col-3{
-    margin-right: 20px;
-} */
 #beneficios-carousel .card-body{ 
     padding:0;
     padding-left: 20px;
@@ -1955,7 +1838,6 @@ footer{
     }
     .beneficio-text {
         padding: 16px;
-        /* height: 90px; */
     }
     .gestion-flota{
         background-size: 376px;
@@ -1986,14 +1868,6 @@ footer{
         padding: 0px 20px;
         font-size: 20px;
     }
-    /* .btn-whatsapp {
-        right: 15px;
-        bottom: 12px;
-    }
-    .carousel-indicators li {
-        height: 10px;
-        width: 10px;
-    } */
 
     .masthead{
         margin-top: 50px;
@@ -2042,9 +1916,7 @@ footer{
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    /* #introduccion label {
-        margin-top: 9px;
-    } */
+   
     #introduccion .card-img{
         width: 100%;
     }
@@ -2077,42 +1949,11 @@ footer{
     .br-none{
         display: none;
     }
-    /* #herramientas{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    #herramientas .col-auto{
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0;
-    }   
-    .numero5{
-        padding: 10px;
-    } */
-    /* .numero5 .intro-lead-in{
-        font-size: 17px !important;
-    } */
-
-    /* .herramienta{
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 60px;
-    }
-
-    .container-herramienta{
-        padding: 0px 20px 20px;
-    } */
 
     .text-herramienta {
         font-size: 22px;
     }
 
-    /* .header-herramienta{
-        justify-content: center !important;
-    } */
     .herramienta .justify-content-end .header-herramienta h4{
         font-size: 22px;
         border-radius: 20px;
@@ -2122,16 +1963,7 @@ footer{
     .alerta-img{
         width: 100%;
     }
-    /* .imagen .card-imagen{
-        height: 40vh;
-    } */
-
-    /* .herramienta .justify-content-start .header-herramienta h4{
-        font-size: 20px;
-        border-radius: 20px;
-        padding: 10px 20px;
-    } */
-
+    
     .microfono-beneficio{
         margin-bottom: -21px !important;
     }
@@ -2150,14 +1982,6 @@ footer{
         display: block;
     }
     
-    /* .container-alerta >.row{
-        margin-bottom: 20px;
-    }
-
-    .card-alerta{
-        margin-bottom: 20px;
-    } */
-    
     .container-alerta .card-title {
         font-size: 20px;
     }
@@ -2167,10 +1991,6 @@ footer{
         line-height: 1.2;
     }
      
-    /* .container-alerta .card-body{
-        padding: 0;
-        padding-left: 20px;
-    } */
 
     .reporte-title{
         font-size: 50px;
@@ -2217,41 +2037,14 @@ footer{
         position: absolute;
         z-index: -1;
     }
-    /* .container-contacto:after{
-        content: "";
-        position: absolute;
-        height: 50%;
-        width: 100%;
-        background-color: white;
-        z-index: -1;
-        bottom: -1px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    } */
+    
 
     .container-contacto-text{
         justify-content: left;
         padding: 30px 0px 10px;
     }
-    /* .card-contacto {
-        border-radius: 5%;
-        padding: 10px 10px;
-        margin-bottom: 20px;
-    } */
-    /* .card-contacto input{
-        margin-bottom: auto;
-        height: 2rem;
-    }
-    .card-contacto .card-body{
-        padding: 10px;
-    }
-
-    .card-contacto .card-title {
-        height: 40px;
-        margin: 20px 0px 30px;
-    } */
+   
     .container-text-rojo p.reporte-heading-1, .container-text-rojo p.reporte-heading-2 {
-        /* font-size: 25px; */
         display: block;
     }
     .container-text-rojo p.reporte-heading-1{
@@ -2271,12 +2064,6 @@ footer{
         padding-right: 20px;
     }
 
-    /* .container-text-rojo{
-        text-align: center;
-        line-height: 1.1;
-        padding-bottom: 30px;
-    } */
-
     .testimonio-text, .testimonio-firma{
         font-size: 20px;
         padding: 10px 20px 20px;
@@ -2286,19 +2073,6 @@ footer{
         padding-top:20px;
         margin-left: 20px;
     }
-    /* .testimonio-title p{
-        font-family: 'Montserrat-semiBold';
-        margin: 0;
-        line-height: 1.2;
-    } */
-    /* .container-beneficios {
-        padding: 60px 0px;
-    }
-    .mas-beneficios-title{
-        margin-bottom: 50px;
-        padding: 0px 20px;
-    } */
-
 
     .mas-beneficios-title p{
         font-family: 'Montserrat-semiBold';
@@ -2336,9 +2110,7 @@ footer{
 
     .beneficio-text p:before {
         content: "\f111";
-        /* bottom: 0; */
         left: 25px;
-        /* right: 0; */
         position: absolute;
         font-size: 16px;
         font-family: 'vespro' !important;
@@ -2348,33 +2120,6 @@ footer{
     .testimonio-title{
         font-size: 28px;
     }
-    
-    /* .container-testimonio .carousel{
-        background-position: center;
-    }
-
-    .producto-text [class*=col-]{
-        padding-right: 0;
-        padding-left: 0;
-    }
-    
-    .container-productos .divisiones {
-        font-size: 28px;
-    }
-    .container-productos .divisiones2 {
-        font-size: 16px;
-        font-family: 'Cabin-italic';
-        line-height: 17px;
-        color: #cbcbcb;
-        padding: 15px 0px;
-    }
-    .container-productos .divisiones3 {
-        font-size: 17px;
-        padding-bottom:20px
-    }
-    .productos-raya{
-        margin-top: 50px;
-    }*/
     .producto-text{
         justify-content: flex-end !important;
     } 
@@ -2409,10 +2154,7 @@ footer{
     }
 }
 @media (min-width: 1200px) {
-    /* .beneficio-text{
-        max-width: 265px;
-        font-size: 20px;
-    } */
+
 }
 @media (min-width: 1280px) {
 
@@ -2421,8 +2163,653 @@ footer{
 
 }
 @media (min-width: 1440px) {
+    .card-img{
+        height: auto;
+        width: auto;
+    }
+    .card-img img{
+        height: auto;
+        width: 100%;
+    }
+    #header.masthead{
+        height: 90vh;
+        background-position: center top;
+        background-size: contain;
+    }
+    .masthead .container-masthead{
+        align-items: normal !important;
+        padding-top: 80px;
+    }
 
+    .container-header {
+        max-width: 6000px;
+        justify-content: flex-end;
+        margin: 0;
+    }
+    .masthead .intro-heading{
+        font-size: 60px;
+    }
+    .intro{
+        font-size: 75px;
+        font-family: "Montserrat-bold";
+        padding-bottom: 10px;
+    }
+    .container-header .card-text{
+        font-size: 20px;
+    }
+    .intro-lead-in{
+        font-size: 30px;
+        font-family: "Montserrat-semibold";
+        line-height: 1;
+    }
+    
+    /* #header .btn{
+        width: auto;
+        font-size: 30px;
+        padding: 10px 30px;
+        background-color: #FFF;
+        margin-top: 30px;
+    } */
+    
+    #img-control {
+        height: 800px;
+        width: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    /* raya header */
+    /* .header-raya{
+        height: 50px;
+        background-color: #b01f16;
+        border: 0;
+        margin: 0;
+        margin-top: 15vh;
+    } */
+    
+    /* introduccion */
+    /* #introduccion{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    
+    #introduccion label{
+        margin-top: 20px;
+    } */
+    
+    #introduccion p {
+        font-size: 70px;
+    }
+    
+    .intro-raya{
+        max-width: 85VW;
+        margin: 57px auto -57px;
+    }
+    
+    #introduccion .card-img img{
+        width: 90vw;
+        height: auto;
+        padding-top: 20px;
+    }
+    #beneficios .card {
+        font-size: 20px;
+        height: 160px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+    
+    }
+    #beneficios .card h5{
+        font-size: 25px;
+    }
+    #beneficios .card-text{
+        font-size: 20px;
+    }
+    
+    /* .container-beneficio .card{
+        border-radius: 30px;
+        box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.37);
+    
+    } */
+    /* #beneficios img{
+        width: 100%;
+    } */
+    
+    .numero5:first-child{
+        padding-right: 0;
+    }
+    /* #herramientas p.intro-heading, #herramientas p.intro-lead-in{
+        font-size: 50px;
+        font-family: 'Montserrat-bold';
+        margin: 0;
+        line-height: 1;
+    }
+    
+    .numero5{
+        display: inline-block;
+    }
+    .numero5 label{
+        font-size: 250px;
+        font-family: 'Montserrat-bold';
+        margin: 0;
+        line-height: 1;
+    } */
+    
+    .img-herramientas {
+        width: auto;
+        height: 100%;
+        padding: 15px;
+    }
+    
+    .herramienta{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+    .herramienta .invertir {
+        flex-direction: row-reverse;
+    }
+    
+    .herramienta .invertir:first-child {
+        order: 2;
+    }
+    
+    .herramienta .invertir:nth-child(2) {
+        order: 1;
+    }
+    .container-herramienta{
+        padding: 0px 30px 30px;
+    }
+    
+    .header-herramienta{
+        margin-bottom: -24px;
+    }
+    .header-herramienta h4{
+        display: inline-block;
+        background-color: #b01f16;
+        color: white;
+        font-family: "Montserrat-bold";
+        font-size: 30px;
+        border-radius: 20px;
+        margin-bottom: 0;
+    }
+    
+    .herramienta > .row{
+        margin-bottom: 40px;
+    }
+    .text-herramienta{
+        font-size: 30px;
+    }
+    .icon-circle-herramienta:before {
+        content: "\f111";
+        bottom: -7px;
+        /* left: 45px; */
+        position: absolute;
+        font-size: 20px;
+    }
+    
+    .invertir .header-herramienta, .invertir .text-herramienta {
+        text-align: left;
+    }
+    
+    .container-herramienta:before, .container-herramienta:after{
+        content: "";
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        background: #b01f16;
+        z-index: -100;
+    }   
+    .container-herramienta.container-herramienta-derecha:before, .container-herramienta.container-herramienta-derecha:after{
+        left: -5px;
+    }
+    .container-herramienta.container-herramienta-izquierda:before, .container-herramienta.container-herramienta-izquierda:after{
+        right: 0px;
+    }
+    .container-herramienta.container-herramienta-izquierda{
+        border-right: 5px solid #b01f16;
+        text-align: end;
+    }
+    .container-herramienta.container-herramienta-derecha{
+        border-left: 5px solid #b01f16;
+    }
+    
+    .container-herramienta:before{
+        top: 0px;
+    } 
+    .container-herramienta:after{
+        bottom: 0;
+    }
+    
+    .container-herramienta-izquierda .icon-circle-herramienta:before{
+        right: 45px;
+    } 
+    
+    .container-herramienta-derecha .icon-circle-herramienta:before{
+        left: 45px;
+    } 
+    
+    /* otros */
+    .alerta-raya{
+        height: 3px;
+        background-color: #666666;
+        max-width: 60vw;
+        border-radius: 2px;
+        margin: 60px auto;  
+    }
+    
+    .alerta-heading{
+        font-size: 65px;
+        font-family: 'Montserrat-Bold';
+    }
+    .alerta-lead-in{
+        font-size: 35px;
+        font-family: 'Montserrat-semiBold';
+    }
+    
+    .container-alerta{
+        margin: 60px 0px;
+        background-image: url('../img/fondo-circle-black.png');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .container-alerta >.row{
+        margin-bottom: 50px;
+    }
+    
+    .container-alerta .card-title {
+        font-family: 'Montserrat-Bold';
+        font-size: 28px;
+    }
+    
+    .container-alerta .card-text {
+        font-size: 25px;
+    }
+     
+    .container-alerta .card-body{
+        padding-top: 0;
+    }
+    
+    /* reporte */
+    .reporte{
+        background-image: url('../img/fondo-degradado.png');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center bottom;
+        padding: 30px 0px 60px;
+    }
+    .reporte-title{
+        font-size: 65px;
+        margin-bottom: 50px;
+    }
+    .reporte-title p{
+        font-family: 'Montserrat-semiBold';
+        margin: 0;
+        line-height: 1.2;
+    }
+    
+    .text-reporte{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .text-reporte p {
+        text-align: left;
+        font-family: 'Montserrat-semiBold';
+        font-size: 30px;
+        position: relative;
+        line-height: 1;
+    }
+    
+    .text-reporte p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .reporte-raya{
+        height: 5PX;
+        border: 0;
+        background-color: black;
+        width: 80px;
+        margin: 0 auto;
+    }
+    .text-reporte p:before {
+        content: "\f111";
+        left: -50px;
+        position: absolute;
+        font-size: 20px;
+        font-family: 'vespro' !important;
+        color: #b01f16;
+    }
+    
+    .text-reporte:before {
+        content: "";
+        width: 5px;
+        min-height: calc(100% - 36px);
+        position: absolute;
+        background: #b01f16;
+        z-index: -100;
+        left: -28px;
+        margin-top: 15px;
+    }
+    
+    /* contacto */
+    .container-contacto{
+        padding: 0px;
+        position: relative;
+        margin-bottom: 40px;    
+    }
+    
+    .container-text-rojo p{
+        color: white;
+        font-family: "Montserrat-bold";
+    }
+    
+    /* card contacto */
+    .card-contacto{
+        border-radius: 5%;
+        padding: 10px 40px;
+    }
+    
+    .card-contacto .card-title{
+        text-align: center;
+        height: 50px;
+        margin: 40px 0px;
+    }
+    
+    .card-contacto .card-title img{
+        width: auto;
+        height: inherit;
+    }
+    
+    .card-contacto input{
+        border: 2px solid #b01f16;
+        border-radius: 10px;
+        color: black;
+        margin-bottom: 35px;
+        height: 3rem;
+    }
+    
+    .card-contacto input:focus{
+        border: 2px solid #b01f16;
+        box-shadow: 0 0 0 1px #b01f16;
+    }
+    
+    .btn-primary {
+        background-color: #b01f16;
+        border: #b01f16;
+        width: 100%;
+        font-family: "Montserrat-bold";
+        font-size: 20px;
+        border-radius: 14px;
+    }
+    .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle .btn-primary:focus, .btn-primary:hover {
+        color: #fff;
+        background-color: #b01f16;
+        border: #b01f16;
+        box-shadow: 0 0 0 0.2rem #b01f16;
+    }
+    
+    
+    /* testimonio pc*/
+    .container-testimonio {
+        margin-bottom: 60px;
+    }
+    .container-testimonio .carousel {
+        background-image: url(../img/fondo-circle.png);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: center bottom;
+        padding-bottom: 20px;
+    }
+    .testimonio-raya{
+        height: 5PX;
+        border: 0;
+        background-color: #b01f16;
+        width: 150px;
+        margin: 0 auto;
+    }
+    
+    .card-testimonio{
+        padding: 50px 30px;
+    }
+    
+    .card-testimonio .card-testimonio-img{
+        z-index: 2;
+    }
+    .card-testimonio .card-img{
+        width: 140px;
+        height: 140px;
+        background-color: #867b7b;
+        border: 8px solid white;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+        margin-bottom: -20px;
+        box-shadow: 3px 3px 11px 0px rgba(0, 0, 0, 0.53);
+    }
+    
+    .card-testimonio .card-img img {
+        width: 100%;
+        transform: translate(0,-50%);
+        margin-top: 50%;
+    }
+    
+    .card-testimonio .testimonio-comillas{
+        width: 40px;
+        height: auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .card-testimonio .card-testimonio-text{
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 3px 4px 10px 2px #0000006e;
+        position: relative;
+    }
+    .testimonio-text{
+        text-align: justify;
+    }
+    .testimonio-firma{
+        text-align: end;
+    }
+    
+    .mas-beneficio-raya{
+        height: 5PX;
+        border: 0;
+        background-color: #666666;
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .carousel-indicators li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: #b01f16;
+        opacity: .4;
+    }
+    
+    .carousel-indicators li.active {
+        opacity: 1;
+        background-color: #b01f16;
+    }
+    
+    /* beneficios */
+    .container-beneficio{
+        margin: 100px 0px;
+    }
+    
+    .container-beneficios{
+        padding: 100px 0px;
+        background-color: #ededed;
+    }
+    .beneficio-text{
+        background-color: #b01f16;
+        border-radius: 10px;
+        box-shadow: 3px 4px 10px 2px #0000006e;
+        padding: 20px;
+        max-height: 10vh;
+    }
+    .beneficio-img{
+        height: 20vh;
+        text-align: center;
+        margin: 30px 30px 0px;
+    }
+    .beneficio-img img{
+        width: auto;
+        height: inherit;
+    }
+    
+    /* otros productos */
+    .container-productos{
+        margin-top: 100px;
+    }
+    .producto-raya{
+        width: 15vw;
+        height: 5PX;
+        border: 0;
+        background-color: #b01f16;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .container-productos .h-100{
+        min-height: 70vh !important;
+    }
+    
+    .container-productos img{
+        padding: 30px;
+    }
+    .container-productos .btn{
+        width: auto;
+    }
+    
+    .container-productos .divisiones{
+        font-size: 40px;
+        font-family: 'Montserrat-bold';
+    
+    }
+    
+    .container-productos .divisiones2{
+        font-size: 23px;
+        font-family: 'Cabin-italic';
+        line-height: 27px;
+        color: #cbcbcb;
+        padding: 40px 0px;
+    }
+    
+    .container-productos .divisiones3{
+        font-size: 30px;
+        font-family: 'Montserrat-bold';
+        text-align: left;
+        padding-bottom: 40px;
+    }
+    
+    .producto-text{
+        margin-bottom: 150px;
+    }
+    .productos-raya{
+        height: 5px;
+        background-color: #666666;
+        border: 0;
+        margin: 0;
+        margin-top: 100px;
+    }
+    
+    /* footer */
+    footer{
+        background-image: url("../img/footer.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: bottom center;
+        color: #000000;
+        padding-top: 15vh;
+        padding-bottom: 5vh;
+    }
+    
+    .icon i{
+        padding: 0px 30px;
+        font-size: 20px;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    
+    
+    #beneficios-carousel .card {
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px 3px #77777770;
+    }
+    #beneficios-carousel .card-title {
+        font-size: 15px;
+        line-height: 15px;
+        font-family: 'Montserrat-semibold';
+    
+    }
+    #beneficios-carousel .card-text {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    #beneficios-carousel .h-100{
+        padding: 20px;
+    }
+    
+    #beneficios-carousel .card-body{ 
+        padding:0;
+        padding-left: 20px;
+    
+    
+    }
+    #beneficios-carousel .carousel-indicators {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -15px;
+        border-radius: 50%;
+        height: auto;
+    }
+    
+    .imagen{
+        margin-top: 20px;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .imagen .card-imagen{
+        height: 50vh;
+        margin:10px
+    }
+    .card-text-herramienta{
+        padding-top: 40px;
+    }
+    
+    .card-img{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .alerta-text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .fondo_maqueta{
+        height: 100%;
+        width: auto;
+    }
 }
+
 @media (min-width: 1600px) {
 
 }
