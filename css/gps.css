@@ -926,7 +926,6 @@ footer{
         justify-content: center !important;
     }
     .herramienta .justify-content-end .header-herramienta h4{
-        font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
     }
@@ -942,9 +941,11 @@ footer{
     }
 
     .herramienta .justify-content-start .header-herramienta h4{
-        font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
+    }
+    .header-herramienta h4{
+        font-size: 20px;
     }
 
     .microfono-beneficio{
@@ -1264,9 +1265,11 @@ footer{
         justify-content: center !important;
     }
     .herramienta .justify-content-end .header-herramienta h4{
-        font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
+    }
+    .header-herramienta h4{
+        font-size: 20px;
     }
 
     .carusel-img{
@@ -1280,7 +1283,6 @@ footer{
     }
 
     .herramienta .justify-content-start .header-herramienta h4{
-        font-size: 20px;
         border-radius: 20px;
         padding: 10px 20px;
     }
@@ -1955,9 +1957,11 @@ footer{
     }
 
     .herramienta .justify-content-end .header-herramienta h4{
-        font-size: 22px;
         border-radius: 20px;
         padding: 10px 20px;
+    }
+    .header-herramienta h4{
+        font-size: 22px;
     }
 
     .alerta-img{
@@ -2164,17 +2168,19 @@ footer{
 }
 @media (min-width: 1440px) {
     .card-img{
-        height: auto;
+        height: 800px;
         width: auto;
     }
     .card-img img{
-        height: auto;
-        width: 100%;
+        height: 100%;
+        width: auto;
     }
     #header.masthead{
         height: 90vh;
-        background-position: center top;
-        background-size: contain;
+        /* background-position: center top;
+        background-size: contain; */
+        background-size: cover;
+        background-position: center bottom;
     }
     .masthead .container-masthead{
         align-items: normal !important;
@@ -2247,8 +2253,8 @@ footer{
     }
     
     #introduccion .card-img img{
-        width: 90vw;
-        height: auto;
+        width: auto;
+        height: 800px;
         padding-top: 20px;
     }
     #beneficios .card {
@@ -2294,7 +2300,7 @@ footer{
         line-height: 1;
     } */
     
-    .img-herramientas {
+    /* .img-herramientas {
         width: auto;
         height: 100%;
         padding: 15px;
@@ -2320,11 +2326,11 @@ footer{
     }
     .container-herramienta{
         padding: 0px 30px 30px;
-    }
+    } */
     
-    .header-herramienta{
+    /* .header-herramienta{
         margin-bottom: -24px;
-    }
+    } */
     .header-herramienta h4{
         display: inline-block;
         background-color: #b01f16;
@@ -2335,16 +2341,16 @@ footer{
         margin-bottom: 0;
     }
     
-    .herramienta > .row{
+    /* .herramienta > .row{
         margin-bottom: 40px;
-    }
+    } */
     .text-herramienta{
         font-size: 30px;
     }
-    .icon-circle-herramienta:before {
+    /* .icon-circle-herramienta:before {
         content: "\f111";
         bottom: -7px;
-        /* left: 45px; */
+        left: 45px;
         position: absolute;
         font-size: 20px;
     }
@@ -2390,7 +2396,7 @@ footer{
         left: 45px;
     } 
     
-    /* otros */
+    otros
     .alerta-raya{
         height: 3px;
         background-color: #666666;
@@ -2398,7 +2404,7 @@ footer{
         border-radius: 2px;
         margin: 60px auto;  
     }
-    
+    */
     .alerta-heading{
         font-size: 65px;
         font-family: 'Montserrat-Bold';
@@ -2408,7 +2414,7 @@ footer{
         font-family: 'Montserrat-semiBold';
     }
     
-    .container-alerta{
+    /* .container-alerta{
         margin: 60px 0px;
         background-image: url('../img/fondo-circle-black.png');
         background-repeat: no-repeat;
@@ -2418,53 +2424,62 @@ footer{
     }
     .container-alerta >.row{
         margin-bottom: 50px;
-    }
-    
+    } */
     .container-alerta .card-title {
         font-family: 'Montserrat-Bold';
-        font-size: 28px;
+        font-size: 30px;
     }
     
     .container-alerta .card-text {
-        font-size: 25px;
+        font-size: 27px;
     }
      
-    .container-alerta .card-body{
-        padding-top: 0;
+    .container-alerta .card-alerta:nth-child(2n){
+        margin-left: 20px;
+    }
+    .container-alerta .card-alerta:nth-child(2n+1){
+        margin-right: 20px;
     }
     
     /* reporte */
-    .reporte{
+    /* .reporte{
         background-image: url('../img/fondo-degradado.png');
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: cover;
         background-position: center bottom;
         padding: 30px 0px 60px;
-    }
+    } */
     .reporte-title{
         font-size: 65px;
         margin-bottom: 50px;
     }
-    .reporte-title p{
+    .reporte>.row{
+        align-items: normal !important;
+        padding-top: 50px;
+    }
+
+    .reporte .card-img img{
+        padding: 0;
+        padding-right: 20px;
+    }
+
+    /* .reporte-title p{
         font-family: 'Montserrat-semiBold';
         margin: 0;
         line-height: 1.2;
-    }
+    } */
     
-    .text-reporte{
+    /* .text-reporte{
         padding-right: 20px;
         padding-left: 20px;
-    }
+    } */
     .text-reporte p {
-        text-align: left;
-        font-family: 'Montserrat-semiBold';
-        font-size: 30px;
-        position: relative;
-        line-height: 1;
+        font-size: 35px;
+        line-height: 1.2;
     }
     
-    .text-reporte p:last-child {
+    /* .text-reporte p:last-child {
         margin-bottom: 0;
     }
     
@@ -2474,46 +2489,71 @@ footer{
         background-color: black;
         width: 80px;
         margin: 0 auto;
-    }
+    } */
     .text-reporte p:before {
-        content: "\f111";
-        left: -50px;
+        /* content: "\f111";
         position: absolute;
-        font-size: 20px;
         font-family: 'vespro' !important;
-        color: #b01f16;
+        color: #b01f16; */
+        left: -50px;
+        font-size: 20px;
+        top: 10px;
     }
     
     .text-reporte:before {
-        content: "";
-        width: 5px;
-        min-height: calc(100% - 36px);
+        /* content: "";
         position: absolute;
-        background: #b01f16;
+        background: #b01f16; */
+        width: 5px;
         z-index: -100;
-        left: -28px;
-        margin-top: 15px;
+        min-height: calc(100% - 80px);
+        left: -8px;
+        margin-top: 20px;
     }
     
     /* contacto */
-    .container-contacto{
+    /* .container-contacto{
         padding: 0px;
         position: relative;
         margin-bottom: 40px;    
-    }
+    } */
     
-    .container-text-rojo p{
+    .container-text-rojo p.reporte-heading-1 {
+        font-size: 45px;
+    }
+    .container-text-rojo p.reporte-heading-2 {
+        font-size: 40px;
+    }
+    .container-text-rojo p.reporte-heading-3 {
+        font-size: 33px;
+    }
+    .container-text-rojo p.reporte-heading-3 span {
+        display:block ;
+        font-size: 40px;
+    }
+
+    .card-contacto .card-body .form-group input {
+        height: 2.5rem;
+    }
+    .card-contacto .card-body .form-group {
+        margin-bottom: 1.8rem;
+    }
+    .container-contacto-text-politica span{
+        font-size: 18px;
+    }
+
+    /* .container-text-rojo p{
         color: white;
         font-family: "Montserrat-bold";
-    }
+    } */
     
     /* card contacto */
-    .card-contacto{
+    /* .card-contacto{
         border-radius: 5%;
         padding: 10px 40px;
-    }
+    } */
     
-    .card-contacto .card-title{
+    /* .card-contacto .card-title{
         text-align: center;
         height: 50px;
         margin: 40px 0px;
@@ -2522,9 +2562,9 @@ footer{
     .card-contacto .card-title img{
         width: auto;
         height: inherit;
-    }
+    } */
     
-    .card-contacto input{
+    /* .card-contacto input{
         border: 2px solid #b01f16;
         border-radius: 10px;
         color: black;
@@ -2551,32 +2591,36 @@ footer{
         border: #b01f16;
         box-shadow: 0 0 0 0.2rem #b01f16;
     }
-    
+     */
     
     /* testimonio pc*/
     .container-testimonio {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
-    .container-testimonio .carousel {
+    /* .container-testimonio .carousel {
         background-image: url(../img/fondo-circle.png);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: contain;
         background-position: center bottom;
         padding-bottom: 20px;
-    }
+    } */
     .testimonio-raya{
-        height: 5PX;
+        /* height: 5PX;
         border: 0;
         background-color: #b01f16;
         width: 150px;
-        margin: 0 auto;
+        margin: 0 auto; */
+        margin-top:10px ;
     }
     
     .card-testimonio{
-        padding: 50px 30px;
+        padding: 50px 30px 80px;
     }
-    
+    .carousel-indicators{
+        bottom: 35px;
+    }
+    /* 
     .card-testimonio .card-testimonio-img{
         z-index: 2;
     }
@@ -2617,9 +2661,9 @@ footer{
     }
     .testimonio-firma{
         text-align: end;
-    }
+    } */
     
-    .mas-beneficio-raya{
+    /* .mas-beneficio-raya{
         height: 5PX;
         border: 0;
         background-color: #666666;
@@ -2637,25 +2681,25 @@ footer{
     .carousel-indicators li.active {
         opacity: 1;
         background-color: #b01f16;
-    }
+    } */
     
     /* beneficios */
-    .container-beneficio{
+    /* .container-beneficio{
         margin: 100px 0px;
     }
     
     .container-beneficios{
         padding: 100px 0px;
         background-color: #ededed;
-    }
+    } */
     .beneficio-text{
-        background-color: #b01f16;
+        /* background-color: #b01f16;
         border-radius: 10px;
         box-shadow: 3px 4px 10px 2px #0000006e;
-        padding: 20px;
-        max-height: 10vh;
+        padding: 20px; */
+        height: 130px
     }
-    .beneficio-img{
+    /* .beneficio-img{
         height: 20vh;
         text-align: center;
         margin: 30px 30px 0px;
@@ -2663,10 +2707,17 @@ footer{
     .beneficio-img img{
         width: auto;
         height: inherit;
+    } */
+    .beneficio-text p {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .beneficio-text p:before{
+        top: 26px;
     }
     
     /* otros productos */
-    .container-productos{
+    /* .container-productos{
         margin-top: 100px;
     }
     .producto-raya{
@@ -2718,9 +2769,26 @@ footer{
         border: 0;
         margin: 0;
         margin-top: 100px;
-    }
+    } */
     
-    /* footer */
+    .container-productos-text{
+        width: 684px;
+    }
+    .container-productos .divisiones {
+        font-size: 40px;
+    }
+    .container-productos .divisiones2 {
+        font-size: 26px;
+        line-height: 1.2;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .container-productos .divisiones3 {
+        font-size: 30px;
+    }
+    .gestion-flota {
+        background-size: 530px;
+    }
+    /* footer
     footer{
         background-image: url("../img/footer.png");
         background-repeat: no-repeat;
@@ -2739,10 +2807,10 @@ footer{
     .row{
         margin-left: 0;
         margin-right: 0;
-    }
+    } */
     
     
-    
+/*     
     #beneficios-carousel .card {
         height: 140px;
         margin-left: auto;
@@ -2807,14 +2875,48 @@ footer{
     .fondo_maqueta{
         height: 100%;
         width: auto;
+    } */
+    .container {
+        max-width: 1340px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
     }
 }
 
 @media (min-width: 1600px) {
+    .container {
+        max-width: 1540px;
+    }
+    .gestion-flota {
+        background-image: url("");
+    }
+    .gestion-empresa {
+        background-image: url("");
+    }
+    .producto-text .card-img {
+        display: block;
+        height: 700px;
+    }
+    .producto-text .card-img img{
+        height: 100%;
+        width: auto;
+    }
+
+    .beneficio-imagen{
+        height: auto;
+        width: 90px;
+    }
 
 }
 @media (min-width: 1900px) {
-
+    .container-vespro{
+        max-width: 1850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media (min-width: 2560px) {
 
