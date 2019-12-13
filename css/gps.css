@@ -141,6 +141,25 @@ a:hover{text-decoration: none}
     margin-top: 30px;
 }
 
+#video {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: -33px;
+    /* bottom: 10px; */
+    margin: auto;
+    width: 150px;
+    height: auto;
+}
+
+#video_introduccion {
+    width: 140px;
+    height: auto;
+    border-radius: 20px;
+    margin: auto;
+}
+
+
 #img-control {
     height: 800px;
     width: auto;
@@ -2014,6 +2033,25 @@ footer{
 }
 
 @media (min-width: 1024px) {
+
+    #video_introduccion {
+        width: 234px;
+        /* height: auto;
+        border-radius: 20px;
+        margin: auto; */
+    }
+    #video {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 27px;
+        /* bottom: 10px; */
+        margin: auto;
+        width: 150px;
+        height: auto;
+    }
+
+
     .garantia .card-img {
         height: 400px;
     }
