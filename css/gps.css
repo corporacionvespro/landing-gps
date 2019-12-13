@@ -813,6 +813,97 @@ footer{
     width: auto;
 }
 
+.modal .modal-content{
+    border: 6px solid #b01f16;
+    border-radius: 50px;
+}
+.modal .card-img{
+    height: 160px;
+    /* width: auto; */
+}
+.modal .card-img img{ 
+    height: 100%;
+    width: auto;
+}
+
+.modal-raya{
+    height: 5px;
+    background-color: #b01f16;
+    border: 0;
+    margin: 0;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.modal  .card-text{
+    padding: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.37);
+    /* border-radius: 50px; */
+
+}
+
+.modal .modal-body{
+    padding: 0;
+}
+
+.modal-heading{
+    font-size: 25px;
+    font-family: "Montserrat-semiBold";
+    margin-bottom: 30px;
+}
+.modal-lead-in{
+    font-size: 18px;
+}
+.modal-lead-in span {
+    font-family: "Montserrat-semiBold";
+}
+
+.btn-modal-cerrar{
+    position: absolute;
+    background-color: black !important;
+    top: -50px;
+    right: 40px;
+    border-radius: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.garantia .card-img{
+    height: 205px;
+    /* height: 400px; */
+    width: 100%;
+    background-color: white;
+}
+.garantia img{
+    height: 100%;
+    width: auto;
+}
+
+.img-circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    opacity: 0.3;
+    height: auto !important;
+    width: 100% !important;
+    margin: auto ;
+    right: 0;
+    bottom: 0;
+}
+
 @media (max-width: 319px){
 
     .card-img{
@@ -1254,7 +1345,7 @@ footer{
     }
 
     .container-herramienta{
-        padding: 0px 20px 20px;
+        padding: 0px 20px 10px;
     }
 
     .text-herramienta {
@@ -1264,9 +1355,16 @@ footer{
     .header-herramienta{
         justify-content: center !important;
     }
+    .herramienta-text .justify-content-start .header-herramienta{
+        padding-right: 23px;
+    }
+    .herramienta-text .invertir .header-herramienta{
+        padding-left: 23px;
+    }
     .herramienta .justify-content-end .header-herramienta h4{
         border-radius: 20px;
         padding: 10px 20px;
+        /* margin-left: 30px; */
     }
     .header-herramienta h4{
         font-size: 20px;
@@ -1274,25 +1372,29 @@ footer{
 
     .container-herramienta.container-herramienta-derecha {
         border-left: 3px solid #b01f16;
+        /* padding: 0px 20px 10px 30px; */
     }
     .container-herramienta.container-herramienta-derecha:before, .container-herramienta.container-herramienta-derecha:after {
         left: 0px;
         height: 3px;
+        width: 40px;
     }
     .container-herramienta-derecha .icon-circle-herramienta:before {
-        left: 54px;
+        left: 38px;
         font-size: 11px;
         bottom: -4px;
     }
 
     .container-herramienta.container-herramienta-izquierda:before, .container-herramienta.container-herramienta-izquierda:after{
         height: 3px;
+        width: 40px;
     }
     .container-herramienta.container-herramienta-izquierda {
         border-right: 3px solid #b01f16;
+        /* padding: 0px 30px 10px 20px;  */
     }
     .container-herramienta-izquierda .icon-circle-herramienta:before {
-        right: 54px;
+        right: 38px;
         font-size: 11px;
         bottom: -4px;
     }
@@ -1519,7 +1621,7 @@ footer{
 @media (min-width: 375px){
     
     .card-img{
-        height: 3200px;
+        height: 320px;
         width: 300px; 
     }
     
@@ -1575,8 +1677,31 @@ footer{
         margin-top: 60px;
     }
 
+    .herramienta .justify-content-end .header-herramienta h4{
+        margin-left: 20px;
+    }
+    .herramienta .justify-content-start .header-herramienta h4 {
+        margin-right: 20px;
+    }
+
+    .herramienta-text .justify-content-start .header-herramienta{
+        padding-right: 15px;
+    }
+    .herramienta-text .invertir .header-herramienta{
+        padding-left: 15px;
+    }
+
+    .container-herramienta.container-herramienta-izquierda {
+        /* border-right: 3px solid #b01f16; */
+        padding: 0px 30px 10px 20px;
+    }
+    .container-herramienta.container-herramienta-derecha {
+        /* border-left: 3px solid #b01f16; */
+        padding: 0px 20px 10px 30px;
+    }
     .container-herramienta{
-        padding: 0px 20px 20px;
+        /* padding: 0px 20px 20px 30px; */
+        /* padding: 0px 20px 20px; */
     }
 
     .text-herramienta {
@@ -1588,9 +1713,7 @@ footer{
         display: none;
     }
     
-    .microfono-beneficio{
-        margin-bottom: -21px !important;
-    }
+    z
 
 
     .alerta-img {
@@ -1627,6 +1750,11 @@ footer{
     }
 }
 
+@media (min-width: 398px){
+    .microfono-beneficio{
+        margin-bottom: -21px !important;
+    }
+}
 
 
 @media (min-width: 576px){
@@ -1824,7 +1952,7 @@ footer{
         background-position: right;
     }
     .invertir .container-herramienta {
-        padding: 0px 10px 0px 20px;
+        padding: 0px 10px 10px 20px;
     }
     .microfono-beneficio {
         margin-bottom: -35px !important;
@@ -1886,7 +2014,9 @@ footer{
 }
 
 @media (min-width: 1024px) {
-
+    .garantia .card-img {
+        height: 400px;
+    }
     .card-img{
         height: 500px;
         width: 410px;
@@ -1968,6 +2098,35 @@ footer{
         font-family: 'Montserrat-bold';
         font-size: 55px;
     }
+
+    .container-herramienta.container-herramienta-derecha {
+        border-left: 5px solid #b01f16;
+        padding: 0px 20px 15px 30px;
+    }
+    .container-herramienta.container-herramienta-derecha:before, .container-herramienta.container-herramienta-derecha:after {
+        left: 0px;
+        height: 5px;
+        width: 40px;
+    }
+    .container-herramienta-derecha .icon-circle-herramienta:before {
+        left: 38px;
+        font-size: 20px;
+        bottom: -7px;
+    }
+
+    .container-herramienta.container-herramienta-izquierda:before, .container-herramienta.container-herramienta-izquierda:after{
+        height: 5px;
+        width: 40px;
+    }
+    .container-herramienta.container-herramienta-izquierda {
+        border-right: 5px solid #b01f16;
+        padding: 0px 30px 15px 20px; 
+    }
+    .container-herramienta-izquierda .icon-circle-herramienta:before {
+        right: 38px;
+        font-size: 20px;
+        bottom: -7px;
+    }
     
     .numero5 label {
         font-size: 205px;
@@ -1990,7 +2149,7 @@ footer{
     }
 
     .alerta-img{
-        width: 100%;
+        width: 57px;
     }
     
     .microfono-beneficio{
@@ -2192,6 +2351,9 @@ footer{
 
 }
 @media (min-width: 1440px) {
+    .garantia .card-img {
+        height: 800px;
+    }
     .card-img{
         height: 800px;
         width: auto;

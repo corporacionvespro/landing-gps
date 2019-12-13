@@ -43,7 +43,7 @@
     <!--Botón flotante de navegación-->
     <div class="container-navegacion">
         <input type="checkbox" id="toggle-navegacion" hidden>
-        <nav class="nav-navegacion">
+        <nav class="nav-navegacion " style="display: none;">
             <a class="btn-navegacion text-center" href="#beneficios">Beneficios</a>
             <a class="btn-navegacion text-center" href="#cotizar">Cotizar</a>
             <a class="btn-navegacion text-center" href="#herramientas">Herramientas</a>
@@ -101,7 +101,13 @@
         <label class="icon"><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i><i class="icon-circle text-primary"></i></label>
         <div class="text-center container-fluid">
             <div class="card-img">
-                <img src="img/control.png" class="img-fluid"/>
+                <!-- <img src="img/control.png" class="img-fluid"/>
+                <h1>gola</h1>
+                    <video id="video_introduccion" autoplay="" controls="">
+                        <source src="img/video.mp4" type="video/mp4">
+                        Tu navegador no soporta HTML5 video
+                    </video> -->
+                
             </div>
         </div>
     </div>
@@ -247,7 +253,7 @@
         </div>
     </div>  
     
-<!--Herramientas-->
+    <!--Herramientas-->
     <div id="herramientas" class=" container-vespro container-fluid align-items-center">
         <div class="row text-center justify-content-center" >
             <div class="container col-auto">
@@ -268,7 +274,9 @@
         <div class="row align-items-center invertir ">
             <div class="col-sm-5 col-md-5 imagen" >
                 <div class="card-img ">
-                    <img class="img-herramientas" src="img/microfono.png"/>
+                    <img class="img-herramientas" src="img/auto-apagate.png" alt=""/>
+                    <img class="img-circle img-herramientas" src="img/circle-black.png" alt=""/>
+                    <!-- <img class="img-herramientas" src="img/microfono.png"/> -->
                 </div>
             </div>
             <div class="col-sm-7 col-md-7 " >
@@ -289,7 +297,9 @@
         <div class="row align-items-center">
             <div class="col-sm-5 col-md-5 imagen" >
                 <div class="card-img">
-                    <img class="img-herramientas" src="img/auto-apagate.png"/>
+                    <!-- <img class="img-herramientas" src="img/auto-apagate.png"/> -->
+                    <img class="img-herramientas" src="img/microfono.png" alt=""/>
+                    <img class="img-circle img-herramientas" src="img/circle-black.png" alt=""/>
                 </div>
             </div>
             <div class="col-sm-7 col-md-7 " >
@@ -309,7 +319,9 @@
         <div class="row align-items-center invertir">
             <div class="col-sm-5 col-md-5 imagen" >
                 <div class="card-img">
-                    <img class="img-herramientas" src="img/btn-panico.png"/>
+                    <!-- <img class="img-herramientas" src="img/btn-panico.png"/> -->
+                    <img class="img-herramientas" src="img/btn-sos.png" alt=""/>
+                    <img class="img-circle img-herramientas" src="img/circle-black.png" alt=""/>
                 </div>
             </div>
             <div class="col-sm-7 col-md-7 " >
@@ -330,7 +342,9 @@
         <div class="row align-items-center">
             <div class="col-sm-5 col-md-5 imagen" >
                 <div class="card-img">
-                    <img class="img-herramientas" src="img/intromision.png"/>
+                    <!-- <img class="img-herramientas" src="img/intromision.png"/> -->
+                    <img class="img-herramientas" src="img/intromision.png" alt=""/>
+                    <img class="img-circle img-herramientas" src="img/circle-black.png" alt=""/>
                 </div>
             </div>
             <div class="col-sm-7 col-md-7 " >
@@ -417,7 +431,7 @@
                 
             </div>
         </div>
-    </div>  -->
+    </div>
     <!-- reportes -->
     <div class=" container-fluid text-center align-items-center justify-content-center reporte " style="position: relative;">
         <div class="reporte-title">
@@ -484,7 +498,8 @@
                                   <input type="text" class="form-control" placeholder="Whatsapp">
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary text-white ">Lo adquiero</button>
+                                    <!-- <button type="submit" class="btn btn-primary text-white "  data-toggle="modal" data-target="#exampleModalCenter" >Lo adquiero</button> -->
+                                    <button type="button" class="btn btn-primary text-white "  data-toggle="modal" data-target="modal-contacto" >Lo adquiero</button>
                                 </div>
                             </form>
                         </div>
@@ -499,7 +514,7 @@
             </div>
         </div>
     </div>
-
+     
     <!--Testimonios-PC-->
     <div id="testimonios" class="container-vespro container-testimonio">
         <div class="reporte-title text-center">
@@ -628,8 +643,14 @@
             </div>
         </div>
     </div>
+
+    <div class="garantia">
+        <div class="card-img">
+            <img src="img/sello-garantia.png" alt="">
+        </div>
+    </div>
     <!-- mas beneficios -->
-    <hr class="mas-beneficio-raya ">
+    <!-- <hr class="mas-beneficio-raya "> -->
     <div class="  container-fluid no-gutters align-items-center container-beneficios">
         <div class="container-fluid container-vespro">
             <div class="mas-beneficios-title text-center">
@@ -732,35 +753,75 @@
             </div>
         </div>
     </footer>
+
+     <!-- Modal -->
+    <div class="modal fade" id="modal-contacto" tabindex="-1" role="dialog" aria-labelledby="modal-contacto" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close btn-modal-cerrar" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                </div> -->
+                <div class="modal-body">
+                    <div class="card-img">
+                        <img src="img/logo-modal.png" alt=""/>
+                    </div>
+                    <div class="card-text">
+                        <h4 class="modal-heading text-primary">Enhorabuena cliente</h4>
+                        <p class=" modal-lead-in"><span>El Pack esta en camino</span> y en unos  minutos te <br> enviaremos información</p>
+                        <p class="modal-lead-in-2"><strong>*</strong> Revisa todas las entradas de tu correo (ej. span, promociones, notificaciones) para ver el mail con la información solitada.</p>
+                        <hr class="modal-raya">
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/gps.js"></script>
      <script>
-        $('body').on('click', '.btn-navegacion', function(){
-            $('.nav-navegacion').css('opacity','0%');
-            $('.nav-navegacion').css('display','none');
-        });
+        // $('body').on('click', '.btn-navegacion', function(){
+        //     $('.nav-navegacion').css('opacity','0%');
+        //     $('.nav-navegacion').css('display','none');
+        // });
         var estado = 0;
+        console.log('hola'+estado);
+        
         $('body').on('click', '.bar-navegacion', function() {
+            console.log('hola2'+estado);
+
             if (estado == 0) {
+                console.log('hola3'+estado);
+
                 $('.nav-navegacion').css('opacity','1');
                 $('.nav-navegacion').css('display','block');
                 estado = 1;
             } else {
+                console.log('hola4'+estado);
+
                 $('.nav-navegacion').css('opacity','0%');
-                $('.nav-navegacion').css('display','block');
+                $('.nav-navegacion').css('display','none');
                 estado = 0;
             }
         });
-        var nav = document.getElementById('mainNav');
-        window.onscroll = function() {
-            if (window.pageYOffset > 100) {
-                nav.classList.add("orange");
-            } else {
-                nav.classList.remove("orange");
-            }
-        }
+        // var nav = document.getElementById('mainNav');
+        // window.onscroll = function() {
+        //     if (window.pageYOffset > 100) {
+        //         nav.classList.add("orange");
+        //     } else {
+        //         nav.classList.remove("orange");
+        //     }
+        // }
+
+        // $('#modal-contacto').modal('show')
     </script>
 </body>
 </html>
