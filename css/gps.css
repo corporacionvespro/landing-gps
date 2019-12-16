@@ -500,12 +500,16 @@ a:hover{text-decoration: none}
     font-size: 20px;
     border-radius: 14px;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle .btn-primary:focus, .btn-primary:hover {
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle, .show>.btn-primary.dropdown-toggle:focus, .btn-primary:hover, .btn-primary.focus, .btn-primary:focus{
     color: #fff;
     background-color: #b01f16;
     border: #b01f16;
     box-shadow: 0 0 0 0.2rem #b01f16;
 }
+
+/* .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5);
+} */
 
 
 /* testimonio pc*/

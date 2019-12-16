@@ -486,22 +486,22 @@
                             <img src="img/logo.png" alt="" >
                         </div>
                         <div class="card-body">
-                            <form action="" method="get">
+                            <form name="formulario" id="frm-contacto">
                                 <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Nombres">
+                                  <input type="text" name="nombres" class="form-control" placeholder="Nombres" required>
                                 </div>
                                 <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Empresa">
+                                  <input type="text" name="empresa" class="form-control" placeholder="Empresa">
                                 </div>
                                 <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="E-mail">
+                                  <input type="text" name="email"  class="form-control" placeholder="E-mail" required>
                                 </div>
                                 <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Whatsapp">
+                                  <input type="text" name="whatsapp" class="form-control" placeholder="Whatsapp" required> 
                                 </div>
                                 <div class="form-group">
-                                    <!-- <button type="submit" class="btn btn-primary text-white "  data-toggle="modal" data-target="#exampleModalCenter" >Lo adquiero</button> -->
-                                    <button type="button" class="btn btn-primary text-white "  data-toggle="modal" data-target="modal-contacto" >Lo adquiero</button>
+                                    <button type="submit" class="btn btn-primary text-white "  data-toggle="modal" data-target="#exampleModalCenter" >Lo adquiero</button>
+                                    <!-- <button type="button" class="btn btn-primary text-white "  data-toggle="modal" data-target="#modal-contacto" >Lo adquiero</button> -->
                                 </div>
                             </form>
                         </div>
@@ -784,6 +784,32 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modal-contacto" tabindex="-1" role="dialog" aria-labelledby="modal-error" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close btn-modal-cerrar" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                </div> -->
+                <div class="modal-body">
+                    <div class="card-img">
+                        <img src="img/logo-modal.png" alt=""/>
+                    </div>
+                    <div class="card-text">
+                        <h4 class="modal-heading text-primary">Advertencia </h4>
+                        <p class=" modal-lead-in" id="error"></p>
+                        <hr class="modal-raya">
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -824,6 +850,32 @@
         // }
 
         // $('#modal-contacto').modal('show')
+        
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#frm-contacto').submit(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: 'registro.php',
+                    data: $(this).serialize(),
+                    success: function(response){
+                        console.log(response);
+                        
+                        var respuesta = JSON.parse(response);
+                        if (respuesta.success == "1"){
+                            $('#modal-contacto').modal('show')
+                        }else{
+                            console.log(respuesta);
+                            $('#modal-error').modal('show');
+                            $('#error').val(respuesta.data);
+                            
+                        }
+                }
+            });
+            });
+        });
     </script>
 </body>
 </html>
