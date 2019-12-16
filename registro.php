@@ -18,11 +18,11 @@ $headers = 'Correo: '.$correo."\r\n".
 
 $aux=0;
 $data; 
-if (mail($destinatario, $subject, $msg, $headers)) {
-	$aux=0;
-}else{ 
-	$aux=1;
-} 
+// if (mail($destinatario, $subject, $msg, $headers)) {
+// 	$aux=0;
+// }else{ 
+// 	$aux=1;
+// } 
 
 try{
 	if($aux==0){
