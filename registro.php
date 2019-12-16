@@ -18,15 +18,15 @@ $headers = 'Correo: '.$correo."\r\n".
 
 $aux=0;
 $data; 
-// if (mail($destinatario, $subject, $msg, $headers)) {
-// 	$aux=0;
-// }else{ 
-// 	$aux=1;
-// } 
+if (mail($destinatario, $subject, $msg, $headers)) {
+	$aux=0;
+}else{ 
+	$aux=1;
+} 
 
 try{
 	if($aux==0){
-		$cn = new PDO("mysql:host=localhost;dbname=landing;charset=utf8", "root", "");
+		$cn = new PDO("mysql:host=localhost;dbname=landing;charset=utf8", "root", "palomino2011");
 		$query = "INSERT INTO cliente (celular, nombre, empresa, correo) VALUES ('".$whatsapp."', '".$nombres."', '".$empresa."', '". $correo."');";
 		$result = $cn->prepare($query);
 		$exec = $result->execute();

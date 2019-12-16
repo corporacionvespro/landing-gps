@@ -486,7 +486,8 @@
                             <img src="img/logo.png" alt="" >
                         </div>
                         <div class="card-body">
-                            <form name="formulario" id="frm-contacto">
+                            <form name="formulario" id="frm-contacto" action="registro.php" method="POST">
+                            <!-- <form name="formulario" id="frm-contacto"> -->
                                 <div class="form-group">
                                   <input type="text" name="nombres" class="form-control" placeholder="Nombres" required>
                                 </div>
@@ -857,24 +858,28 @@
             $('#frm-contacto').submit(function(e) {
                 e.preventDefault();
                 $.ajax({
-                    type: "POST",
-                    url: 'contacto.php',
+                    type: 'POST',
+                    url: $(this).attr('action'),
                     data: $(this).serialize(),
-                    success: function(response){
-                        console.log(response);
+                    
+                    success: function(data) {
+                        console.log(data);
+                        // console.log(response);
                         
-                        // var respuesta = JSON.parse(response);
-                        // if (respuesta.success == "1"){
-                        //     $('#modal-contacto').modal('show')
-                        // }else{
-                        //     console.log(respuesta);
-                        //     $('#modal-error').modal('show');
-                        //     $('#error').val(respuesta.data);
+                        var respuesta = JSON.parse(data);
+                        if (respuesta.status == "success"){
+                            console.log('aqui');
                             
-                        // }
-                }
-            });
-            });
+                            $('#modal-contacto').modal('show');
+                        }else{
+                            console.log(respuesta);
+                            $('#modal-error').modal('show');
+                            $('#error').val(respuesta.data);
+                            
+                        }
+                    }
+                }) 
+            })     
         });
     </script>
 </body>

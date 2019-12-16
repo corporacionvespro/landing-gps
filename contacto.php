@@ -1,7 +1,7 @@
 <?php
 $nombres = $_POST["nombres"];
 $empresa = $_POST["empresa"];
-$correo = $_POST["correo"];
+$correo = $_POST["email"];
 $whatsapp = $_POST["whatsapp"];
 
 $destinatario = "corporacionvespro@gmail.com";
