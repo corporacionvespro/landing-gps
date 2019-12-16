@@ -489,16 +489,16 @@
                             <form name="formulario" id="frm-contacto" action="email.php" method="POST">
                             <!-- <form name="formulario" id="frm-contacto"> -->
                                 <div class="form-group">
-                                  <input type="text" name="nombres" class="form-control" placeholder="Nombres" required>
+                                  <input type="text" name="nombres" class="form-control" placeholder="Nombres" >
                                 </div>
                                 <div class="form-group">
                                   <input type="text" name="empresa" class="form-control" placeholder="Empresa">
                                 </div>
                                 <div class="form-group">
-                                  <input type="text" name="email"  class="form-control" placeholder="E-mail" required>
+                                  <input type="text" name="email"  class="form-control" placeholder="E-mail" >
                                 </div>
                                 <div class="form-group">
-                                  <input type="text" name="whatsapp" class="form-control" placeholder="Whatsapp" required> 
+                                  <input type="text" name="whatsapp" class="form-control" placeholder="Whatsapp" > 
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary text-white "  data-toggle="modal" data-target="#exampleModalCenter" >Lo adquiero</button>
@@ -855,27 +855,99 @@
     </script>
     <script>
         $(document).ready(function() {
+            var require=[
+                {
+                    name: "nombres",
+                    validation: [
+                        ["required","Nombre necesario"]
+                    ]
+                },
+                // {
+                //     name: "empresa",
+                //     validation: [
+                //         ["required","Empresa necesario"]
+                //     ]
+                // },
+                {
+                    name: "whatsapp",
+                    validation: [
+                        ["required","whatsapp necesario"]
+                    ]
+                },
+                {
+                    name: "email",
+                    validation: [
+                        ["required","Mail necesario"],
+                        ["email","Ingrear un E-mail valido"]
+                    ]
+                },
+                // {
+                //     name: "descripcion",
+                //     validation: [
+                //         ["required","Descripción necesaria"]
+                //     ]
+                // },
+
+            ];
+            function validation_form() {
+                var v_continue=true;
+                $('.form-group').removeClass('error');
+                $('.form-group span').remove();
+                for (let i = 0; i < require.length; i++) {
+                    const data = require[i];
+                    for (let j = 0; j < data.validation.length; j++) {
+                        const validation = data.validation[j];
+                        var error=false;
+                        switch (validation[0]) {
+                            case "required":
+                                if ($('[name='+data.name+']').val()=="") {
+                                    $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[1]+'</span>');                        
+                                    error=true;
+                                }
+                                break;
+                            case "email":
+                                if (($('[name='+data.name+']').val()).search('@')==-1) {
+                                    $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[1]+'</span>');                        
+                                    error=true;
+                                }
+                                break;
+                            // case 'max':
+                            // // completar    
+                        }
+                        if (error) {
+                            v_continue=false;
+                            break;
+                        };
+                    }
+                    
+                }
+                return v_continue;
+            }
+
             $('#frm-contacto').submit(function(e) {
                 e.preventDefault();
-                $.ajax({
-                    type: 'POST',
-                    url: $(this).attr('action'),
-                    data: $(this).serialize(),
-                    
-                    success: function(data) {
-                        console.log(data);
-                        var respuesta=data;
-                        // var respuesta = JSON.parse(data);
-                        if (respuesta.status == "OK"){
-                            $('#modal-contacto').modal('show');
-                        }else{
-                            console.log(respuesta);
-                            $('#modal-error').modal('show');
-                            $('#error').val(respuesta.data);
-                            
+                if (validation_form()) {
+                    $.ajax({
+                        type: 'POST',
+                        url: $(this).attr('action'),
+                        data: $(this).serialize(),
+                        
+                        success: function(data) {
+                            console.log(data);
+                            var respuesta=data;
+                            // var respuesta = JSON.parse(data);
+                            if (respuesta.status == "OK"){
+                                $('#frm-contacto')[0].reset();
+                                $('#modal-contacto').modal('show');
+                            }else{
+                                console.log(respuesta);
+                                $('#modal-error').modal('show');
+                                $('#error').val(respuesta.data);
+                                
+                            }
                         }
-                    }
-                }) 
+                    }) 
+                }
             })     
         });
     </script>

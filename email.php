@@ -16,6 +16,7 @@ $pdo = new PDO("mysql:host=localhost;dbname=landing;charset=utf8", "root", "", a
     PDO::ATTR_EMULATE_PREPARES => false
 ));
 
+
 try{
     //variables 
     $nombres = $_POST["nombres"];
@@ -28,10 +29,6 @@ try{
     $query = "INSERT INTO cliente (celular, nombre, empresa, correo) VALUES ('".$whatsapp."', '".$nombres."', '".$empresa."', '". $correo."');";
     $result = $pdo->prepare($query);
     $exec = $result->execute();
-    echo json_encode([
-        "status"    => "hola",
-        "data"      => ""
-    ]);
     
     try {
        
@@ -74,7 +71,7 @@ try{
                 "data"      => "Mensaje enviado."
             ]);
         }
-    }catch (Exception $e) {
+    }catch (\Exception $e) {
         $pdo->rollBack();
         header('Content-Type: application/json');    
         echo json_encode([
@@ -82,11 +79,7 @@ try{
             "data"      => $mail->ErrorInfo
         ]);
     }
-}catch(Exception $e){
-    echo json_encode([
-        "status"    => "holsa",
-        "data"      => $e->getMessage()
-    ]);
+}catch(\Exception $e){
     $pdo->rollBack();
     echo json_encode([
         "status"    => "ERROR",
