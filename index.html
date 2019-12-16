@@ -486,7 +486,7 @@
                             <img src="img/logo.png" alt="" >
                         </div>
                         <div class="card-body">
-                            <form name="formulario" id="frm-contacto" action="registro.php" method="POST">
+                            <form name="formulario" id="frm-contacto" action="email.php" method="POST">
                             <!-- <form name="formulario" id="frm-contacto"> -->
                                 <div class="form-group">
                                   <input type="text" name="nombres" class="form-control" placeholder="Nombres" required>
@@ -864,12 +864,9 @@
                     
                     success: function(data) {
                         console.log(data);
-                        // console.log(response);
-                        
-                        var respuesta = JSON.parse(data);
-                        if (respuesta.status == "success"){
-                            console.log('aqui');
-                            
+                        var respuesta=data;
+                        // var respuesta = JSON.parse(data);
+                        if (respuesta.status == "OK"){
                             $('#modal-contacto').modal('show');
                         }else{
                             console.log(respuesta);

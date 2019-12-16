@@ -32,7 +32,7 @@ try{
 		$exec = $result->execute();
 		$aux=0;
 	}
-}catch(Excetion $e){
+}catch(Exception $e){
 	$aux=2;
 	$data=$e->getMessage();
 }
