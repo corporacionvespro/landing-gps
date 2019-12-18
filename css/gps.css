@@ -147,9 +147,9 @@ a:hover{text-decoration: none}
 
 #video {
     position: absolute;
-    top: 52px;
+    top: 66px;
     left: 0;
-    right: -23px;
+    right: 9px;
     /* bottom: 10px; */
     margin: auto;
     width: 150px;
@@ -157,12 +157,12 @@ a:hover{text-decoration: none}
 }
 
 #video_introduccion {
-    width: 136px;
+    width: 117px;
     height: auto;
-    /* border-radius: 20px; */
+    /* border-radius: 5px; */
     margin: auto;
-    box-shadow: -2px -3px 4px -1px rgba(0, 0, 0, 0.53);
-
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 
@@ -514,8 +514,9 @@ a:hover{text-decoration: none}
 
 /* testimonio pc*/
 .container-testimonio {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
+
 .container-testimonio .carousel {
     background-image: url(../img/fondo-circle.png);
     background-repeat: no-repeat;
@@ -934,6 +935,138 @@ footer{
     bottom: 0;
 }
 
+.raya{
+    height: 2px;
+    margin-top: 10px;
+}
+.alerta-raya{
+    margin: 60px auto;
+}
+
+.container-preguntas {
+    padding: 60px 0px 0px;
+}
+.header-preguntas-text {
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+/* .header-preguntas-text p {
+    font-family: 'Montserrat-semiBold';
+    margin: 0;
+    line-height: 1.2;
+    font-size: 26px;
+} */
+.pregunta-heading{
+    font-family: 'Montserrat-semiBold';
+    font-size: 22px;
+}
+.preguntas-text .header-text{
+    font-size: 18px;
+    font-family: 'Montserrat-semiBold';
+}
+
+.preguntas-text{
+    padding: 0px 20px;
+}
+.preguntas-text .header-text:before {
+    content: "\e901";
+    left: 14px;
+    position: absolute;
+    font-size: 16px;
+    font-family: 'vespro' !important;
+    color: #b01f16;
+}
+.container-garantia{
+    background-color: #f8f8f8;
+    padding: 20px ;
+    margin-top: 30px;
+    position: relative;
+    padding-top: 40px;
+}
+.container-garantia p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 1.2;
+    padding: 0px 20px;
+    font-family: 'Montserrat-semiBold';
+}
+.sello-garantia{
+    background-image: url(../img/sello-garantia.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 145%;
+    background-position: center;
+    color: #f8f8f8;
+    height: 76vw;
+}
+.promocion-card{
+    background-color: #e6e6e6;
+}
+.card-img-promocion{
+    background-image: url(../img/regalo.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.card-img-promocion .text-promocion{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+}
+.card-img-promocion .text-promocion p{
+    margin-bottom: 0;
+    line-height: 1;
+    /* display: inline; */
+}
+
+.text-50{
+    font-size: 40px;
+    font-family: 'Montserrat-Bold';
+}
+.text-descuento{
+    font-size: 28px;
+    font-family: 'Montserrat-semiBold';
+}
+
+.header-promocion{
+    font-family: 'Montserrat-semiBold';
+    /* font-size: 25px; */
+}
+.leand-promocion{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.card-text-promocion{
+    padding: 40px;
+}
+
+#dia, #hora,  #min, #seg {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    border: 5px solid #b01f16;
+    border-radius: 50%;
+}
+.promocion-card a{
+    width: auto;
+}
+
+.header-promocion-movil{
+    padding:20px;
+}
+.card-text-promocion .header-promocion{
+    display: none;
+}
+.card-img-promocion{
+    height: 300px;
+}
 @media (max-width: 319px){
 
     .card-img{
@@ -1272,9 +1405,42 @@ footer{
     }
 
 }
+
+@media (max-width: 332px){
+    #dia, #hora,  #min, #seg {
+        margin-left: 5px;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        display: inline-block;
+        border: 5px solid #b01f16;
+        border-radius: 50%;
+    }
+}
 /* @media (min-width: 320px) and (max-width: 374px) { */
 @media (min-width: 320px){
+    /* .garantia .card-img {
+        width: 170px;
+        height: 170px;
+        background-color: #fff;
+        border: 8px solid #fff;
+        overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 5px;
+    }
+    .garantia .card-img img{
+        width: 100%;
+        transform: translate(0,-50%);
+        margin-top: 50%;
+    } */
 
+    .pregunta-heading {
+        font-size: 26px;
+    }
+    .container-productos {
+        margin-top: 30px;
+    }
     .card-img{
         height: 250px;
         width: 250px; 
@@ -1684,12 +1850,12 @@ footer{
 }
 @media (min-width: 375px){
     #video {
-        top: 52px;
-        right: -26px;
-        width: 150px;
+        top: 67px;
+        right: 11px;
+        width: 159px;
     }
     #video_introduccion {
-        width: 144px;
+        width: 125px;
     }
 
     .card-img{
@@ -1830,6 +1996,21 @@ footer{
 
 
 @media (min-width: 576px){
+    .sello-garantia{
+        background-size: cover;
+        height: 76vw;
+    }
+    .container-garantia{
+        background-color: white;
+        /* padding-top: 0; */
+        padding: 0px 20px;
+    }
+    .container-garantia p{
+        top: 20px;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .icon i {
         padding: 0px 20px;
         font-size: 18px;
@@ -2058,6 +2239,7 @@ footer{
 }
 
 @media (min-width: 768px) {
+
     .herramienta-text{
         justify-content: flex-end;
     }
@@ -2090,6 +2272,35 @@ footer{
 }
 
 @media (min-width: 1024px) {
+    
+    .container-garantia{
+        /* background-color: white; */
+        /* padding-top: 0; */
+        /* padding: 0px 20px; */
+        margin-top: 60px;
+    }
+    .sello-garantia{
+        /* background-size: cover;
+        height: 65vw; */
+        background-size: contain;
+        height: 50vw;
+    }
+    .container-garantia p{
+        top: 25px;
+        font-size: 22px;
+    }
+
+    .pregunta-heading {
+        font-size: 50px;
+    }
+    .raya{
+        height: 2px;
+        margin-top: 10px;
+    }
+    .alerta-raya{
+        margin: 60px auto;
+    }
+
     .navbar>div{
         height: 80px;
     }
@@ -2098,12 +2309,11 @@ footer{
     }
 
     #video_introduccion {
-        width: 234px;
-        box-shadow: none
+        width: 195px;
     } 
     #video {
-        top: 57px;
-        right: -69px;
+        top: 81px;
+        right: -10px;
         width: 250px;
     }
 
@@ -2458,14 +2668,24 @@ footer{
 
 }
 @media (min-width: 1440px) {
+    .sello-garantia{
+        background-size: contain;
+        height: 50vw;
+    }
+    .container-garantia p{
+        top: 30px;
+        font-size: 26px;
+    }
     #video_introduccion {
-        width: 365px;
-        box-shadow: none
+        width: 313px;
+        /* border-radius: 16px; */
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     } 
     #video {
-        top: 21px;
-        right: -64px;
-        width: 380px;
+        top: 60px;
+        right: 25px;
+        width: 371px;
     }
 
     .garantia .card-img {
@@ -3226,6 +3446,16 @@ footer{
 
 }
 
+#clock {
+    /* height: 30px; */
+    font-size: 5em;
+    text-align: center;
+    margin: 1em;
+    color: #b01f16;
+    background-color: rgba(127, 255, 212, 0.11);
+  }
+
+ 
 @font-face {
     font-family: 'Cabin-italic';
     src: url("../css/font-cabin/Cabin-Italic.ttf");

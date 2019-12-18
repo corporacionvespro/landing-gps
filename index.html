@@ -366,7 +366,7 @@
     </div>
    
     <!-- alertas -->
-    <hr class="alerta-raya ">
+    <hr class="alerta-raya raya">
     <div class="container-vespro container-fluid text-center justify-content-center alerta" >
         <div class="alerta-text">
             <p class="alerta-heading ">Más seguridad para tu vehículo</p>
@@ -439,7 +439,7 @@
         <div class="reporte-title">
             <p class="reporte-heading ">Tus reportes</p>
             <p class="reporte-lead-in text-primary">en orden  </p>
-            <hr class="reporte-raya ">
+            <hr class="reporte-raya raya">
         </div>
 
         <div class="row align-items-center no-gutters container-vespro">
@@ -470,7 +470,7 @@
 
     <!-- aqui me quede -->
     <!-- contacto -->
-    <div class=" container-fluid no-gutters align-items-center container-contacto">
+    <div id="contacto" class=" container-fluid no-gutters align-items-center container-contacto">
         <div class="container-fluid container-vespro">
             <div class="row container-contacto-text ">
                 <div class=" col-12 col-sm-12 col-md-12 col-lg-4">
@@ -501,6 +501,9 @@
                                   <input type="text" name="whatsapp" class="form-control" placeholder="Whatsapp" > 
                                 </div>
                                 <div class="form-group">
+                                  <input id="" type="text" name="codigo-promocion" class="form-control"> 
+                                </div>
+                                <div class="form-group">
                                     <button type="submit" class="btn btn-primary text-white "  data-toggle="modal" data-target="#exampleModalCenter" >Lo adquiero</button>
                                     <!-- <button type="button" class="btn btn-primary text-white "  data-toggle="modal" data-target="#modal-contacto" >Lo adquiero</button> -->
                                 </div>
@@ -518,12 +521,47 @@
         </div>
     </div>
      
+    <!-- promocion  -->
+    <div class="promocion ">
+        <div class=" container-vespro promocion-card">
+            <div class="row">
+                <div class="col-12 header-promocion-movil text-center">
+                    <h3 class="header-promocion text-primary">Promoción Diciembre 2019</h3>
+                </div>
+                <div class="col-12 col-md-5 card-img-promocion" >
+                    <div class="text-promocion text-center">
+                        <p class="text-50">50%</p>
+                        <p class="text-descuento">Descuento</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 card-text-promocion text-center">
+                    <h3 class="header-promocion text-primary">Promoción Diciembre 2019</h3>
+                    <p class="leand-promocion">
+                        <strong> Este mes de  Diciembre accede al descuento de hasta 50% por tu compra de tu equipo GPS.</strong>
+                    </p>
+                    <p><strong>*</strong> Incluye instalacion de equipo.</p>
+                    <div id="tiempo">
+                        <!-- <div id="dia"><span class="numero">01</span></div>
+                        <div id="hora"><span class="numero">01</span></div>
+                        <div id="min"><span class="numero">01</span></div> -->
+                        <div id="seg"></div>
+                    </div>
+                    <div id="palo">
+
+                    </div>
+                    <!-- <div id="container"></div> -->
+                    <a href="#contacto" class="btn btn-primary">Lo adquiero ahora</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--Testimonios-PC-->
     <div id="testimonios" class="container-vespro container-testimonio">
         <div class="reporte-title text-center">
             <p class="reporte-heading text-primary">Nuestros clientes</p>
             <p class="reporte-lead-in ">nos respaldan</p>
-            <hr class="testimonio-raya ">
+            <hr class="testimonio-raya raya ">
         </div>
         <div id="carouselExampleIndicators" class="carousel slide align-self-center justify-content-center align-items-center" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -588,7 +626,7 @@
         <div class="testimonio-title text-center">
             <p class="testimonio-heading text-primary">Nuestros clientes</p>
             <p class="testimonio-lead-in ">nos respaldan</p>
-            <hr class="testimonio-raya ">
+            <hr class="testimonio-raya raya ">
         </div>
         <div id="carousel-testimonios-movil" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -647,10 +685,13 @@
         </div>
     </div>
 
-    <div class="garantia">
-        <div class="card-img">
-            <img src="img/sello-garantia.png" alt="">
+    <div class="container-garantia">
+        <div class="container-fluid container-vespro sello-garantia text-center">
+            <p class="text-primary text-center">Si el producto no funciona te devolvemos tu dinero.</p>
         </div>
+        <!-- <div class="card-img">
+            <img src="img/sello-garantia.png" alt="">
+        </div> -->
     </div>
     <!-- mas beneficios -->
     <!-- <hr class="mas-beneficio-raya "> -->
@@ -689,11 +730,54 @@
         </div>
 
     </div>
+
+    <!-- preguntas ferecuentes  -->
+    <div class="  container-fluid no-gutters align-items-center container-preguntas">
+        <div class="container-fluid container-vespro">
+            <div class="header-preguntas-text text-center">
+                <p class="pregunta-heading ">Respondemos a tus preguntas</p>
+                <!-- <p class="mas-beneficios-lead-in text-primary">el Sistema incluye:</p> -->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11 col-lg-10 col-xl-8">
+                    <div class="preguntas-text">
+                        <p class="header-text"> ¿Cuántas personas pueden descargar la aplicación? </p>
+                        <p class="lead-in"> La aplicación lo pueden descargar las personas que desees, no tiene límites. Al adquirir el servicio se le ofrecerá una cuenta, usuario y contraseña, y el cliente podrá compartir esas credenciales con las personas que quiera. </p>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-10 col-xl-8">
+                    <div class="preguntas-text">
+                        <p class="header-text"> ¿Comprando el equipo GPS, Yo mismo puedo bloquear mi vehículo? </p>
+                        <p class="lead-in"> Así es, podrás bloquear y desbloquear tu vehículo las veces que quieras. </p>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-10 col-xl-8">
+                    <div class="preguntas-text">
+                        <p class="header-text"> ¿Qué alcance tiene los GPS VESPRO? </p>
+                        <p class="lead-in"> La cobertura que tienen los GPS VESPRO, es a nivel nacional. Siempre y cuando haya cobertura de la red de telefonía que el cliente escoja. </p>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-10 col-xl-8">
+                    <div class="preguntas-text">
+                        <p class="header-text"> ¿Qué tipo de vehículos pueden monitorearse? </p>
+                        <p class="lead-in"> Vehículos como autos, camiones, camionetas, moto lineal, moto taxi, y cualquier tipo de vehículo motorizado. </p>
+                    </div>
+                </div>
+                <div class="col-11 col-lg-10 col-xl-8">
+                    <div class="preguntas-text">
+                        <p class="header-text"> ¿Mis datos e información se encuentras seguros? </p>
+                        <p class="lead-in"> Así es, toda la información de nuestros clientes es completamente confidencial y solo para uso exclusivo de Corporación Vespro </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- OTROS -->
     <div class="container-vespro container-fluid no-gutters align-items-center container-productos " >
         <div class="reporte-title text-center">
             <p class="reporte-heading ">Descubre otros servicios para ti </p>
-            <hr class="producto-raya ">
+            <hr class="producto-raya raya">
         </div>
         <div class="container container-fluid align-items-center">
             <div class="row align-items-center justify-content-end  producto-text gestion-flota">
@@ -709,7 +793,7 @@
                                 <a class="btn btn-primary text-white " href="#masinformacion">+ Información</a>
                             </div>
                             <div class="col-12">
-                                <hr class="productos-raya">
+                                <hr class="productos-raya raya">
                             </div>
                         </div>
                     </div>
@@ -733,7 +817,7 @@
                                 <a class="btn btn-primary text-white " href="#masinformacion">+ Información</a>
                             </div>
                             <div class="col-12">
-                                <hr class="productos-raya">
+                                <hr class="productos-raya raya">
                             </div>
                         </div>
                     </div>
@@ -747,6 +831,12 @@
         </div>
     </div>
 
+    <!-- <div class="reloj">
+        <div id="clock"></div>
+        <div class="form-group">
+            <a id="btn-tiempo" role="button" href="#contacto" class="btn btn-primary text-white " >Lo adquiero</a>
+        </div>
+    </div> -->
     <footer class="container-fluid footer text-white">
         <div class="align-items-center">
             <div class="container-fluid text-center align-items-center">
@@ -775,7 +865,7 @@
                         <h4 class="modal-heading text-primary">Enhorabuena cliente</h4>
                         <p class=" modal-lead-in"><span>El Pack esta en camino</span> y en unos  minutos te <br> enviaremos información</p>
                         <p class="modal-lead-in-2"><strong>*</strong> Revisa todas las entradas de tu correo (ej. span, promociones, notificaciones) para ver el mail con la información solitada.</p>
-                        <hr class="modal-raya">
+                        <hr class="modal-raya raya">
                     </div>
                 </div>
                 <!-- <div class="modal-footer">
@@ -801,7 +891,7 @@
                     <div class="card-text">
                         <h4 class="modal-heading text-primary">Advertencia </h4>
                         <p class=" modal-lead-in" id="error"></p>
-                        <hr class="modal-raya">
+                        <hr class="modal-raya raya">
                     </div>
                 </div>
                 <!-- <div class="modal-footer">
@@ -815,6 +905,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
     <script src="js/gps.js"></script>
      <script>
         // $('body').on('click', '.btn-navegacion', function(){
@@ -859,7 +950,8 @@
                 {
                     name: "nombres",
                     validation: [
-                        ["required","Nombre necesario"]
+                        ["required","Nombre necesario"],
+                        ["max","100", "Nombre no debe ser mayor a 100 carácteres "],
                     ]
                 },
                 // {
@@ -871,14 +963,16 @@
                 {
                     name: "whatsapp",
                     validation: [
-                        ["required","whatsapp necesario"]
+                        ["required","whatsapp necesario"],
+                        ["max","12", "whatsapp no debe ser mayor a 12 números "],
                     ]
                 },
                 {
                     name: "email",
                     validation: [
                         ["required","Mail necesario"],
-                        ["email","Ingrear un E-mail valido"]
+                        ["email","Ingresar un E-mail valido"],
+                        ["max","100", "Nombre no debe ser mayor a 100 carácteres "],
                     ]
                 },
                 // {
@@ -900,7 +994,8 @@
                         var error=false;
                         switch (validation[0]) {
                             case "required":
-                                if ($('[name='+data.name+']').val()=="") {
+                                
+                                if ($('[name='+data.name+']').val().trim()==="") {
                                     $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[1]+'</span>');                        
                                     error=true;
                                 }
@@ -911,8 +1006,12 @@
                                     error=true;
                                 }
                                 break;
-                            // case 'max':
-                            // // completar    
+                            case 'max':
+                                if (($('[name='+data.name+']').val()).length>validation[1]) {
+                                    $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[2]+'</span>');                        
+                                    error=true;
+                                }
+                                break;
                         }
                         if (error) {
                             v_continue=false;
@@ -953,3 +1052,4 @@
     </script>
 </body>
 </html>
+

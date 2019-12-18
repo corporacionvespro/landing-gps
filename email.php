@@ -51,7 +51,7 @@ try{
     
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Nuevo cliente GPS';
+        $mail->Subject = 'GPS: '.$nombres;
         $mail->Body    = '<b>Nombre:</b> '.$nombres.'<br>';
         $mail->Body    = $mail->Body.'<b>Empresa:</b> '.$empresa.'<br>';
         $mail->Body    = $mail->Body.'<b>Telefono:</b> '.$whatsapp.'<br>';
