@@ -33,37 +33,37 @@ const getRemainingTime = deadline => {
   countdown('Dec 19 2019 21:34:40 GMT-0500', 'palo', '¡Ya empezó!');
 
 
-  var bar = new ProgressBar.Circle(seg, {
-    color: '#b01f16',  //texto
-    strokeWidth: 4,
-    trailWidth: 10, //ancho fondo
-    trailColor: 'rgba(176, 31, 22, 0.2)', // color fondo 
-    easing: 'easeInOut',
-    duration: 60000,
-    text: {
-      autoStyleContainer: false //anulas lo que tiene por defecto positio relative
-    },
-    from: { color: '#b01f16', width: 5 }, // circle animation inicio
-    to: { color: '#b01f16', width: 8 },   // circle animation fin
-    // Set default step function for all animate calls
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-      circle.path.setAttribute('stroke-width', state.width);
-      // console.log(circle.value());
+  // var bar = new ProgressBar.Circle(seg, {
+  //   color: '#b01f16',  //texto
+  //   strokeWidth: 4,
+  //   trailWidth: 10, //ancho fondo
+  //   trailColor: 'rgba(176, 31, 22, 0.2)', // color fondo 
+  //   easing: 'easeInOut',
+  //   duration: 60000,
+  //   text: {
+  //     autoStyleContainer: false //anulas lo que tiene por defecto positio relative
+  //   },
+  //   from: { color: '#b01f16', width: 5 }, // circle animation inicio
+  //   to: { color: '#b01f16', width: 8 },   // circle animation fin
+  //   // Set default step function for all animate calls
+  //   step: function(state, circle) {
+  //     circle.path.setAttribute('stroke', state.color);
+  //     circle.path.setAttribute('stroke-width', state.width);
+  //     // console.log(circle.value());
       
-      var value = Math.round(circle.value() * 60);
-      if (value === 0) {
-        circle.setText('');
-      } else {
-        circle.setText(value);
-      }
+  //     var value = Math.round(circle.value() * 60);
+  //     if (value === 0) {
+  //       circle.setText('');
+  //     } else {
+  //       circle.setText(value);
+  //     }
   
-    }
-  });
-  // bar.text.style.fontFamily = 'Montserrat-regular';
-  bar.text.style.fontSize = '2rem';
+  //   }
+  // });
+  // // bar.text.style.fontFamily = 'Montserrat-regular';
+  // bar.text.style.fontSize = '2rem';
   
-  bar.animate(1.0);
+  // bar.animate(1.0);
 
 
 
