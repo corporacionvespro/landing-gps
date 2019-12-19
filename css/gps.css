@@ -113,28 +113,60 @@ a:hover{text-decoration: none}
 }
 
 /* header */
-
-#header.masthead {
-    background-image: url("../img/header.png");
+#header.masthead{
+    background-color: #e6e6e6;
+    padding-bottom: 15vh;
+}
+#header.masthead .container-masthead {
+    background-image: url("../img/header-vertical.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    background-position: center bottom;
-    color: #FFFFFF;
+    background-position: center top;
+    background-color: #e6e6e6;
+    /* color: #FFFFFF; */
 }
 .intro-heading{
     font-size: 60px;
     font-family: "Montserrat-bold";
 }
 .intro{
-    font-size: 75px;
+    font-size: 20px;
     font-family: "Montserrat-bold";
     padding-bottom: 10px;
 }
+.masthead .intro-heading{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.container-masthead .intro-lead-in:last-child {
+    margin-bottom: 20px;
+}
+.container-masthead .tipo-vehiculo{
+    font-size: 16px;
+}
+.container-masthead .tipo-vehiculo i{
+    font-size: 10px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.container-masthead .tipo-vehiculo.tipo-vehiculo-primero  {
+    margin-top: 20px;
+}
+#img-control {
+    height: 300px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.br-header{
+    display: none;
+}
 .intro-lead-in{
-    font-size: 30px;
-    font-family: "Montserrat-semibold";
+    font-size: 18px;
+    /* font-family: "Montserrat-semibold"; */
     line-height: 1;
+    display: inline;
 }
 
 #header .btn{
@@ -166,13 +198,13 @@ a:hover{text-decoration: none}
 }
 
 
-#img-control {
+/* #img-control {
     height: 800px;
-    width: auto;
+    width: auto; */
     /* padding-top: 50px; */
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-}
+    /* margin-top: 10vh; */
+    /* margin-bottom: 5vh; */
+/* } */
 
 /* raya header */
 .header-raya{
@@ -180,7 +212,7 @@ a:hover{text-decoration: none}
     background-color: #b01f16;
     border: 0;
     margin: 0;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
 }
 
 /* introduccion */
@@ -1009,6 +1041,13 @@ footer{
 }
 /* .promocion-card{
 } */
+.container-img-promocion{
+    padding-left: 0;
+    padding-right: 0;
+}
+.container-img-promocion >.row{
+    height: 100%;
+}
 .card-img-promocion{
     background-image: url(../img/regalo.png);
     background-repeat: no-repeat;
@@ -1017,6 +1056,7 @@ footer{
     background-position: center;
     position: relative;
     height: 300px;
+    background-color: #e0e0e0;
 }
 .card-img-promocion .text-promocion{
     position: absolute;
@@ -1080,6 +1120,17 @@ footer{
     padding-bottom: 20px;
 }
 
+.container-masthead .tipo-vehiculo{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-family: "Montserrat-semibold";
+}
+.container-masthead .tipo-vehiculo i{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 @media (max-width: 319px){
 
     .card-img{
@@ -1478,7 +1529,7 @@ footer{
     }
     .masthead .intro-heading {
         font-size: 25px;
-        line-height: 0.4;
+        line-height: 1.2;
     }
     .intro {
         font-size: 31px;
@@ -1487,21 +1538,21 @@ footer{
         padding: 0px 10px;
     }
 
-    .intro-lead-in {
+    /* .intro-lead-in {
         font-size: 14px;
         line-height: 1;
         display: inline;
-    }
+    } */
 
     #header .btn {
         font-size: 16px;
         padding: 4px 10px;
     }
-    #img-control {
+    /* #img-control {
         height: 300px;
         width: auto;
         margin-top: 5vh;
-    }
+    } */
     /*  */
     #introduccion p {
         font-size: 31px;
@@ -1860,8 +1911,12 @@ footer{
         height: 100%!important;
         width: auto !important;
     }
+    .container-masthead .row.justify-content-end{
+        justify-content: center !important;
+    }
 }
 @media (min-width: 375px){
+    
     #video {
         top: 67px;
         right: 11px;
@@ -1882,8 +1937,9 @@ footer{
     }
     .intro-lead-in {
         font-size: 17px;
-        line-height: 1;
-        display: inline;
+        line-height: 1.2;
+        display: block;
+        margin-bottom: 0;
     }
 
     #header .btn {
@@ -2006,6 +2062,9 @@ footer{
     }
 }
 @media (min-width: 398px){
+    .br-header{
+        display: block;
+    }
     .microfono-beneficio{
         margin-bottom: -21px !important;
     }
@@ -2013,6 +2072,18 @@ footer{
 
 
 @media (min-width: 576px){
+    #header.masthead .container-masthead {
+        background-image: url("../img/header.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: center top;
+        background-color: #e6e6e6;
+        /* color: #FFFFFF; */
+    }
+    .br-header{
+        display: none;
+    }
 
     .sello-garantia{
         background-size: cover;
@@ -2240,6 +2311,12 @@ footer{
         /* font-size: 14px; */
     }
 }
+@media (min-width: 651px) {
+    .br-header{
+        display: block;
+    }
+}
+
 @media (max-width: 654px) {
     .container-text-rojo p.reporte-heading-1{
         font-size: 26px;
@@ -2259,23 +2336,34 @@ footer{
 @media (min-width: 768px) {
     .card-img-promocion{
         background-size: cover;
-        margin-top:5px ;
-        margin-bottom:5px ;
+        /* margin-top:5px ; */
+        /* margin-bottom:5px ; */
+        height: auto;
+        /* border-top-right-radius: 120px;
+        border-bottom-right-radius: 120px; */
     }
     
     .leand-promocion{
         display: inline;
+        font-size: 22px;
     }
-    .card-img-promocion{
-        height: auto;
+    .incluye-promocion{
+        font-size: 18px;
+        margin-top: 20px;
+        /* margin-bottom: 40px; */
     }
+    #tiempo{
+        margin: 40px 0px;
+        padding-bottom: 0;
+    }
+    
     .header-promocion-movil{
         display: none;
     }
     .card-text-promocion .header-promocion{
         display: block;
         margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .card-img-promocion .text-promocion {
@@ -2306,11 +2394,11 @@ footer{
     }
     
 }
-@media (min-width: 950px) {
+/* @media (min-width: 950px) {
     .leand-promocion{
         display: block;
     }
-}
+} */
 @media (min-width: 800px) {
 
 }
@@ -2319,6 +2407,40 @@ footer{
 }
 
 @media (min-width: 1024px) {
+    .container-masthead .row.justify-content-end{
+        justify-content: flex-end !important;
+    }
+    #header.masthead{
+        background-color: #e6e6e6;
+        padding-bottom: 15vh;
+    }
+    #header.masthead .container-masthead {
+        background-image: url("../img/header.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: center top;
+        background-color: #e6e6e6;
+        /* color: #FFFFFF; */
+    }
+    .intro-heading{
+        font-size: 60px;
+        font-family: "Montserrat-bold";
+    }
+    .intro{
+        font-size: 75px;
+        font-family: "Montserrat-bold";
+        padding-bottom: 10px;
+    }
+    .intro-lead-in{
+        font-size: 30px;
+        /* font-family: "Montserrat-semibold"; */
+        line-height: 1;
+    }
+
+    .container-alerta {
+        margin: 80px 0px 60px;
+    }
     .card-img-promocion {
         background-size: contain;
         /* background-position-x: right ; */
@@ -2330,14 +2452,18 @@ footer{
         /* padding: 0px 20px; */
         margin-top: 60px;
     }
-    .sello-garantia{
-        /* background-size: cover;
-        height: 65vw; */
+    /* .sello-garantia{
+        background-size: cover;
+        height: 65vw;
         background-size: contain;
         height: 50vw;
+    } */
+    .sello-garantia {
+        background-size: contain;
+        height: 40vw;
     }
     .container-garantia p{
-        top: 25px;
+        top: 15px;
         font-size: 22px;
     }
 
@@ -2386,8 +2512,9 @@ footer{
         text-align: center;
     }
     .masthead .intro-heading {
-        font-size: 35px;
+        font-size: 34px;
         line-height: 1.3;
+        margin-bottom: 25px;
     }
     .intro {
         font-size: 45px;
@@ -2719,12 +2846,15 @@ footer{
 
 }
 @media (min-width: 1440px) {
-    .sello-garantia{
+    .container-alerta {
+        margin: 100px 0px 60px;
+    }
+    .sello-garantia {
         background-size: contain;
-        height: 50vw;
+        height: 30vw;
     }
     .container-garantia p{
-        top: 30px;
+        top: 15px;
         font-size: 26px;
     }
     #video_introduccion {
@@ -2740,10 +2870,10 @@ footer{
     }
 
     .garantia .card-img {
-        height: 800px;
+        height: 700px;
     }
     .card-img{
-        height: 800px;
+        height: 700px;
         width: auto;
     }
     .card-img img{
@@ -2751,7 +2881,7 @@ footer{
         width: auto;
     }
     #header.masthead{
-        height: 90vh;
+        /* height: 90vh; */
         /* background-position: center top;
         background-size: contain; */
         background-size: cover;
@@ -2793,7 +2923,7 @@ footer{
     } */
     
     #img-control {
-        height: 800px;
+        height: 650px;
         width: auto;
         margin-top: 0px;
         margin-bottom: 0px;
