@@ -2421,15 +2421,15 @@ footer{
         font-size: 35px;
     }
 
-    .container-img-promocion{
+    /* .container-img-promocion{
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
-    }
+    } */
     .card-img-promocion{
         background-size: cover;
         height: auto;
-        border-top-right-radius: 10%;
-        border-bottom-right-radius: 10%;
+        /* border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%; */
     }
     
     .leand-promocion{
@@ -2509,8 +2509,8 @@ footer{
 }
 @media (min-width: 1024px) {
     .card-img-promocion{
-        border-top-right-radius: 30%;
-        border-bottom-right-radius: 30%;
+        /* border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%; */
     }
 
     .card-img-promocion .text-promocion {
@@ -2533,8 +2533,8 @@ footer{
     }
 
     .container-img-promocion{
-        border-top-right-radius: 192px;
-        border-bottom-right-radius: 192px;
+        /* border-top-right-radius: 192px;
+        border-bottom-right-radius: 192px; */
     }
 
 
