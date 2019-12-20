@@ -530,6 +530,9 @@
                 </div>
                 <div class="col-12 col-md-5 container-img-promocion" >
                     <div class="row">
+                        <!-- <div class="img-promocion col-md-11 ">
+                            <img src="img/regalo.png" alt="">
+                        </div> -->
                         <div class="col-md-11 card-img-promocion">
                             <div class="text-promocion text-center">
                                 <p class="text-50">50%</p>
@@ -540,7 +543,7 @@
                 </div>
                 <div class="col-12 col-md-7 card-text-promocion text-center">
                     <div class="row no-gutters">
-                        <di class="col-12 col-md-12 col-lg-9 col-xl-8">
+                        <di class="col-12 col-md-12 col-xl-10">
                             <h3 class="header-promocion text-primary">Promoción Diciembre 2019</h3>
                             <p class="leand-promocion">
                                 <strong> Este mes de  Diciembre accede al descuento </strong> 
@@ -553,11 +556,23 @@
                             </p>
                             <p class="incluye-promocion"> <strong>*</strong> Incluye instalacion de equipo.</p>
                             <div id="tiempo">
-                                <div id="dia"><span class="numero">01</span></div>
-                                <div id="hora"><span class="numero">01</span></div>
-                                <div id="min"><span class="numero">01</span></div>
-                                <div id="seg"><span class="numero">01</span></div>
+                                <div class="container-animacion">
+                                    <div id="dia" class="dia "> </div>
+                                </div>
+                                <div class="container-animacion">
+                                    <div id="hora" class="hora"> </div>
+                                </div>
+                                <div class="container-animacion">
+                                    <div id="min" class="min"> </div>
+                                </div>
+                                <div class="container-animacion">
+                                    <div id="seg" class="seg"> </div>
+                                </div>
                             </div>
+                            <div class="text-tiempo">Días</div>
+                            <div class="text-tiempo">Horas</div>
+                            <div class="text-tiempo">Min</div>
+                            <div class="text-tiempo">Seg</div>
                             <div id="palo"></div>
                             <!-- <div id="container"></div> -->
                             <a href="#contacto" class="btn btn-primary">Lo adquiero ahora</a>
@@ -917,7 +932,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://raw.githubusercontent.com/tigrr/circle-progress/master/dist/circle-progress.js"></script> -->
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+    
+    <script src="js/jquery.circle-progress.js"></script>
     <script src="js/gps.js"></script>
      <script>
         // $('body').on('click', '.btn-navegacion', function(){

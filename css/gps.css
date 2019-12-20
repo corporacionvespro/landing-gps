@@ -1044,9 +1044,11 @@ footer{
 .container-img-promocion{
     padding-left: 0;
     padding-right: 0;
+    background-color: #e0e0e0;
 }
 .container-img-promocion >.row{
     height: 100%;
+    padding: 30px 0px;
 }
 .card-img-promocion{
     background-image: url(../img/regalo.png);
@@ -1056,7 +1058,7 @@ footer{
     background-position: center;
     position: relative;
     height: 300px;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
 }
 .card-img-promocion .text-promocion{
     position: absolute;
@@ -1096,15 +1098,7 @@ footer{
     padding: 40px;
 }
 
-#dia, #hora,  #min, #seg {
-    margin-left: 10px;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    display: inline-block;
-    border: 5px solid #b01f16;
-    border-radius: 50%;
-}
+
 .promocion-card a{
     width: auto;
 }
@@ -1117,7 +1111,7 @@ footer{
 }
 
 #tiempo{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .container-masthead .tipo-vehiculo{
@@ -1130,6 +1124,14 @@ footer{
     font-size: 12px;
     margin-left: 15px;
     margin-right: 15px;
+}
+.img-promocion{
+    height: 300px;
+}
+.img-promocion img{
+    height: 100%;
+    width: auto;
+
 }
 @media (max-width: 319px){
 
@@ -1471,15 +1473,15 @@ footer{
 }
 
 @media (max-width: 332px){
-    #dia, #hora,  #min, #seg {
+    /* #dia, #hora,  #min, #seg {
         margin-left: 5px;
         width: 40px;
         height: 40px;
-        /* position: relative;
+        position: relative;
         display: inline-block;
         border: 5px solid #b01f16;
-        border-radius: 50%; */
-    }
+        border-radius: 50%;
+    } */
 }
 /* @media (min-width: 320px) and (max-width: 374px) { */
 @media (min-width: 320px){
@@ -2334,13 +2336,22 @@ footer{
 }
 
 @media (min-width: 768px) {
+    .text-50 {
+        font-size: 60px;
+    }
+    .text-descuento {
+        font-size: 35px;
+    }
+
+    .container-img-promocion{
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
     .card-img-promocion{
         background-size: cover;
-        /* margin-top:5px ; */
-        /* margin-bottom:5px ; */
         height: auto;
-        /* border-top-right-radius: 120px;
-        border-bottom-right-radius: 120px; */
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
     }
     
     .leand-promocion{
@@ -2367,7 +2378,7 @@ footer{
     }
 
     .card-img-promocion .text-promocion {
-        top: calc(50% - 68px );
+        top: calc(50% - 90px );
     }
     
     .herramienta-text{
@@ -2394,19 +2405,61 @@ footer{
     }
     
 }
-/* @media (min-width: 950px) {
+@media (min-width: 960px) {
     .leand-promocion{
         display: block;
     }
-} */
+}
 @media (min-width: 800px) {
 
 }
+
 @media (min-width: 992px) {
-
+    .container-contacto:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
 }
-
 @media (min-width: 1024px) {
+    .card-img-promocion{
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+    }
+
+    .card-img-promocion .text-promocion {
+        top: calc(50% - 95px );
+    }
+    .text-50 {
+        font-size: 60px;
+    }
+    .text-descuento {
+        font-size: 35px;
+    }
+    .leand-promocion {
+        display: inline;
+    }
+    .card-text-promocion .header-promocion {
+        font-size: 50px;
+    }
+    .leand-promocion {
+        font-size: 25px;
+    }
+
+    .container-img-promocion{
+        border-top-right-radius: 192px;
+        border-bottom-right-radius: 192px;
+    }
+
+
     .container-masthead .row.justify-content-end{
         justify-content: flex-end !important;
     }
@@ -2807,23 +2860,12 @@ footer{
     }
 
 }
-@media (min-width: 992px) {
-    .container-contacto:after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 50%;
-        background-color: white;
-        z-index: -1;
-        bottom: 0;
-        right: 0;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 0px;
-    }
-}
+
 
 @media (min-width: 1100px) {
+    .leand-promocion {
+        display: inline;
+    }
     /* #video_introduccion {
         width: 234px;
         box-shadow: none
@@ -2846,6 +2888,12 @@ footer{
 
 }
 @media (min-width: 1440px) {
+    
+    .leand-promocion {
+        font-size: 30px;
+        display: inline;
+    }
+
     .container-alerta {
         margin: 100px 0px 60px;
     }
@@ -3590,7 +3638,11 @@ footer{
         max-width: 1140px;
     }
 }
-
+@media (min-width: 1482px) {
+    .leand-promocion {
+        display: block;
+    }
+}
 @media (min-width: 1600px) {
     .container {
         max-width: 1540px;
@@ -3671,3 +3723,66 @@ footer{
     font-family: 'Montserrat-thin';
     src: url("../css/font-montserrat/Montserrat-Thin.ttf")
 }
+
+.circle-progress-value {
+	stroke-width: 6px;
+    /* stroke: hsl(39, 100%, 50%); */
+    stroke: #b01f16;
+    /* color: #b01f16; */
+}
+.circle-progress-circle {
+	stroke-width: 6px;
+	/* stroke: hsl(39, 100%, 85%); */
+	stroke: rgba(176, 31, 22, 0.5);
+}
+.circle-progress-text {
+	/* fill: hsl(39, 100%, 50%); */
+    fill: #b01f16;
+    font-family: 'Montserrat-bold';
+    font-size: 40px;
+}
+
+/* [class^=progress]>svg,
+[class*=" progress"]>svg {
+	width: 500px;
+	height: 500px
+} */
+
+/* #dia, #hora,  #min, #seg {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+}
+[class^=progress]>svg, [class*=" progress"]>svg {
+    width: 100px;
+    height: 100px;
+} */
+
+#tiempo svg{
+    height: 50px;
+    width: 50px;
+}
+.container-animacion {
+    display: inline;
+}
+#dia, #hora,  #min, #seg {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.text-tiempo{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top:10px;
+    color: #b01f16;
+    font-family: 'Montserrat-semibold';
+}
+
+#tiempo{
+    margin-bottom: 0;
+}
+
+

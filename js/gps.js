@@ -27,10 +27,69 @@ const getRemainingTime = deadline => {
         clearInterval(timerUpdate);
         el.innerHTML = finalMessage;
       }
+      animacion('seg', '60', t.remainSeconds);
+      animacion('min', '60', t.remainMinutes);
+      animacion('hora', '24', t.remainHours);
+      animacion('dia', '60', t.remainDays);
+
     }, 1000)
   };
   
-  countdown('Dec 19 2019 21:34:40 GMT-0500', 'palo', '¡Ya empezó!');
+  countdown('Dec 20 2019 21:34:40 GMT-0500', 'palo', '¡Ya empezó!');
+
+  // new CircleProgress('.dia', {
+  //   max: 100,
+  //   value: 60,
+  //   textFormat: 'percent',
+  // });
+  // new CircleProgress('.dia', {
+  //   max: 60,
+  //   value: 38, // color pintado
+  //   textFormat: function(value, max) {
+  //     return value + ' '; //texto que muestra
+  //   },
+  //   animationDuration:5000, //tiempo de la animacion
+  // });
+
+
+  const animacion= (elem, max, value)=>{
+    var el = document.getElementById(elem);
+    // console.log(el);
+    // console.log($('#hora'));
+    // console.log($(el));
+    
+    
+    $(el).circleProgress(
+      { 
+        max: max,
+        value:value, // color pintado
+        textFormat: function(value, max) {
+          return value + ' '; //texto que muestra
+        },
+        animationDuration:500, //tiempo de la animacion
+      }
+    );
+  }
+
+// animacion('hora', '24', '12');
+// animacion('min', '60', '15');
+// animacion('seg', '60', '45');
+  
+  // new CircleProgress('.hora', {
+  //   max: 100,
+  //   value: 60,
+  //   textFormat: 'percent',
+  // });
+  // new CircleProgress('.min', {
+  //   max: 100,
+  //   value: 60,
+  //   textFormat: 'percent',
+  // });
+  // new CircleProgress('.seg', {
+  //   max: 100,
+  //   value: 60,
+  //   textFormat: 'percent',
+  // });
 
 
   // var bar = new ProgressBar.Circle(seg, {
