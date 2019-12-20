@@ -1131,7 +1131,56 @@ footer{
 .img-promocion img{
     height: 100%;
     width: auto;
+}
 
+/* #tiempo svg, #dia, #hora,  #min, #seg, .text-tiempo {
+    height: 50px;
+    width: 50px;
+    margin-right: 6px;
+} */
+.container-animacion,.text-tiempo, #tiempo svg {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 6px;
+}
+/* #dia, #hora,  #min, #seg { */
+    /* display: inline-block; */
+    /* width: 50px;
+    height: 50px; */
+/* } */
+.text-tiempo{
+    display: inline-block;
+    /* width: 50px;
+    height: 50px; */
+    margin-top:10px;
+    color: #b01f16;
+    font-family: 'Montserrat-semibold';
+}
+
+/* #tiempo{
+    margin-bottom: 0;
+} */
+
+.circle-progress-value {
+	stroke-width: 6px;
+    /* stroke: hsl(39, 100%, 50%); */
+    stroke: #b01f16;
+    /* color: #b01f16; */
+}
+.circle-progress-circle {
+	stroke-width: 6px;
+	/* stroke: hsl(39, 100%, 85%); */
+	stroke: rgba(176, 31, 22, 0.5);
+}
+.circle-progress-text {
+	/* fill: hsl(39, 100%, 50%); */
+    fill: #b01f16;
+    font-family: 'Montserrat-bold';
+    font-size: 40px;
+}
+#btn-promocion{
+    /* display: block; */
 }
 @media (max-width: 319px){
 
@@ -1887,6 +1936,8 @@ footer{
             background-color: red;
         } */
 @media (min-width: 367px) and (max-width: 575px){
+    
+
     .card-alerta{
         padding-left: 0;
         padding-right: 0;
@@ -2074,6 +2125,33 @@ footer{
 
 
 @media (min-width: 576px){
+
+    .container-animacion,.text-tiempo, #tiempo svg {
+        height: 70px;
+        width: 70px;
+        margin-right: 6px;
+    }
+    .text-tiempo{
+        height:auto;
+        margin-bottom: 30px;
+    }
+    #tiempo{
+        margin-top:30px ;
+    }
+    .text-tiempo{
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .circle-progress-value {
+        stroke-width: 12px;
+    }
+    .circle-progress-circle {
+        stroke-width: 12px;
+    }
+    .circle-progress-text {
+        font-size: 40px;
+    }
+
     #header.masthead .container-masthead {
         background-image: url("../img/header.png");
         background-repeat: no-repeat;
@@ -2363,10 +2441,10 @@ footer{
         margin-top: 20px;
         /* margin-bottom: 40px; */
     }
-    #tiempo{
+    /* #tiempo{
         margin: 40px 0px;
         padding-bottom: 0;
-    }
+    } */
     
     .header-promocion-movil{
         display: none;
@@ -3724,23 +3802,7 @@ footer{
     src: url("../css/font-montserrat/Montserrat-Thin.ttf")
 }
 
-.circle-progress-value {
-	stroke-width: 6px;
-    /* stroke: hsl(39, 100%, 50%); */
-    stroke: #b01f16;
-    /* color: #b01f16; */
-}
-.circle-progress-circle {
-	stroke-width: 6px;
-	/* stroke: hsl(39, 100%, 85%); */
-	stroke: rgba(176, 31, 22, 0.5);
-}
-.circle-progress-text {
-	/* fill: hsl(39, 100%, 50%); */
-    fill: #b01f16;
-    font-family: 'Montserrat-bold';
-    font-size: 40px;
-}
+
 
 /* [class^=progress]>svg,
 [class*=" progress"]>svg {
@@ -3760,29 +3822,9 @@ footer{
     height: 100px;
 } */
 
-#tiempo svg{
-    height: 50px;
-    width: 50px;
-}
-.container-animacion {
-    display: inline;
-}
-#dia, #hora,  #min, #seg {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-}
-.text-tiempo{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin-top:10px;
-    color: #b01f16;
-    font-family: 'Montserrat-semibold';
-}
 
-#tiempo{
-    margin-bottom: 0;
-}
 
+/* #palo{
+    display: none;
+} */
 

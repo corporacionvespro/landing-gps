@@ -16,26 +16,28 @@ const getRemainingTime = deadline => {
     }
   };
   
-  const countdown = (deadline,elem,finalMessage) => {
-    const el = document.getElementById(elem);
+  const countdown = (deadline) => {
+    // const el = document.getElementById(elem);
   
     const timerUpdate = setInterval( () => {
       let t = getRemainingTime(deadline);
-      el.innerHTML = `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s`;
+      // el.innerHTML = `${t.remainDays}d:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s`;
   
       if(t.remainTime <= 1) {
         clearInterval(timerUpdate);
-        el.innerHTML = finalMessage;
+        $('#promocion').css('display','none')
+        // el.innerHTML = finalMessage;
+      }else{
+        animacion('seg', '60', t.remainSeconds);
+        animacion('min', '60', t.remainMinutes);
+        animacion('hora', '24', t.remainHours);
+        animacion('dia', '60', t.remainDays);
       }
-      animacion('seg', '60', t.remainSeconds);
-      animacion('min', '60', t.remainMinutes);
-      animacion('hora', '24', t.remainHours);
-      animacion('dia', '60', t.remainDays);
 
     }, 1000)
   };
   
-  countdown('Dec 20 2019 21:34:40 GMT-0500', 'palo', '¡Ya empezó!');
+  countdown('Dec 20 2019 23:17:40 GMT-0500');
 
   // new CircleProgress('.dia', {
   //   max: 100,

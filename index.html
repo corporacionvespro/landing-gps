@@ -43,8 +43,10 @@
     <!--Botón flotante de navegación-->
     <div class="container-navegacion">
         <input type="checkbox" id="toggle-navegacion" hidden>
-        <nav class="nav-navegacion " style="display: none;">
-            <a class="btn-navegacion text-center" href="#beneficios">Beneficios</a>
+        <nav class="nav-navegacion " style="container-navegacion(){
+
+        }:btn-navegacio
+            <a class="n text-center" href="#beneficios">Beneficios</a>
             <a class="btn-navegacion text-center" href="#cotizar">Cotizar</a>
             <a class="btn-navegacion text-center" href="#herramientas">Herramientas</a>
             <a class="btn-navegacion text-center" href="#testimonios">Testimonios</a>
@@ -500,8 +502,8 @@
                                 <div class="form-group">
                                   <input type="text" name="whatsapp" class="form-control" placeholder="Whatsapp" > 
                                 </div>
-                                <div class="form-group">
-                                  <input id="" type="text" name="codigo-promocion" class="form-control"> 
+                                <div class="form-group hidden">
+                                  <input id="codigo-promocion" type="text" name="codigo-promocion" class="form-control" hidden readonly> 
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary text-white "  data-toggle="modal" data-target="#exampleModalCenter" >Lo adquiero</button>
@@ -522,7 +524,7 @@
     </div>
      
     <!-- promocion  -->
-    <div class="promocion  align-items-center ">
+    <div id="promocion" class="promocion  align-items-center ">
         <div class=" container-vespro promocion-card">
             <div class="row">
                 <div class="col-12 header-promocion-movil text-center">
@@ -556,26 +558,19 @@
                             </p>
                             <p class="incluye-promocion"> <strong>*</strong> Incluye instalacion de equipo.</p>
                             <div id="tiempo">
-                                <div class="container-animacion">
-                                    <div id="dia" class="dia "> </div>
-                                </div>
-                                <div class="container-animacion">
-                                    <div id="hora" class="hora"> </div>
-                                </div>
-                                <div class="container-animacion">
-                                    <div id="min" class="min"> </div>
-                                </div>
-                                <div class="container-animacion">
-                                    <div id="seg" class="seg"> </div>
-                                </div>
+                                <div id="dia" class="dia container-animacion"> </div>
+                                <div id="hora" class="hora container-animacion"> </div>
+                                <div id="min" class="min container-animacion"> </div>
+                                <div id="seg" class="seg container-animacion"> </div>
                             </div>
                             <div class="text-tiempo">Días</div>
                             <div class="text-tiempo">Horas</div>
                             <div class="text-tiempo">Min</div>
                             <div class="text-tiempo">Seg</div>
-                            <div id="palo"></div>
-                            <!-- <div id="container"></div> -->
-                            <a href="#contacto" class="btn btn-primary">Lo adquiero ahora</a>
+                            <!-- <div></div> -->
+                            <div class="form-group">
+                                <a href="#contacto" id="btn-promocion" class="btn btn-primary">Lo adquiero ahora</a>
+                            </div>
                         </di>
                     </div>
                 </div>
@@ -1079,6 +1074,10 @@
                     }) 
                 }
             })     
+            
+            $("body").on("click", "#btn-promocion", function(){
+                $('#codigo-promocion').val('gps-vespro');
+            })
         });
     </script>
 </body>

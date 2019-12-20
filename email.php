@@ -23,10 +23,11 @@ try{
     $empresa = $_POST["empresa"];
     $correo = $_POST["email"];
     $whatsapp = $_POST["whatsapp"];
+    $codigo = $_POST["codigo-promocion"];
     
     $pdo->beginTransaction();
 
-    $query = "INSERT INTO cliente (celular, nombre, empresa, correo) VALUES ('".$whatsapp."', '".$nombres."', '".$empresa."', '". $correo."');";
+    $query = "INSERT INTO cliente (celular, nombre, empresa, correo, codigo_promocion) VALUES ('".$whatsapp."', '".$nombres."', '".$empresa."', '". $correo.",'".$codigo."');";
     $result = $pdo->prepare($query);
     $exec = $result->execute();
     
@@ -56,6 +57,7 @@ try{
         $mail->Body    = $mail->Body.'<b>Empresa:</b> '.$empresa.'<br>';
         $mail->Body    = $mail->Body.'<b>Telefono:</b> '.$whatsapp.'<br>';
         $mail->Body    = $mail->Body.'<b>Email:</b> '.$correo.'<br>';
+        $mail->Body    = $mail->Body.'<b>Codigo Promoción:</b> '.$codigo.'<br>';
        
         header('Content-Type: application/json');    
         if (!$mail->send()) {
