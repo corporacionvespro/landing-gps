@@ -29,14 +29,14 @@ a:hover{text-decoration: none}
 }
 
 .nav-item .nav-link {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    /* font-weight: 400; */
     letter-spacing: 1px;
     color: #b01f16;
-    font-family: 'Montserrat-semibold';
+    font-family: 'Montserrat-mediun';
 } 
 .navbar-nav i{
-    font-size: 10px;
+    font-size: 7px;
     letter-spacing: 1px;
     color: #b01f16;
 }
@@ -152,6 +152,7 @@ a:hover{text-decoration: none}
 }
 .container-masthead .tipo-vehiculo.tipo-vehiculo-primero  {
     margin-top: 20px;
+    margin-bottom: 0;
 }
 #img-control {
     height: 300px;
@@ -208,7 +209,7 @@ a:hover{text-decoration: none}
 
 /* raya header */
 .header-raya{
-    height: 50px;
+    height: 25px;
     background-color: #b01f16;
     border: 0;
     margin: 0;
@@ -236,8 +237,8 @@ a:hover{text-decoration: none}
 
 .intro-raya{
     background-color: black;
-    max-width: 80VW;
-    height: 8px;
+    max-width: 60VW;
+    height: 4px;
     margin: 57px auto -57px;
 }
 
@@ -968,7 +969,7 @@ footer{
 }
 
 .raya{
-    height: 2px;
+    height: 3px;
     margin-top: 10px;
 }
 .alerta-raya{
@@ -1016,10 +1017,10 @@ footer{
     padding-top: 40px;
 }
 .container-garantia p{
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     line-height: 1.2;
     padding: 0px 20px;
     font-family: 'Montserrat-semiBold';
@@ -1114,17 +1115,12 @@ footer{
     /* padding-bottom: 20px; */
 }
 
-.container-masthead .tipo-vehiculo{
-    font-size: 20px;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    font-family: "Montserrat-semibold";
-}
-.container-masthead .tipo-vehiculo i{
+
+/* .container-masthead .tipo-vehiculo i{
     font-size: 12px;
     margin-left: 15px;
     margin-right: 15px;
-}
+} */
 .img-promocion{
     height: 300px;
 }
@@ -1182,6 +1178,32 @@ footer{
 #btn-promocion{
     /* display: block; */
 }
+/* .container-text-garantia{
+    height: 2rem;
+    position: relative;
+} */
+.container-text-garantia p{
+    margin-bottom: 0;
+}
+
+.beneficio-text {
+    height: 120px;
+    padding: 20px 20px 20px 40px;
+}
+.beneficio-text p{
+    position: relative;
+}
+.beneficio-text p:before {
+    content: "\f111";
+    left: -15px;
+    top: 3px;
+    position: absolute;
+    font-size: 12px;
+    font-family: 'vespro' !important;
+    color: white;
+}
+
+
 @media (max-width: 319px){
 
     .card-img{
@@ -1554,7 +1576,7 @@ footer{
         font-size: 26px;
     }
     .container-productos {
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .card-img{
         height: 250px;
@@ -1845,7 +1867,10 @@ footer{
         font-size: 25px;
         display: inline;
     }
-
+    .container-text-rojo p.reporte-heading-3 span{
+        display: block;
+        padding-top: 10px;
+    }
     .container-contacto-text-politica p span{
         color: #b01f16 !important;
     }
@@ -1888,7 +1913,8 @@ footer{
         max-height: inherit;
     }
     .beneficio-text {
-        padding: 20px;
+        /* padding: 20px; */
+        padding: 20px 20px 20px 40px;
         max-height: 200px;
     }
     .beneficio-text p{
@@ -1969,7 +1995,9 @@ footer{
     }
 }
 @media (min-width: 375px){
-    
+    .beneficio-text{
+        height: 90px;
+    }
     #video {
         top: 67px;
         right: 11px;
@@ -2125,6 +2153,30 @@ footer{
 
 
 @media (min-width: 576px){
+    .container-text-garantia{
+        height: 2rem;
+        position: relative;
+    }
+    .container-text-garantia p{
+        margin-bottom: 0px;
+        position: absolute;
+        bottom: -32px;
+        left: 0;
+        right: 0;
+    }
+
+    .container-masthead .tipo-vehiculo i{
+        font-size: 12px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .container-masthead .tipo-vehiculo{
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+        font-family: "Montserrat-semibold";
+    }
 
     .container-animacion,.text-tiempo, #tiempo svg {
         height: 70px;
@@ -2175,7 +2227,7 @@ footer{
         padding: 0px 20px;
     }
     .container-garantia p{
-        top: 20px;
+        /* top: 20px; */
         font-size: 20px;
         padding-left: 30px;
         padding-right: 30px;
@@ -2188,9 +2240,13 @@ footer{
         height: 320px;
         width: auto; 
     }
-    .masthead{
-        padding-top: 6px;
+    #header.masthead {
+        padding-top: 6vh;
+        padding-bottom: 7vh;
     }
+    /* .masthead{
+        padding-top: 6px;
+    } */
     .masthead .intro-heading {
         font-size: 25px;
         line-height: 1.2;
@@ -2353,7 +2409,8 @@ footer{
 
     .beneficio-text{
         padding: 10px;
-        height: 90px;
+        /* height: 90px; */
+        height: 110px;
     }
     .producto-text .card-img{
         display: none;
@@ -2469,7 +2526,8 @@ footer{
         min-height: calc(100% - 40px);
     }
     .beneficio-text {
-        padding: 16px;
+        /* padding: 16px; */
+        padding: 20px 20px 20px 40px;
     }
     .gestion-flota{
         background-size: 376px;
@@ -2508,13 +2566,30 @@ footer{
     }
 }
 @media (min-width: 1024px) {
+    .container-productos {
+        margin-top: 5
+        0px;
+    }
+
+    .nav-item .nav-link {
+        font-size: 18px;
+        /* font-weight: 400; */
+        letter-spacing: 1px;
+        color: #b01f16;
+        font-family: 'Montserrat-mediun';
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
     .card-img-promocion{
         /* border-top-right-radius: 30%;
         border-bottom-right-radius: 30%; */
     }
 
     .card-img-promocion .text-promocion {
-        top: calc(50% - 95px );
+        top: calc(54% - 95px );
     }
     .text-50 {
         font-size: 60px;
@@ -2570,7 +2645,7 @@ footer{
     }
 
     .container-alerta {
-        margin: 80px 0px 60px;
+        margin: 100px 0px 60px;
     }
     .card-img-promocion {
         background-size: contain;
@@ -2594,7 +2669,7 @@ footer{
         height: 40vw;
     }
     .container-garantia p{
-        top: 15px;
+        /* top: 15px; */
         font-size: 22px;
     }
 
@@ -2602,11 +2677,11 @@ footer{
         font-size: 50px;
     }
     .raya{
-        height: 2px;
-        margin-top: 10px;
+        height: 4px;
+        margin-top: 20px;
     }
     .alerta-raya{
-        margin: 60px auto;
+        margin: 80px auto;
     }
 
     .navbar>div{
@@ -2692,7 +2767,8 @@ footer{
     
     .intro-raya{
         margin: 57px auto -40px;
-        display: block;        
+        display: block;  
+        max-width: 70VW;      
     }
 
     #beneficios .card {
@@ -2843,9 +2919,12 @@ footer{
         justify-content: left;
         padding: 30px 0px 10px;
     }
+    .container-text-rojo{
+        padding: ;
+    }
    
     .container-text-rojo p.reporte-heading-1, .container-text-rojo p.reporte-heading-2 {
-        display: block;
+        display: inline;
     }
     .container-text-rojo p.reporte-heading-1{
         font-size: 40px;
@@ -2861,7 +2940,8 @@ footer{
 
     .container-contacto-text-politica p span.text-white{
         color: #FFF !important;
-        padding-right: 20px;
+        margin-left: -20px;
+        padding-right: 10px;
     }
 
     .testimonio-text, .testimonio-firma{
@@ -2895,7 +2975,7 @@ footer{
         max-height: inherit;
     }
     .beneficio-text {
-        height: 120px;
+        height: 90px;
         padding: 20px 20px 20px 40px;
     }
     
@@ -2909,12 +2989,8 @@ footer{
     }
 
     .beneficio-text p:before {
-        content: "\f111";
-        left: 25px;
-        position: absolute;
-        font-size: 16px;
-        font-family: 'vespro' !important;
-        color: white;
+        /* left: 25px; */
+        font-size: 13px;
     }
 
     .testimonio-title{
@@ -2973,14 +3049,14 @@ footer{
     }
 
     .container-alerta {
-        margin: 100px 0px 60px;
+        margin: 120px 0px 60px;
     }
     .sello-garantia {
         background-size: contain;
         height: 30vw;
     }
     .container-garantia p{
-        top: 15px;
+        /* top: 15px; */
         font-size: 26px;
     }
     #video_introduccion {
@@ -3079,7 +3155,7 @@ footer{
     }
     
     .intro-raya{
-        max-width: 85VW;
+        max-width: 75VW;
         margin: 57px auto -57px;
     }
     
@@ -3442,7 +3518,7 @@ footer{
         background-color: #b01f16;
         width: 150px;
         margin: 0 auto; */
-        margin-top:10px ;
+        margin-top:20px ;
     }
     
     .card-testimonio{
@@ -3617,7 +3693,10 @@ footer{
         font-size: 30px;
     }
     .gestion-flota {
-        background-size: 530px;
+        background-size: 450px;
+    }
+    .gestion-empresa{
+        background-size: 450px;
     }
     /* footer
     footer{
@@ -3745,6 +3824,10 @@ footer{
         width: 90px;
     }
 
+    .productos-raya{
+        margin-top: 180px;
+    }
+
 }
 @media (min-width: 1900px) {
     .container-vespro{
@@ -3802,7 +3885,17 @@ footer{
     src: url("../css/font-montserrat/Montserrat-Thin.ttf")
 }
 
-
+.modal-espera{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
 
 /* [class^=progress]>svg,
 [class*=" progress"]>svg {

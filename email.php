@@ -27,7 +27,7 @@ try{
     
     $pdo->beginTransaction();
 
-    $query = "INSERT INTO cliente (celular, nombre, empresa, correo, codigo_promocion) VALUES ('".$whatsapp."', '".$nombres."', '".$empresa."', '". $correo.",'".$codigo."');";
+    $query = "INSERT INTO cliente (celular, nombre, empresa, correo, codigo) VALUES ('".$whatsapp."', '".$nombres."', '".$empresa."', '". $correo."','".$codigo."')";
     $result = $pdo->prepare($query);
     $exec = $result->execute();
     

@@ -37,7 +37,7 @@ const getRemainingTime = deadline => {
     }, 1000)
   };
   
-  countdown('Dec 20 2019 23:17:40 GMT-0500');
+  countdown('Dec 22 2019 23:17:40 GMT-0500');
 
   // new CircleProgress('.dia', {
   //   max: 100,
