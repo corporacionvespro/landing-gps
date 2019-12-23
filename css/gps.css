@@ -33,7 +33,7 @@ a:hover{text-decoration: none}
     /* font-weight: 400; */
     letter-spacing: 1px;
     color: #b01f16;
-    font-family: 'Montserrat-mediun';
+    font-family: 'Montserrat-medium';
 } 
 .navbar-nav i{
     font-size: 7px;
@@ -58,6 +58,7 @@ a:hover{text-decoration: none}
     border-radius: 5px;
 }
 .nav-navegacion a {
+    border-radius: 8px;
     background-color:#b01f16;
     text-align: left;
     display: block;
@@ -144,6 +145,7 @@ a:hover{text-decoration: none}
 }
 .container-masthead .tipo-vehiculo{
     font-size: 16px;
+    font-family: "Montserrat-semibold";
 }
 .container-masthead .tipo-vehiculo i{
     font-size: 10px;
@@ -209,7 +211,7 @@ a:hover{text-decoration: none}
 
 /* raya header */
 .header-raya{
-    height: 25px;
+    height: 12px;
     background-color: #b01f16;
     border: 0;
     margin: 0;
@@ -736,6 +738,14 @@ footer{
 }
 
 @media (min-width: 576px){
+    .beneficio-text {
+        /* font-size: 18px; */
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        /* font-size: 14px; */
+    }
+
     #beneficios-carousel {
         display: none;
     }
@@ -844,7 +854,7 @@ footer{
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -15px;
+    bottom: -30px;
     border-radius: 50%;
     height: auto;
 }
@@ -1324,6 +1334,11 @@ footer{
     .carusel-img{
         width: 100%;
     }
+    #beneficios-carousel .carousel-inner .carousel-item{
+        /* margin-left: 100%; */
+        /* margin-right: 0; */
+    }
+
     .alerta-img{
         width: 100%;
     }
@@ -1605,7 +1620,7 @@ footer{
         line-height: 1.2;
     }
     .intro {
-        font-size: 31px;
+        font-size: 33px;
     }
     .masthead .card-text{
         padding: 0px 10px;
@@ -1942,9 +1957,10 @@ footer{
     }
     .productos-raya{
         margin-top: 50px;
+        display: none;
     }
     .producto-text{
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
     .final-text{
         font-size: 14px;
@@ -2407,15 +2423,18 @@ footer{
         font-family: "Montserrat-bold";
     }
 
-    .beneficio-text{
-        padding: 10px;
-        /* height: 90px; */
-        height: 110px;
-    }
+    /* .beneficio-text{
+        padding: 20px 20px 20px 40px;
+
+        
+    } */
     .producto-text .card-img{
         display: none;
     }
 
+    .productos-raya {
+        display: block;
+    }
     .gestion-flota{
         background-image: url(../img/gestion-flota.png);
         background-repeat: no-repeat;
@@ -2471,11 +2490,18 @@ footer{
 }
 
 @media (min-width: 768px) {
+    .header-raya{
+        height: 25px;
+    }
+
     .text-50 {
         font-size: 60px;
     }
     .text-descuento {
         font-size: 35px;
+    }
+    .beneficio-text {
+        height: 100px;
     }
 
     /* .container-img-promocion{
@@ -2546,8 +2572,10 @@ footer{
         display: block;
     }
 }
-@media (min-width: 800px) {
-
+@media (min-width: 818px) {
+    .beneficio-text {
+        height: 90px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -2567,12 +2595,11 @@ footer{
 }
 @media (min-width: 1024px) {
     .container-productos {
-        margin-top: 5
-        0px;
+        margin-top: 80px;
     }
 
     .nav-item .nav-link {
-        font-size: 18px;
+        /* font-size: 18px; */
         /* font-weight: 400; */
         letter-spacing: 1px;
         color: #b01f16;
@@ -3036,16 +3063,24 @@ footer{
 }
 
 @media (min-width: 1200px) {
-
+    .beneficio-text {
+        height: 110px;
+    }
 }
-@media (min-width: 1280px) {
 
+@media (min-width: 1280px) {
+    .beneficio-text {
+        height: 90px;
+    }
 }
 @media (min-width: 1360px) {
 
 }
 @media (min-width: 1440px) {
     
+    
+    
+    /* max-width: 260px; */
     .leand-promocion {
         font-size: 30px;
         display: inline;
@@ -3618,12 +3653,19 @@ footer{
         width: auto;
         height: inherit;
     } */
+    .beneficio-text {
+        max-width: 100%;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .beneficio-text p {
         font-size: 25px;
         line-height: 1.2;
     }
     .beneficio-text p:before{
-        top: 26px;
+        top: 7px;
     }
     
     /* otros productos */
@@ -3801,6 +3843,11 @@ footer{
 @media (min-width: 1482px) {
     .leand-promocion {
         display: block;
+    }
+}
+@media (min-width: 1582px) {
+    .beneficio-text {
+        height: 100px;
     }
 }
 @media (min-width: 1600px) {
