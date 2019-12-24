@@ -2512,7 +2512,8 @@ a:hover{text-decoration: none}
         font-size: 21px;
     }
     .container-text-rojo p.reporte-heading-3 span{
-        font-size: 22px;
+        font-size: 30px;
+        font-family: "Montserrat-semibold";
     }
 }
 
