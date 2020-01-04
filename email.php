@@ -82,6 +82,7 @@ try{
         ]);
     }
 }catch(\Exception $e){
+    header('Content-Type: application/json');    
     $pdo->rollBack();
     echo json_encode([
         "status"    => "ERROR",

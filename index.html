@@ -547,7 +547,7 @@
                         </div> -->
                         <div class="col-md-11 card-img-promocion">
                             <div class="text-promocion text-center">
-                                <p class="text-50">50%</p>
+                                <p class="text-50 descuento">50%</p>
                                 <p class="text-descuento">Descuento</p>
                             </div>
                         </div>
@@ -558,10 +558,10 @@
                         <di class="col-12 col-md-12 col-xl-10">
                             <h3 class="header-promocion text-primary">Promoción Diciembre 2019</h3>
                             <p class="leand-promocion">
-                                <strong> Este mes de  Diciembre accede al descuento </strong> 
+                                <strong> Este mes de  <strong class="mes"> Diciembre</strong> accede al descuento </strong> 
                             </p>
                             <p class="leand-promocion">
-                                <strong>de hasta 50% por tu compra de </strong>
+                                <strong>de hasta <strong class="descuento">50%</strong> por tu compra de </strong>
                             </p>
                             <p class="leand-promocion">
                                 <strong> tu equipo GPS.</strong>
@@ -937,7 +937,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.6/dist/loadingoverlay.min.js"></script>
     <script src="js/jquery.circle-progress.js"></script>
-    <script src="js/gps.js"></script>
      <script>
         var estado = 0;
         $('body').on('click', '.bar-navegacion', function() {
@@ -953,120 +952,10 @@
         });
     </script>
     <script>
-        $(document).ready(function() {
-            var require=[
-                {
-                    name: "nombres",
-                    validation: [
-                        ["required","Nombre necesario"],
-                        ["max","100", "Nombre no debe ser mayor a 100 carácteres "],
-                    ]
-                },
-                // {
-                //     name: "empresa",
-                //     validation: [
-                //         ["required","Empresa necesario"]
-                //     ]
-                // },
-                {
-                    name: "whatsapp",
-                    validation: [
-                        ["required","whatsapp necesario"],
-                        ["max","12", "whatsapp no debe ser mayor a 12 números "],
-                    ]
-                },
-                {
-                    name: "email",
-                    validation: [
-                        ["required","Mail necesario"],
-                        ["email","Ingresar un E-mail valido"],
-                        ["max","100", "Nombre no debe ser mayor a 100 carácteres "],
-                    ]
-                },
-                // {
-                //     name: "descripcion",
-                //     validation: [
-                //         ["required","Descripción necesaria"]
-                //     ]
-                // },
-
-            ];
-            function validation_form() {
-                var v_continue=true;
-                $('.form-group').removeClass('error');
-                $('.form-group span').remove();
-                for (let i = 0; i < require.length; i++) {
-                    const data = require[i];
-                    for (let j = 0; j < data.validation.length; j++) {
-                        const validation = data.validation[j];
-                        var error=false;
-                        switch (validation[0]) {
-                            case "required":
-                                
-                                if ($('[name='+data.name+']').val().trim()==="") {
-                                    $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[1]+'</span>');                        
-                                    error=true;
-                                }
-                                break;
-                            case "email":
-                                if (($('[name='+data.name+']').val()).search('@')==-1) {
-                                    $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[1]+'</span>');                        
-                                    error=true;
-                                }
-                                break;
-                            case 'max':
-                                if (($('[name='+data.name+']').val()).length>validation[1]) {
-                                    $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[2]+'</span>');                        
-                                    error=true;
-                                }
-                                break;
-                        }
-                        if (error) {
-                            v_continue=false;
-                            break;
-                        };
-                    }
-                    
-                }
-                return v_continue;
-            }
-
-            $('#frm-contacto').submit(function(e) {
-                e.preventDefault();
-                if (validation_form()) {
-                    $('#contacto').LoadingOverlay('show',
-                        {
-                            image       : "http://gps.vespro.ml/img/icon.png",
-                            imageAnimation: "2000ms fadein",
-                        }
-                    );
-
-                    $.ajax({
-                        type: 'POST',
-                        url: $(this).attr('action'),
-                        data: $(this).serialize(),
-                        success: function(data) {
-                            var respuesta=data;
-                            $('#contacto').LoadingOverlay('hide');
-                            // var respuesta = JSON.parse(data);
-                            if (respuesta.status == "OK"){
-                                $('#frm-contacto')[0].reset();
-                                $('#modal-contacto').modal('show');
-                            }else{
-                                $('#modal-error').modal('show');
-                                $('#error').text(respuesta.data);
-                            }
-
-                        }
-                    }) 
-                }
-            })     
-            
-            $("body").on("click", "#btn-promocion", function(){
-                $('#codigo-promocion').val('gps-vespro');
-            })
-        });
+        
     </script>
+    <script src="js/gps.js"></script>
+
 </body>
 </html>
 
