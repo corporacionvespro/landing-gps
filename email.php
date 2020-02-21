@@ -11,7 +11,7 @@ require 'vendor/autoload.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
-$pdo = new PDO("mysql:host=localhost;dbname=landing;charset=utf8", "root", "", array(
+$pdo = new PDO("mysql:host=localhost;dbname=landing;charset=utf8", "root", "palomino2011", array(
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_EMULATE_PREPARES => false
 ));
