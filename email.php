@@ -81,6 +81,9 @@ try{
             "data"      => $mail->ErrorInfo
         ]);
     }
+
+    header('Location: https://api.whatsapp.com/send?phone=51997630413&text=Hola, soy '.$nombres.' de la empresa '.$empresa.', mi correo es '.$correo.' y solicito información sobre el GPS');
+
 }catch(\Exception $e){
     header('Content-Type: application/json');    
     $pdo->rollBack();
