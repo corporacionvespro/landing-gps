@@ -155,7 +155,7 @@ const getRemainingTime = deadline => {
       $.ajax({
         url:'mostrar_data.php',
         success:function(data){
-         var fecha =new Date((data[0].fechafin).replace(/-/g, '\/'));
+         var fecha =new Date(("2020-02-29").replace(/-/g, '\/'));
                  
           var anio = fecha.getFullYear();
           $('.descuento').text(data[0].descuento+'%'); 
