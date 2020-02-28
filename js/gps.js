@@ -27,8 +27,8 @@ const getRemainingTime = deadline => {
       }else{
         animacion('seg', '60', t.remainSeconds);
         animacion('min', '60', t.remainMinutes);
-        animacion('hora', '8', t.remainHours);
-        animacion('dia', '0', t.remainDays);
+        animacion('hora', '24', t.remainHours);
+        animacion('dia', '60', t.remainDays);
       }
 
     }, 1000)
@@ -155,7 +155,7 @@ const getRemainingTime = deadline => {
       $.ajax({
         url:'mostrar_data.php',
         success:function(data){
-         var fecha =new Date(("2020-02-29"));
+         var fecha =new Date((data[0].fechafin).replace(/-/g, '\/'));
                  
           var anio = fecha.getFullYear();
           $('.descuento').text(data[0].descuento+'%'); 
