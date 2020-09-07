@@ -38,7 +38,7 @@ try{
         $mail->isSMTP();                                            // Set mailer to use SMTP
         $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'tecnologiavespro@gmail.com';                     // SMTP username
+        $mail->Username   = 'bry.y.valen@gmail.com';                     // SMTP username
         $mail->Password   = 'jacmegzeisdcooep';                               // SMP passwordT
         $mail->SMTPSecure = 'SMTP';                                  // Enable TLS encryption, `ssl` also accepted
         // $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
@@ -47,8 +47,8 @@ try{
         $mail->Port       = 25;                                    // TCP port to connect to
     
         //Recipients
-        $mail->setFrom('tecnologiavespro@gmail.com', 'Sistemas GPS');
-        $mail->addAddress('tecnologiavespro@gmail.com');     // Add a recipient
+        $mail->setFrom('bry.y.valen@gmail.com', 'Sistemas GPS');
+        $mail->addAddress('bry.y.valen@gmail.com');     // Add a recipient
     
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
