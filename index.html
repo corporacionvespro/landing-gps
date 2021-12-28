@@ -516,29 +516,48 @@
                 <div class="col-11 col-sm-12 col-md-12 col-lg-4 text-center ">
                     <div class="card card-contacto">
                         <div class="card-title">
-                            <img src="img/logo.png" alt="" >
+                            <img src="img/logo.png" alt="">
                         </div>
                         <div class="card-body">
-                            <form name="formulario" id="frm-contacto" action="email.php" method="POST">
-                                <div class="form-group">
-                                  <input type="text" name="nombres" class="form-control" placeholder="Nombres" >
-                                </div>
-                                <div class="form-group">
-                                  <input type="text" name="empresa" class="form-control" placeholder="Empresa">
-                                </div>
-                                <div class="form-group">
-                                  <input type="text" name="email"  class="form-control" placeholder="E-mail" >
-                                </div>
-                                <div class="form-group">
-                                  <input type="text" name="whatsapp" class="form-control" placeholder="Whatsapp" > 
-                                </div>
-                                <div class="form-group hidden">
-                                  <input id="codigo-promocion" type="text" name="codigo-promocion" class="form-control" hidden readonly> 
-                                </div>
-                                <div class="form-group">
-                                    <button id="btn-enviar" type="submit" class="btn btn-primary text-white "  data-toggle="modal" data-target="#exampleModalCenter" >Lo adquiero</button>
-                                </div>
-                            </form>
+
+                            <div class="form-group">
+                                <input type="text" name="nombres" id="nombres" class="form-control" placeholder="Nombres">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="empresa" id="empresa" class="form-control" placeholder="Empresa">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" id="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input id="codigo-promocion" type="text" name="codigo-promocion" class="form-control" placeholder="C&oacute;digo promocional">
+                            </div>
+                            <div class="form-group">
+                                <button id="btn-enviar" onclick="enviar();" class="btn btn-primary text-white ">Lo adquiero</button>
+                                <script>
+                                    function enviar() {
+                                        var codigo = '+51';
+                                        var numero = '997630413';
+                                        var nombre = $('#nombres').val();
+                                        var empresa = $('#empresa').val();
+                                        var email = $('#email').val();
+                                        var codigopromocion = $('#codigo-promocion').val();
+                                        var canal = 'Landing GPS';
+
+                                        var nombreurl = encodeURI(nombre);
+                                        var empresaurl = encodeURI(empresa);
+                                        var emailurl = encodeURI(email);
+                                        var codigopromocionurl = encodeURI(codigopromocion);
+                                        var canalurl = encodeURI(canal);
+                                        var mensaje = '🔔%20%2ANUEVO%20PROSPECTO%20GPS%2A%20🔔%0A😁%20%2ANombres%2A%3A%20' + nombreurl + '.%0A🔸%20%2AEmpresa%2A%3A%20' + empresa + '.%0A🔸%20%2ACorreo%2A%3A%20' + emailurl + '.%0A🔸%20%2ACodigo%2A%3A%20' + codigopromocionurl + '.%0A🔸%20%2ACanal%2A%3A%20' + canalurl + '.%0A➖➖➖➖➖➖➖➖➖➖➖%0A';
+                                        if (navigator.userAgent.match(/iPhone|Android/i)) {
+                                            window.location.replace('whatsapp://send?phone=' + codigo + numero + '&text=' + mensaje);
+                                        } else {
+                                            window.location.replace('https://api.whatsapp.com/send?phone=' + codigo + numero + '&text=' + mensaje);
+                                        }
+                                    }
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -840,7 +859,7 @@
                                     <p class="divisiones2">La información de tus vehículos de manera ordenada y segura para un mayor crecimiento...</p>
                                 </div>
                                 <p class="divisiones3">Sistema que te permitirá registrar, organizar, ubicar y gestionar tu flota de vehículos de manera óptima y segura.</p>
-                                <a class="btn btn-primary text-white" href="https://vespro.io">+ Información</a>
+                                <a class="btn btn-primary text-white" href="https://vespro.io/taxi/">+ Información</a>
                             </div>
                         </div>
                     </div>
