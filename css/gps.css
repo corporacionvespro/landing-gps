@@ -116,7 +116,7 @@ a:hover{text-decoration: none}
     padding-bottom: 15vh;
 }
 #header.masthead .container-masthead {
-    background-image: url("../img/header-vertical.png");
+    background-image: url("../img/header-vertical.webp");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -383,7 +383,7 @@ a:hover{text-decoration: none}
 
 .container-alerta{
     margin: 60px 0px;
-    background-image: url('../img/fondo-circle-black.png');
+    background-image: url('../img/fondo-circle-black.webp');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
@@ -408,7 +408,7 @@ a:hover{text-decoration: none}
 
 /* reporte */
 .reporte{
-    /*background-image: url('../img/fondo-degradado.png');
+    /*background-image: url('../img/fondo-degradado.webp');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -531,7 +531,7 @@ a:hover{text-decoration: none}
 }
 
 .container-testimonio .carousel {
-    background-image: url(../img/fondo-circle.png);
+    background-image: url(../img/fondo-circle.webp);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
@@ -984,7 +984,7 @@ a:hover{text-decoration: none}
     font-family: 'Montserrat-semiBold';
 }
 .sello-garantia{
-    background-image: url(../img/sello-garantia.png);
+    background-image: url(../img/sello-garantia.webp);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: 145%;
@@ -1008,7 +1008,7 @@ a:hover{text-decoration: none}
     padding: 30px 0px;
 }
 .card-img-promocion{
-    background-image: url(../img/regalo.png);
+    background-image: url(../img/regalo.webp);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: contain;
@@ -1126,7 +1126,7 @@ a:hover{text-decoration: none}
 }
 #pie {
 
-    background-image: url(../img/footer.png);
+    background-image: url(../img/footer.webp);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -2108,7 +2108,7 @@ a:hover{text-decoration: none}
     }
 
     #header.masthead .container-masthead {
-        background-image: url("../img/header.png");
+        background-image: url("../img/header.webp");
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: contain;
@@ -2313,14 +2313,14 @@ a:hover{text-decoration: none}
         display: block;
     }
     .gestion-flota{
-        background-image: url(../img/gestion-flota.png);
+        background-image: url(../img/gestion-flota.webp);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: 301px;
         background-position: right center;
     }
     .gestion-empresa{
-        background-image: url(../img/gestion-empresa.png);
+        background-image: url(../img/gestion-empresa.webp);
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: 301px;
@@ -2528,7 +2528,7 @@ a:hover{text-decoration: none}
     }
 
     #header.masthead .container-masthead {
-        background-image: url("../img/header.png");
+        background-image: url("../img/header.webp");
         background-repeat: no-repeat;
         background-attachment: scroll;
         background-size: contain;
