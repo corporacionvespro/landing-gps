@@ -9,9 +9,10 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/gps.css" />
     <link rel="stylesheet" href="css/icon/style.css" />
-    <link rel="icon" href="img/icon.png" type="image/png">
     <title>GPS-VESPRO</title>
-
+    <link rel="icon" href="https://vespro.pe/muche/img/favicon.jpeg">
+    <meta name="description" content="Controla tu vehiculo de manera fácil, rápido y segura">
+    <link rel="apple-touch-icon" href="https://vespro.pe/muche/img/favicon.jpeg">
 </head>
 
 <body>
@@ -1037,6 +1038,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
-<script>$("#myCarousel").carousel({ interval: false, }); $("#myCarousel").on("touchstart", function (event) { var yClick = event.originalEvent.touches[0].pageY; $(this).one("touchmove", function (event) { var yMove = event.originalEvent.touches[0].pageY; if (Math.floor(yClick - yMove) > 1) { $(".carousel").carousel("next"); } else if (Math.floor(yClick - yMove) < -1) { $(".carousel").carousel("prev"); } }); $(".carousel").on("touchend", function () { $(this).off("touchmove"); }); }); var estado = 0; $("body").on("click", ".bar-navegacion", function () { if (estado == 0) { $(".nav-navegacion").css("opacity", "1"); $(".nav-navegacion").css("display", "block"); estado = 1; } else { $(".nav-navegacion").css("opacity", "0%"); $(".nav-navegacion").css("display", "none"); estado = 0; } });</script>
+<script>
+    $("#myCarousel").carousel({ interval: false, }); $("#myCarousel").on("touchstart", function (event) { var yClick = event.originalEvent.touches[0].pageY; $(this).one("touchmove", function (event) { var yMove = event.originalEvent.touches[0].pageY; if (Math.floor(yClick - yMove) > 1) { $(".carousel").carousel("next"); } else if (Math.floor(yClick - yMove) < -1) { $(".carousel").carousel("prev"); } }); $(".carousel").on("touchend", function () { $(this).off("touchmove"); }); }); var estado = 0; $("body").on("click", ".bar-navegacion", function () { if (estado == 0) { $(".nav-navegacion").css("opacity", "1"); $(".nav-navegacion").css("display", "block"); estado = 1; } else { $(".nav-navegacion").css("opacity", "0%"); $(".nav-navegacion").css("display", "none"); estado = 0; } });
+</script>
 
 </html>
